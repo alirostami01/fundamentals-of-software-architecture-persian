@@ -690,3 +690,11 @@
 | Churn (version control) | حجم تغییرات | chunk-43 | مصوب |
 | Version Control | کنترل نسخه | chunk-43 | مصوب |
 | Contract Test | آزمون قرارداد | chunk-43 | مصوب |
+| A/B Testing | آزمون A/B | chunk-44 | مصوب |
+| Domain-to-Architecture Isomorphism | هم‌ریختی حوزه و معماری | chunk-44 | مصوب |
+| Evolvability | تکامل‌پذیری | chunk-44 | مصوب |
+| Clustering | خوشه‌بندی | chunk-44 | مصوب |
+| Insurance Claims Processing | رسیدگی به خسارت‌های بیمه | chunk-44 | مصوب |
+| Jurisdiction | حوزهٔ قضایی | chunk-44 | مصوب |
+| Declarative | اعلانی | chunk-44 | مصوب |
+| Domain-Specific Language (DSL) | زبان ویژهٔ حوزه | chunk-44 | مصوب |
