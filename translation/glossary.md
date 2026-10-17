@@ -484,3 +484,23 @@
 | Unitary Architecture | معماری یکتا | chunk-28 | مصوب |
 | Mainframe | رایانهٔ بزرگ | chunk-28 | مصوب |
 | Personal Computer (PC) | رایانهٔ شخصی | chunk-28 | مصوب |
+| Embedded Systems | سیستم‌های تعبیه‌شده | chunk-29 | مصوب |
+| Frontend / Backend | سمت کاربر / سمت سرور | chunk-29 | مصوب |
+| Two-Tier Architecture | معماری دولایه | chunk-29 | مصوب |
+| Client/Server | کلاینت/سرور | chunk-29 | مصوب |
+| Desktop Application | برنامهٔ رومیزی | chunk-29 | مصوب |
+| Presentation Logic | منطق ارائه | chunk-29 | مصوب |
+| Thin Client | کلاینت نازک | chunk-29 | مصوب |
+| Rich Client | کلاینت غنی | chunk-29 | مصوب |
+| Firewall | دیوار آتش | chunk-29 | مصوب |
+| Single-Page Application | برنامهٔ تک‌صفحه‌ای | chunk-29 | مصوب |
+| Three-Tier Architecture | معماری سه‌لایه | chunk-29 | مصوب |
+| Plumbing | لوله‌کشی زیرساختی | chunk-29 | مصوب |
+| Serialization | سریال‌سازی | chunk-29 | مصوب |
+| Future-Proofing | آینده‌نگری و مصون‌سازی در برابر آینده | chunk-29 | مصوب |
+| Architecture Partitioning | افراز معماری | chunk-29 | مصوب |
+| Containment Mechanism | سازوکار دربرگیری | chunk-29 | مصوب |
+| Top-Level Partitioning | افراز سطح بالا | chunk-29 | مصوب |
+| Technical Top-Level Partitioning | افراز فنی سطح بالا | chunk-29 | مصوب |
+| Model-View-Controller (MVC) | Model-View-Controller (بدون ترجمه) | chunk-29 | مصوب |
+| Conway’s Law | قانون Conway | chunk-29 | مصوب |
