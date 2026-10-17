@@ -154,8 +154,10 @@ def main():
     def join(ls):
         out = ls[0]
         for s in ls[1:]:
-            if out and out[-1] in "\u2010\u2011-":
+            if out and out[-1] in "\u2010\u2011":       # typesetter's soft break → strip
                 out = out[:-1] + s
+            elif out and out[-1] == "-":                 # real hyphen (U+002D) → keep, join tight
+                out = out + s
             else:
                 out = out + " " + s
         return re.sub(r"[ \t]+", " ", out).strip()

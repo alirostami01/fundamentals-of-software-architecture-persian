@@ -215,3 +215,25 @@
 | Domain-Driven Design (DDD) | طراحی حوزه‌محور (DDD) | chunk-12 | مصوب |
 | Code Smell | بوی کد | chunk-12 | مصوب |
 | Component | مؤلفه | chunk-12 | مصوب |
+| Structural Design | طراحی ساختاری | chunk-13 | مصوب |
+| Join Point | نقطهٔ اتصال | chunk-13 | مصوب |
+| Problem Domain | حوزهٔ مسئله | chunk-13 | مصوب |
+| Non-Functional Requirements | الزامات غیرکارکردی | chunk-13 | مصوب |
+| Functional Requirements | الزامات کارکردی | chunk-13 | مصوب |
+| Quality Attributes | صفات کیفی | chunk-13 | مصوب |
+| Capabilities | قابلیت‌ها | chunk-13 | مصوب |
+| Behavior | رفتار | chunk-13 | مصوب |
+| Function Point Analysis | تحلیل نقاط کارکردی | chunk-13 | مصوب |
+| Non-Function Points | نقاط غیرکارکردی | chunk-13 | مصوب |
+| Nondomain | غیرحوزه‌ای | chunk-13 | مصوب |
+| Security | امنیت | chunk-13 | مصوب |
+| Coding Hygiene | بهداشت کدنویسی | chunk-13 | مصوب |
+| Encryption | رمزنگاری | chunk-13 | مصوب |
+| Hashing | درهم‌سازی | chunk-13 | مصوب |
+| Salting | نمک‌زنی | chunk-13 | مصوب |
+| Distributed Architecture | معماری توزیع‌شده | chunk-13 | مصوب |
+| Operational Architectural Characteristics | ویژگی‌های عملیاتی معماری | chunk-13 | مصوب |
+| Explicit Architecture Characteristic | ویژگی صریح معماری | chunk-13 | مصوب |
+| Reliability | قابلیت اطمینان | chunk-13 | مصوب |
+| High-Frequency Trading | معاملات پربسامد | chunk-13 | مصوب |
+| Latency | تأخیر | chunk-13 | مصوب |
