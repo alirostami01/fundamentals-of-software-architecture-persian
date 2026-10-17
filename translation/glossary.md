@@ -677,3 +677,16 @@
 | Runtime-Based Plug-in | افزونهٔ مبتنی بر زمان اجرا | chunk-42 | مصوب |
 | Shared Library | کتابخانهٔ مشترک | chunk-42 | مصوب |
 | Throughput | توان عملیاتی | chunk-42 | مصوب |
+| Microkern-ality | میکروکرنل‌بودن | chunk-43 | مصوب |
+| Linter | لینتر | chunk-43 | مصوب |
+| Abstract Syntax Tree | درخت نحو انتزاعی | chunk-43 | مصوب |
+| Plug-in Registry | رجیستری افزونه‌ها | chunk-43 | مصوب |
+| Discovery (tool) | کشف | chunk-43 | مصوب |
+| Custom Contract | قرارداد سفارشی | chunk-43 | مصوب |
+| Data Store | مخزن داده | chunk-43 | مصوب |
+| Rules Engine | موتور قواعد | chunk-43 | مصوب |
+| Dependency-Free Plug-in | افزونهٔ بی‌وابستگی | chunk-43 | مصوب |
+| Transitive Dependency | وابستگی گذرا | chunk-43 | مصوب |
+| Churn (version control) | حجم تغییرات | chunk-43 | مصوب |
+| Version Control | کنترل نسخه | chunk-43 | مصوب |
+| Contract Test | آزمون قرارداد | chunk-43 | مصوب |
