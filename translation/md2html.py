@@ -17,6 +17,7 @@ import argparse
 import html as htmllib
 import re
 from pathlib import Path
+PERSIAN = re.compile(r"[\u0600-\u06FF]")
 
 ART = ('<article dir="rtl" lang="fa" style="font-family:\'Vazirmatn\',\'IRANSans\',\'Tahoma\',sans-serif;'
        'line-height:2;max-width:46rem;margin:0 auto;color:#1a1a1a;background:#fff;padding:1.5rem;'
@@ -193,8 +194,10 @@ def main():
                     f'    </figure>')
         attrib = next((p for p in paras if p.startswith("—")), None)
         if attrib:
+            at = attrib.lstrip("—").strip()
+            foot = inline(at) if PERSIAN.search(at) else bdi(at, iso=True)   # Persian attribution stays RTL
             return (f'    <blockquote style="{QUOTA}">\n      {inline(unb(first))}\n'
-                    f'      <footer style="{FOOTER}">— {bdi(attrib.lstrip("—").strip(), iso=True)}</footer>\n'
+                    f'      <footer style="{FOOTER}">— {foot}</footer>\n'
                     f'    </blockquote>')
         if first.startswith("**نکته") and len(paras) == 1:   # tip callout (book's lemur/tip icon)
             return (f'    <aside role="note" style="{TIP}">\n      <p style="margin:0;">{inline(first)}</p>\n    </aside>')

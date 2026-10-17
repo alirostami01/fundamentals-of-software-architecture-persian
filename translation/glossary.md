@@ -335,3 +335,13 @@
 | Plug-in | افزونه | chunk-17 | مصوب |
 | Sacrificial Architecture | معماری قربانی‌شدنی | chunk-17 | مصوب |
 | Internationalization (i18n) | بین‌المللی‌سازی (i18n) | chunk-17 | مصوب |
+| Stability | پایداری | chunk-18 | مصوب |
+| Security Hygiene | بهداشت امنیتی | chunk-18 | مصوب |
+| Underspecifying (Architectural Characteristics) | تعیین کمتر از حد (ویژگی‌های معماری) | chunk-18 | مصوب |
+| Co-constructors (of a software system) | هم‌سازندگان (سیستم نرم‌افزاری) | chunk-18 | مصوب |
+| Ivory Tower Architecture Antipattern | ضدالگوی معماری برج عاج | chunk-18 | مصوب |
+| Tech Lead | سرپرست فنی | chunk-18 | مصوب |
+| Driving Architectural Characteristics | ویژگی‌های معماری پیشران | chunk-18 | مصوب |
+| Generic Architecture | معماری عام | chunk-18 | مصوب |
+| Architectural Characteristics Worksheet | کاربرگ ویژگی‌های معماری | chunk-18 | مصوب |
+| Others Considered (worksheet category) | موارد بررسی‌شدهٔ دیگر | chunk-18 | مصوب |
