@@ -450,3 +450,14 @@
 | Fine-Grained | ریزدانه | chunk-25 | مصوب |
 | CRUD (Create, Read, Update, Delete) | CRUD (ایجاد، خواندن، به‌روزرسانی، حذف) | chunk-25 | مصوب |
 | No-Code/Low-Code | بدون‌کد/کم‌کد | chunk-25 | مصوب |
+| Role and Responsibility Statement | بیانیهٔ نقش و مسئولیت | chunk-26 | مصوب |
+| Conjunctive Phrase | عبارت ربطی | chunk-26 | مصوب |
+| Shopping Cart | سبد خرید | chunk-26 | مصوب |
+| Restructuring (Components) | بازساختاردهی (مؤلفه‌ها) | chunk-26 | مصوب |
+| Edge Case | حالت مرزی | chunk-26 | مصوب |
+| Lifecycle | چرخهٔ عمر | chunk-26 | مصوب |
+| Component Coupling | کوپلینگ مؤلفه‌ها | chunk-26 | مصوب |
+| Incoming (Fan-in) Coupling | کوپلینگ درون‌سو (هم‌گرا) | chunk-26 | مصوب |
+| Outgoing (Fan-out) Coupling | کوپلینگ برون‌سو (انشعابی) | chunk-26 | مصوب |
+| Temporal Coupling | کوپلینگ زمانی | chunk-26 | مصوب |
+| Transaction | تراکنش | chunk-26 | مصوب |
