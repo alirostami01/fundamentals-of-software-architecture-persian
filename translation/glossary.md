@@ -571,3 +571,12 @@
 | Fast-Lane Reader (pattern) | الگوی Fast-Lane Reader (بدون ترجمه) | chunk-33 | مصوب |
 | Business Delegate (pattern) | الگوی Business Delegate (بدون ترجمه) | chunk-33 | مصوب |
 | Adapter | مبدل | chunk-33 | مصوب |
+| Shared Object | شیء مشترک | chunk-34 | مصوب |
+| Request Flow | جریان درخواست | chunk-34 | مصوب |
+| Out-of-Memory | کمبود حافظه | chunk-34 | مصوب |
+| Mean Time to Recover (MTTR) | میانگین زمانِ بازیابی | chunk-34 | مصوب |
+| Structural Testing Tools | ابزارهای آزمون ساختاری | chunk-34 | مصوب |
+| Architecture Sinkhole (antipattern) | چاهک معماری | chunk-34 | مصوب |
+| 80-20 Rule | قاعدهٔ ۸۰-۲۰ | chunk-34 | مصوب |
+| Cross-Cutting Team Members | اعضای میان‌بُرشی تیم | chunk-34 | مصوب |
+| Operational Data | دادهٔ عملیاتی | chunk-34 | مصوب |
