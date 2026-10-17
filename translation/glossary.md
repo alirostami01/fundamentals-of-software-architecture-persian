@@ -461,3 +461,12 @@
 | Outgoing (Fan-out) Coupling | کوپلینگ برون‌سو (انشعابی) | chunk-26 | مصوب |
 | Temporal Coupling | کوپلینگ زمانی | chunk-26 | مصوب |
 | Transaction | تراکنش | chunk-26 | مصوب |
+| Law of Demeter | قانون Demeter | chunk-27 | مصوب |
+| Principle of Least Knowledge | اصل کمترین دانش | chunk-27 | مصوب |
+| Decoupled | جدا (فاقد کوپلینگ) | chunk-27 | مصوب |
+| Component Decomposition | تجزیهٔ مؤلفه‌ای | chunk-27 | مصوب |
+| Bidder | پیشنهاددهنده | chunk-27 | مصوب |
+| Auctioneer | حراج‌گردان | chunk-27 | مصوب |
+| Read-Only | فقط‌خواندنی | chunk-27 | مصوب |
+| System of Record | سیستم مرجع | chunk-27 | مصوب |
+| Least Worst (Trade-offs) | کم‌بدترین (مجموعهٔ مصالحه‌ها) | chunk-27 | مصوب |

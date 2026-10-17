@@ -46,7 +46,7 @@ def collect_rows(chunks):
 
 def merge_md(title, chunks, drops):
     bodies = []
-    drop_lines = {f"## {d}" for d in drops}
+    drop_lines = {f"## {d}" for d in drops} | {f"### {d}" for d in drops}   # H2 and H3 continuation headings
     for n in chunks:
         body, _ = _split_chunk_md(n)
         if body and body[0].startswith("# "):
@@ -106,7 +106,7 @@ def merge_html(chunks, drops, rows):
         hr_pos = t.rfind("<hr ", 0, gi)
         body = t[start:hr_pos]
         for d in drops:
-            body = re.sub(r"<h3[^>]*>" + re.escape(d) + r"</h3>\n\s*", "", body)
+            body = re.sub(r"<(h[34])[^>]*>" + re.escape(d) + r"</\1>\n\s*", "", body)
         bodies.append(body.strip())
     sep = "\n\n  " + HR + "\n\n  "
     inner = "\n\n  " + sep.join(bodies)
