@@ -698,3 +698,4 @@
 | Jurisdiction | حوزهٔ قضایی | chunk-44 | مصوب |
 | Declarative | اعلانی | chunk-44 | مصوب |
 | Domain-Specific Language (DSL) | زبان ویژهٔ حوزه | chunk-44 | مصوب |
+| Deployment Frequency | بسامد استقرار | chunk-28 | مصوب |
