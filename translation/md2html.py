@@ -6,7 +6,7 @@ Usage:
 
 Supported blocks: H1 / H2(→h3) / H3(→h4) / H4(→h5) / plain "> …" quotes / paragraphs (inline **bold**) /
 fenced code (any language, LTR <pre>) / "- " lists (consecutive → one <ul>) /
-"> **شکل …**" figures / "> … > — Name" aphorisms / "> **title** …" sideboxes /
+"> **شکل …**" figures / "**جدول …**" + body tables / "> … > — Name" aphorisms / "> **title** …" sideboxes /
 "---" separators (rendered as <hr> between top-level sections) / final glossary.
 
 English wrapping: parenthesised Latin-only content → one <bdi>(…)</bdi>; mixed
@@ -210,6 +210,23 @@ def main():
         elif b[0].startswith(">"):
             ensure(); close_ul()
             current.append(quote(b))
+        elif all(l.startswith("|") for l in b):        # body table (→ figure + figcaption)
+            ensure(); close_ul()
+            cap = ""
+            if current and current[-1].startswith('    <p style="text-align:justify;"><b>جدول'):
+                cap_html = current.pop()[len('    <p style="text-align:justify;">'):-len("</p>")]
+                cap = (f'      <figcaption style="font-size:.95rem;color:#333;margin-bottom:.5rem;" dir="rtl">'
+                       f'{cap_html}</figcaption>\n')
+            cells = [[c.strip() for c in l.strip().strip("|").split("|")] for l in b if not re.match(r"^\|[-:| ]+\|$", l)]
+            th = "".join(f'<th style="border:1px solid #ccc;padding:.45rem .6rem;">{inline(c)}</th>' for c in cells[0])
+            trs = "\n".join("          <tr>" + "".join(
+                f'<td style="border:1px solid #ccc;padding:.4rem .6rem;vertical-align:top;">{inline(c)}</td>' for c in r)
+                + "</tr>" for r in cells[1:])
+            current.append(
+                f'    <figure style="{FIG}">\n{cap}'
+                '      <table dir="rtl" style="width:100%;border-collapse:collapse;font-size:.95rem;text-align:right;">\n'
+                f'        <thead>\n          <tr style="background:#2c5f8a;color:#fff;">{th}</tr>\n        </thead>\n'
+                f'        <tbody>\n{trs}\n        </tbody>\n      </table>\n    </figure>')
         elif all(l.startswith("- ") for l in b):
             ensure()
             pending_ul.extend(l[2:].strip() for l in b)

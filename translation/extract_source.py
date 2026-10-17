@@ -74,6 +74,44 @@ def classify(top, left, size, bold, inner, txt):
     return "DROP"                                     # equation pieces etc.
 
 
+def render_table(items):
+    """items: (left, txt, top, page) of 9pt cells → Markdown table.
+    Column boundary = left of the 2nd header cell; new row when top jumps > 12pt."""
+    items = sorted(items, key=lambda x: (x[3], x[1] == "", x[2], x[0]))
+    header = [it for it in items if it[1] in ("Term", "Definition", "Defniition")]
+    boundary = max(it[0] for it in header) - 5 if len(header) >= 2 else 110
+    rows, last_top, last_pg = [], None, None
+    for left, txt, top, pg in sorted(items, key=lambda x: (x[3], x[2], x[0])):
+        if txt in ("Term", "Definition", "Defniition"):
+            continue
+        if last_top is None or pg != last_pg or top - last_top > 12:
+            if not (rows and pg == last_pg and abs(top - last_top) < 0.5):
+                rows.append([[], []])
+        col = 0 if left < boundary else 1
+        m = re.match(r"^(\S+/\S+|\S+) (The |How |Whether |Support |Security |Rules )(.*)$", txt) if col == 0 else None
+        if m and not rows[-1][1]:                       # fused "Term Definition…" run
+            rows[-1][0].append(m.group(1)); rows[-1][1].append(m.group(2) + m.group(3))
+        else:
+            rows[-1][col].append(txt)
+        if col == 0 or not rows[-1][0] or top - (last_top or top) > 12:
+            pass
+        last_top, last_pg = top, pg
+
+    def j(ls):
+        out = ""
+        for t in ls:
+            if out.endswith(("\u2010", "\u2011")):
+                out = out[:-1] + t
+            elif out.endswith(("-", "/")):
+                out += t
+            else:
+                out = (out + " " + t).strip()
+        return out
+    md = ["| Term | Definition |", "|---|---|"]
+    md += [f"| {j(a)} | {j(b)} |" for a, b in rows]
+    return "\n".join(md)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out")
@@ -86,6 +124,7 @@ def main():
     doc = pymupdf.open(PDF)
     lines = []                                        # (page, top, size, cls, txt)
     started = a.start_at is None
+    in_table = False
     for pno in range(a.start_page, a.stop_page + 1):
         h = doc[pno].get_text("html")
         for m in PAT.finditer(h):
@@ -107,6 +146,13 @@ def main():
                     continue
             if a.stop_at and cls in ("H2", "H3") and txt == a.stop_at:
                 break
+            if cls == "LISTHEAD" and re.match(r"Table \d+-\d+\.", txt):
+                cls, in_table = "TABCAP", True
+            elif in_table and size == 9.0 and top <= 580:
+                lines.append([pno, top, size, "TABLE", (left, txt, top, pno)])
+                continue
+            elif in_table:
+                in_table = False
             if cls == "DROP":
                 continue
             full_ital = bool(re.match(r"^<i>.*</i>$", inner.strip(), re.S))
@@ -132,6 +178,8 @@ def main():
             cls = last_cls                            # bullet wrap inherits
         if cur is None:
             cur = (cls, [(pg, top, txt)])
+        elif cls == "TABLE" and last_cls == "TABLE":
+            cur[1].append((pg, top, txt))
         elif cls != last_cls:
             flush()
             cur = (cls, [(pg, top, txt)])
@@ -172,6 +220,8 @@ def main():
                 i += 1
                 merged += blocks[i][1]
             parts.append("```text\n" + "\n".join(merged) + "\n```")
+        elif cls == "TABLE":
+            parts.append(render_table(ls))
         elif cls == "BULLET":                          # prose (question) bullets
             txt = join(ls)
             items = [x.strip() for x in re.split(r"(?=• )", txt) if x.strip()]
@@ -197,7 +247,8 @@ def main():
     words = len(re.findall(r"[A-Za-z][A-Za-z0-9'’().;/-]*", src))
     print(f"{a.out}: {len(blocks)} blocks, {words} words")
     for i, (c, ls) in enumerate(blocks):
-        print(f"{i+1:2d} {c:11s} ({len(ls)}) {join(ls)[:66]}")
+        preview = (" ".join(x[1] for x in ls) if c == "TABLE" else join(ls))[:66]
+        print(f"{i+1:2d} {c:11s} ({len(ls)}) {preview}")
 
 
 if __name__ == "__main__":

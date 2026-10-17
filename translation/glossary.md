@@ -237,3 +237,30 @@
 | Reliability | قابلیت اطمینان | chunk-13 | مصوب |
 | High-Frequency Trading | معاملات پربسامد | chunk-13 | مصوب |
 | Latency | تأخیر | chunk-13 | مصوب |
+| Structural Architectural Characteristics | ویژگی‌های ساختاری معماری | chunk-14 | مصوب |
+| Continuity | تداوم | chunk-14 | مصوب |
+| Recoverability | بازیابی‌پذیری | chunk-14 | مصوب |
+| Reliability/Safety | قابلیت اطمینان/ایمنی | chunk-14 | مصوب |
+| Fail-safe | ایمن در برابر خرابی | chunk-14 | مصوب |
+| Robustness | استواری | chunk-14 | مصوب |
+| Configurability | پیکربندی‌پذیری | chunk-14 | مصوب |
+| Extensibility | گسترش‌پذیری | chunk-14 | مصوب |
+| Installability | نصب‌پذیری | chunk-14 | مصوب |
+| Leverageability/Reuse | بهره‌گیری مجدد/بازاستفاده | chunk-14 | مصوب |
+| Localization | بومی‌سازی | chunk-14 | مصوب |
+| Portability | قابلیت حمل | chunk-14 | مصوب |
+| Upgradeability | ارتقاپذیری | chunk-14 | مصوب |
+| On-demand Scalability | مقیاس‌پذیری بر حسب تقاضا | chunk-14 | مصوب |
+| On-demand Elasticity | کشسانی بر حسب تقاضا | chunk-14 | مصوب |
+| Zone-based Availability | در دسترس‌بودن مبتنی بر ناحیه | chunk-14 | مصوب |
+| Region-based Privacy and Security | حریم خصوصی و امنیت مبتنی بر منطقه | chunk-14 | مصوب |
+| Cross-Cutting Architectural Characteristics | ویژگی‌های میان‌بُرشی معماری | chunk-14 | مصوب |
+| Accessibility | دسترس‌پذیری | chunk-14 | مصوب |
+| Archivability | بایگانی‌پذیری | chunk-14 | مصوب |
+| Authentication | احراز هویت | chunk-14 | مصوب |
+| Authorization | مجوزدهی | chunk-14 | مصوب |
+| Legal | الزامات حقوقی | chunk-14 | مصوب |
+| Privacy | حریم خصوصی | chunk-14 | مصوب |
+| Supportability | پشتیبانی‌پذیری | chunk-14 | مصوب |
+| Usability/Achievability | کاربردپذیری/دستیابی‌پذیری | chunk-14 | مصوب |
+| Logging | ثبت وقایع | chunk-14 | مصوب |
