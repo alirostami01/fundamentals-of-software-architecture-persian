@@ -648,3 +648,14 @@
 | Streaming | جریان‌سازی داده | chunk-39 | مصوب |
 | Embedded Messaging | پیام‌رسانی تعبیه‌شده | chunk-39 | مصوب |
 | Continuous Fitness Function | تابع برازش مداوم | chunk-39 | مصوب |
+| Serverless Function | تابع بدون سرور | chunk-40 | مصوب |
+| Containerized Function | تابع کانتینری | chunk-40 | مصوب |
+| Single-Purpose Filter | فیلتر تک‌منظوره | chunk-40 | مصوب |
+| Bidirectional Communication | ارتباط دوسویه | chunk-40 | مصوب |
+| Error Condition | وضعیت خطا | chunk-40 | مصوب |
+| Fatal Error | خطای مهلک | chunk-40 | مصوب |
+| Tag | برچسب | chunk-40 | مصوب |
+| Annotation (Java) | حاشیه‌نویسی | chunk-40 | مصوب |
+| Custom Attribute (C#) | صفت سفارشی | chunk-40 | مصوب |
+| Metadata | فراداده | chunk-40 | مصوب |
+| Entry Point | نقطهٔ ورود | chunk-40 | مصوب |

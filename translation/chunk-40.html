@@ -1,0 +1,143 @@
+<!-- بخش دوم: خروجی HTML — کامپوننت محتوای داخلی (بدون html/head) — بستهٔ ۴۰ -->
+<article dir="rtl" lang="fa" style="font-family:'Vazirmatn','IRANSans','Tahoma',sans-serif;line-height:2;max-width:46rem;margin:0 auto;color:#1a1a1a;background:#fff;padding:1.5rem;border:1px solid #e5e5e5;border-radius:8px;">
+
+  <h1 style="font-size:1.7rem;margin:0 0 1rem;border-bottom:3px solid #2c5f8a;padding-bottom:.5rem;">فصل ۱۲: سبک معماری خط لوله (ادامه — بستهٔ ۴۰)</h1>
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">ملاحظات ابری</h3>
+    <p style="text-align:justify;">سبک معماری خط لوله، به دلیلِ سطحِ بالای ماژولاریتی و انواعِ جداگانهٔ فیلترهایش، برای استقرارهای مبتنی بر ابر بسیار مناسب است. از آنجا که بیشترِ معماری‌های خط لوله چندان پیچیده و گسترده نیستند، به‌خوبی به‌صورتِ معماری‌های تک‌پارچه مستقر می‌شوند؛ یعنی همهٔ فیلترها در یک واحد استقرار مستقر می‌شوند.</p>
+    <p style="text-align:justify;">اما فیلترها در محیط‌های ابری به‌صورتِ توابعِ توزیع‌شده نیز به‌خوبی کار می‌کنند. در <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">AWS</bdi>، معماری خط لوله را می‌توان به‌صورتِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">AWS Step Functions</bdi> مستقر کرد که در آن هر فیلتر به‌صورتِ یک <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">lambda</bdi> جداگانه در گردش‌کار مستقر می‌شود. <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">AWS Step Functions</bdi> دو گردش‌کار عرضه می‌کند: <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Standard</bdi>، که در آن هر گام دقیقاً یک بار اجرا می‌شود، و <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Express</bdi>، که در آن هر گام ممکن است بیش از یک بار اجرا شود. سبک معماری خط لوله با هر دو کار می‌کند. کدِ زیر نمونهٔ تابع برازشِ مداومِ شکل ۱۲-۲ را به‌عنوانِ یک استقرارِ ابریِ متداول برای معماری خط لوله نشان می‌دهد که به‌صورتِ یک <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">AWS Step Function</bdi> پیاده‌سازی شده است:</p>
+    <pre dir="ltr" style="direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:.92rem;line-height:1.6;"><code class="language-json">{
+  "Comment": "Measure and analyze scalability trends.",
+  "StartAt": "Capture Raw Data",
+  "States": {
+    "Capture Raw Data": {
+    "Type": "Task",
+    "Resource": "arn:aws:lambda:region:account_id:function:raw_data_capture",
+    "Next": "Time Series Selector"
+   },
+    "Time Series Selector": {
+    "Type": "Task",
+    "Resource": "arn:aws:lambda:region:account_id:function:time_series_selector",
+    "Next": "Trend Analyzer"
+   },
+    "Trend Analyzer": {
+    "Type": "Task",
+    "Resource": "arn:aws:lambda:region:account_id:function:trend_analyzer",
+    "Next": "Graphing Tool"
+    },
+    "Graphing Tool": {
+    "Type": "Task",
+    "Resource": "arn:aws:lambda:region:account_id:function:graphing_tool",
+    "End": true
+    }
+  }
+}</code></pre>
+    <p style="text-align:justify;">این نمونه تنها راهِ به‌کارگیریِ معماری خط لوله در محیط‌های ابری نیست. فیلترها را می‌توان به‌صورتِ توابعِ بدون سرور <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(serverless functions)</bdi>، توابعِ کانتینری <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(containerized functions)</bdi> یا حتی یک سرویسِ واحد که هر چهار مؤلفهٔ فیلتر را در یک استقرارِ تک‌پارچه در بر می‌گیرد نیز مستقر کرد.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">ریسک‌های رایج</h3>
+    <p style="text-align:justify;">هدفِ اصلیِ معماری خط لوله جداسازیِ کارکردها در قالبِ فیلترهای تک‌منظوره <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(single-purpose filters)</bdi> است؛ فیلترهایی که هر یک عملِ مشخصی روی داده‌ها انجام می‌دهند و سپس آن‌ها را برای پردازشِ بیشتر به فیلترِ دیگری تحویل می‌دهند. از این رو، یکی از رایج‌ترین ریسک‌های این معماری، بارکردنِ مسئولیتِ بیش از حد بر دوشِ فیلترهاست. حاکمیتِ خوب، که در بخشِ بعد به آن می‌پردازیم، با شناساییِ هدفِ هر مؤلفهٔ فیلتر به تیم‌ها کمک می‌کند این ریسک را کاهش دهند.</p>
+    <p style="text-align:justify;">ریسکِ رایجِ دیگر در این سبک معماری، واردکردنِ ارتباطِ دوسویه <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(bidirectional communication)</bdi> میانِ فیلترهاست. لوله‌ها قرار است فقط یک‌سویه باشند تا جداسازیِ روشنی از دغدغه‌ها میانِ فیلترها فراهم کنند و از همکاریِ میانِ آن‌ها جلوگیری شود. اگر معلوم شود ارتباطِ دوسویه ضروری است، این نشانهٔ خوبی است که معماری خط لوله احتمالاً سبکِ درستی برای استفاده نیست، یا فیلترها بیش از حد پیچیده‌اند و کارکردها به‌درستی مرزبندی نشده‌اند.</p>
+    <p style="text-align:justify;">رسیدگی به وضعیت‌های خطا <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(error conditions)</bdi> پیچیدگیِ دیگری است که می‌تواند ریسکِ چشمگیری در این سبک معماری پدید آورد. اگر خطایی درونِ یک خط لوله رخ دهد، تعیینِ اینکه چگونه باید به‌درستی از خط لوله خارج شد و پس از آغازِ آن بازیابی کرد، اغلب دشوار است. به همین دلیل، مهم است که معماران پیش از تعریفِ معماری، همهٔ وضعیت‌های خطای مهلکِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(fatal error)</bdi> ممکن درونِ خط لوله را مشخص کنند.</p>
+    <p style="text-align:justify;">آخرین حوزهٔ ریسک، مدیریتِ قراردادهای میانِ فیلترهاست. هر لوله قراردادی دارد که نمایانگرِ داده‌هایی (و احتمالاً نوع‌های متناظرشان) است که به فیلترِ بعدی می‌فرستد. تغییرِ یک قرارداد میانِ فیلترها به حاکمیت و آزمونِ سخت‌گیرانه نیاز دارد تا اطمینان حاصل شود فیلترهای دیگری که این قرارداد را دریافت می‌کنند، از کار نمی‌افتند.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">حاکمیت</h3>
+    <p style="text-align:justify;">حاکمیت بر ویژگی‌های عملیاتیِ عمومی، مانندِ پاسخ‌گویی، مقیاس‌پذیری، در دسترس‌بودن و مانندِ آن‌ها، به هر موردِ کاربردِ مشخص وابسته است و ممکن است تفاوتِ بسیاری داشته باشد. اما از منظرِ ساختاری، معماران برای حاکمیت بر معماری‌های خط لوله از نقش و مسئولیتِ هر نوعِ فیلتر بهره می‌گیرند.</p>
+    <p style="text-align:justify;">هر یک از چهار نوعِ پایه‌ایِ فیلتر (تولیدکننده، تبدیل‌گر، آزماینده و مصرف‌کننده) نقشِ مشخصی انجام می‌دهد. اما برای توسعه‌دهندگان بسیار آسان است که مسئولیتِ بیش از حدی بر دوشِ فیلترها بگذارند و معماری خط لوله را به یک تک‌پارچهٔ بی‌ساختار تبدیل کنند.</p>
+    <p style="text-align:justify;">نوشتنِ یک تابع برازشِ خودکار برای حاکمیت بر این موضوع دشوار است که آیا یک فیلترِ تولیدکننده واقعاً نقطهٔ آغازِ خط لوله است، یا آیا یک فیلترِ آزماینده واقعاً یک وارسیِ شرطی برای تعیینِ ادامه یا پایانِ جریان انجام می‌دهد. فنونِ حاکمیت به معماران کمک می‌کنند تیمِ توسعه را در پایبندی به نقشِ هر نوعِ فیلتر و مسئولیتِ آن راهنمایی کنند.</p>
+    <p style="text-align:justify;">یکی از این فنون، بهره‌گیری از برچسب‌ها <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(tags)</bdi> است. (در زبانِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Java</bdi> برچسب‌ها به‌صورتِ حاشیه‌نویسی‌ها <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(annotations)</bdi> و در <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">C#</bdi> به‌صورتِ صفت‌های سفارشی <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(custom attributes)</bdi> پیاده‌سازی می‌شوند.) برچسب‌ها در واقع هیچ کارکردی انجام نمی‌دهند؛ آن‌ها به شیوه‌ای برنامه‌نویسانه فراداده‌ای <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(metadata)</bdi> دربارهٔ مؤلفه یا سرویس فراهم می‌کنند. به‌کارگیریِ برچسب‌ها در کلاسِ آغازینِ مؤلفهٔ فیلتر به توسعه‌دهندگان می‌گوید چه نوع فیلتری را می‌سازند یا تغییر می‌دهند و کمک می‌کند از سپردنِ مسئولیتِ بیش از حد به آن فیلتر یا انجامِ کارکردی که به نوعِ آن مربوط نیست، پرهیز کنند.</p>
+    <p style="text-align:justify;">برای نشان دادنِ این فن، کدِ منبعِ زیر را در نظر بگیرید که برچسب‌هایی را برای چهار نوعِ پایه‌ایِ فیلتر تعریف می‌کند. این تعریفِ حاشیه‌نویسیِ برچسب در <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Java</bdi> است:</p>
+    <pre dir="ltr" style="direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:.92rem;line-height:1.6;"><code class="language-java">@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
+public @interface Filter {
+   public FilterType[] value();
+   public enum FilterType {
+      PRODUCER,
+      TESTER,
+      TRANSFORMER,
+      CONSUMER
+   }
+}</code></pre>
+    <p style="text-align:justify;">و این تعریفِ صفتِ سفارشیِ برچسب در <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">C#</bdi> است:</p>
+    <pre dir="ltr" style="direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:.92rem;line-height:1.6;"><code class="language-csharp">[System.AttributeUsage(System.AttributeTargets.Class)]
+class Filter : System.Attribute {
+   public FilterType[] filterType;
+   public enum FilterType {
+      PRODUCER,
+      TESTER,
+      TRANSFORMER,
+      CONSUMER
+   };
+}</code></pre>
+    <p style="text-align:justify;">از آنجا که فیلترها در اصل مؤلفه‌ای معماری‌اند، می‌توان آن‌ها را با چندین فایلِ کلاس پیاده‌سازی کرد. برای نمونه، در مثالِ تابع برازشِ مداوم در شکل ۱۲-۲، فیلترِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Trend Analyzer</bdi> نسبتاً پیچیده است و ممکن است چندین فایلِ کلاس داشته باشد. به همین دلیل، یک برچسبِ دیگر تعریف می‌کنیم تا کلاسی را که نقطهٔ ورودِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(entry point)</bdi> فیلتر را بازنمایی می‌کند شناسایی کنیم و بتوانیم برچسب‌های دیگر را به آن پیوست کنیم.</p>
+    <p style="text-align:justify;">این تعریفِ برچسبِ نقطهٔ ورود در <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Java</bdi> است:</p>
+    <pre dir="ltr" style="direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:.92rem;line-height:1.6;"><code class="language-java">@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
+public @interface FilterEntrypoint {}</code></pre>
+    <p style="text-align:justify;">و این تعریفِ برچسبِ نقطهٔ ورود در <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">C#</bdi>:</p>
+    <pre dir="ltr" style="direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:.92rem;line-height:1.6;"><code class="language-csharp">[System.AttributeUsage(System.AttributeTargets.Class)]
+class FilterEntrypoint : System.Attribute {}</code></pre>
+    <p style="text-align:justify;">اکنون توسعه‌دهندگان می‌توانند برچسبِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">FilterType</bdi> را به کلاسِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Entrypoint</bdi> بیفزایند و نوعِ آن و نقشِ متناظرش در معماری را مشخص کنند. برای نمونه، حاشیه‌نویسی‌های زیر نوع و نقشِ فیلترِ تبدیل‌گرِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Trend Analyzer</bdi> را مشخص می‌کنند. در <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Java</bdi>:</p>
+    <pre dir="ltr" style="direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:.92rem;line-height:1.6;"><code class="language-java">@FilterEntrypoint
+@Filter(FilterType.TRANSFORMER)
+public class TrendAnalyzerFilter {
+   ...
+}</code></pre>
+    <p style="text-align:justify;">و در <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">C#</bdi>:</p>
+    <pre dir="ltr" style="direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:.92rem;line-height:1.6;"><code class="language-csharp">[FilterEntrypoint]
+[Filter(FilterType.TRANSFORMER)]
+class TrendAnalyzerFilter {
+   ...
+}</code></pre>
+    <p style="text-align:justify;">هرچند این فن ممکن است نتواند جلوی همهٔ توسعه‌دهندگان را بگیرد که یک فیلترِ از نوعِ تبدیل‌گر را به اجرای منطقِ آزمون (کاری که باید فیلترِ آزماینده انجام دهد) وادار کنند، دست‌کم زمینهٔ بیشتری فراهم می‌کند.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">ملاحظاتِ توپولوژی تیم</h3>
+    <p style="text-align:justify;">برخلافِ برخی از سبک‌های معماریِ شرح‌داده‌شده در این کتاب، سبک معماری خط لوله به‌طورِ کلی مستقل از توپولوژی‌های تیم است و با هر پیکربندیِ تیمی کار می‌کند:</p>
+    <p style="text-align:justify;"><b>تیم‌های هم‌راستا با جریان:</b> از آنجا که معماری خط لوله معمولاً کوچک و خودبسنده است و یک سفر یا جریانِ واحد را در سیستم بازنمایی می‌کند، با تیم‌های هم‌راستا با جریان به‌خوبی کار می‌کند. در این توپولوژیِ تیم، تیم‌ها معمولاً مالکِ جریان در سیستم از آغاز تا پایان‌اند و این با شکلِ معماری خط لوله به‌خوبی جور درمی‌آید.</p>
+    <p style="text-align:justify;"><b>تیم‌های توانمندساز:</b> از آنجا که معماری خط لوله بسیار ماژولار است و بر پایهٔ دغدغه‌های فنی جدا شده است، به‌خوبی با توپولوژی‌های تیمِ توانمندساز جفت می‌شود. متخصصان و اعضای میان‌بُرشی تیم می‌توانند با افزودنِ فیلترهای تازه درونِ خط لوله، بی‌آنکه بر بقیهٔ جریان اثر بگذارند، پیشنهادهایی بدهند و آزمایش‌هایی انجام دهند. برای نمونه، در مثالِ تابع برازشِ مداوم، یک تیمِ توانمندساز ممکن است پس از فیلترِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Time Series Selector</bdi> یک فیلترِ تبدیل‌گر بیفزاید تا تحلیلِ روندِ جایگزینی انجام دهد. این فیلترِ تازه از همان داده‌های فیلترِ موجودِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Trend Analyzer</bdi> استفاده می‌کند، بی‌آنکه جریانِ عادیِ خط لوله را مختل کند.</p>
+    <p style="text-align:justify;"><b>تیم‌های زیرسیستم پیچیده:</b> از آنجا که هر فیلتر کارِ بسیار مشخصی انجام می‌دهد، معماری خط لوله با توپولوژیِ تیمِ زیرسیستم پیچیده به‌خوبی کار می‌کند. اعضای مختلفِ تیم می‌توانند مستقل از یکدیگر (و از فیلترهای دیگر) بر پردازشِ پیچیدهٔ فیلترها تمرکز کنند. تحویل‌های یک‌سویه در این سبک معماری به اعضای تیم‌های زیرسیستم پیچیده امکان می‌دهد با تمرکزی دقیق به پیچیدگیِ درونِ پردازشِ فیلترِ مشخصِ خود بپردازند.</p>
+    <p style="text-align:justify;"><b>تیم‌های پلتفرم:</b> تیم‌های پلتفرمی که روی یک معماری خط لوله کار می‌کنند، می‌توانند با به‌کارگیریِ ابزارها، سرویس‌ها، <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">API</bdi>‌ها و کارهای مشترک، از درجهٔ بالای ماژولاریتیِ آن بهره ببرند.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">واژه‌نامهٔ اختصاصی این بخش</h3>
+    <table dir="rtl" style="width:100%;border-collapse:collapse;font-size:.95rem;">
+      <thead>
+        <tr style="background:#2c5f8a;color:#fff;">
+          <th style="border:1px solid #ccc;padding:.5rem .7rem;text-align:right;">واژهٔ انگلیسی</th>
+          <th style="border:1px solid #ccc;padding:.5rem .7rem;text-align:right;">معادل مصوب/به‌کاررفته در این بخش</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Serverless Function</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">تابع بدون سرور</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Containerized Function</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">تابع کانتینری</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Single-Purpose Filter</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">فیلتر تک‌منظوره</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Bidirectional Communication</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">ارتباط دوسویه</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Error Condition</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">وضعیت خطا</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Fatal Error</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">خطای مهلک</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Tag</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">برچسب</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Annotation (Java)</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">حاشیه‌نویسی</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Custom Attribute (C#)</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">صفت سفارشی</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Metadata</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">فراداده</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Entry Point</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">نقطهٔ ورود</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Unstructured Monolith</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">تک‌پارچهٔ بی‌ساختار</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Contract</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">قرارداد</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</article>
