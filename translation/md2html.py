@@ -145,12 +145,15 @@ def main():
     sections, current = [], None
     pending_ul = []
 
+    pending_kind = ["ul"]                             # "ul" or "ol" (numbered list)
+
     def close_ul():
         nonlocal pending_ul
         if pending_ul:
-            current.append(f'    <ul style="{UL}">')
+            tag = pending_kind[0]
+            current.append(f'    <{tag} style="{UL}">')
             current.extend(f"      <li>{inline(x)}</li>" for x in pending_ul)
-            current.append("    </ul>")
+            current.append(f"    </{tag}>")
             pending_ul = []
 
     def start_section(heading_html=None):
@@ -269,7 +272,14 @@ def main():
                 f'        <tbody>\n{trs}\n        </tbody>\n      </table>\n    </figure>')
         elif all(l.startswith("- ") for l in b):
             ensure()
+            if pending_kind[0] != "ul": close_ul()
+            pending_kind[0] = "ul"
             pending_ul.extend(l[2:].strip() for l in b)
+        elif all(re.match(r"^[0-9۰-۹]+\. ", l) for l in b):   # numbered list item(s) → <ol>
+            ensure()
+            if pending_kind[0] != "ol": close_ul()
+            pending_kind[0] = "ol"
+            pending_ul.extend(re.sub(r"^[0-9۰-۹]+\. ", "", l).strip() for l in b)
         else:
             ensure(); close_ul()
             current.append(f'    <p style="text-align:justify;">{inline(" ".join(x.strip() for x in b))}</p>')

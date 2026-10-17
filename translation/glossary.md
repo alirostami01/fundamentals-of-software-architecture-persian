@@ -441,3 +441,12 @@
 | Workflow Approach | رویکرد گردش‌کار | chunk-24 | مصوب |
 | Actor/Action Approach | رویکرد کنشگر/کنش | chunk-24 | مصوب |
 | Entity Trap | تلهٔ موجودیت | chunk-24 | مصوب |
+| Happy Path | مسیر موفق | chunk-25 | مصوب |
+| User Journey | سفر کاربری | chunk-25 | مصوب |
+| Order Packer | بسته‌بند سفارش | chunk-25 | مصوب |
+| Dumping Ground | انبار درهم | chunk-25 | مصوب |
+| Kitchen Sink (Utility Class) | کلاس کمکی همه‌چیزدار | chunk-25 | مصوب |
+| Coarse-Grained | درشت‌دانه | chunk-25 | مصوب |
+| Fine-Grained | ریزدانه | chunk-25 | مصوب |
+| CRUD (Create, Read, Update, Delete) | CRUD (ایجاد، خواندن، به‌روزرسانی، حذف) | chunk-25 | مصوب |
+| No-Code/Low-Code | بدون‌کد/کم‌کد | chunk-25 | مصوب |

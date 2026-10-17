@@ -40,6 +40,7 @@ for md in sorted(list(here.glob("chunk-*.md")) + list(here.glob("chapter-*.md"))
         if s.startswith(">"): s = re.sub(r"^(?:>\s*)+", "", s).strip()   # nested "> >" too
         if not s or s.startswith("```"): continue                      # fence markers inside sideboxes
         if s.startswith("- "): s = s[2:]
+        s = re.sub(r"^[0-9۰-۹]+\. ", "", s)                       # numbered-list markers
         blocks.append(norm(s.replace("`", "")))          # inline-code markers (prose only)
     miss = [b for b in blocks if b not in text_tight and b not in text]
     heads = [norm(re.sub(r"^#+\s*", "", l)) for l in src if l.startswith("##")]

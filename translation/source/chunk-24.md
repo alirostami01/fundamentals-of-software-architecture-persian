@@ -16,7 +16,7 @@ In the same way, the major functions a system performs represent the components 
 
 Figure 8-2. The various major functions represent the components of the system
 
-Logical components in software architecture are usually manifested through a namespace or a directory structure containing the source code that implements that particular functionality. Typically, the leaf nodes of the directory structure or namespace containing source code represent the logical components in the architecture, and higher-level directories or namespace nodes represent the system’s domains and subdomains. In the directory structure illustrated in Figure 8-3, the directory path `order_entry/ordering/payment` represents the Payment Processing component, and the path `order_entry/processing/fulfillment` represents the Order Fulfillment component. The source code underlying the directories implements these logical components.
+Logical components in software architecture are usually manifested through a namespace or a directory structure containing the source code that implements that particular functionality. Typically, the leaf nodes of the directory structure or namespace containing source code represent the logical components in the architecture, and higher-level directories or namespace nodes represent the system’s domains and subdomains. In the directory structure illustrated in Figure 8-3, the directory path `order_entry/ordering/payment` represents the `Payment Processing` component, and the path `order_entry/processing/fulfillment` represents the `Order Fulfillment` component. The source code underlying the directories implements these logical components.
 
 Figure 8-3. The leaf nodes of the directory represent the components of the system
 
