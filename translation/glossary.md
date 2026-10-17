@@ -319,3 +319,19 @@
 | Additional Context | زمینهٔ تکمیلی | chunk-16 | مصوب |
 | Brown-Bag Lunch | جلسهٔ ناهار آموزشی | chunk-16 | مصوب |
 | Timeboxed | با زمان محدود و ازپیش‌تعیین‌شده | chunk-16 | مصوب |
+| Requirements Specification | مشخصات الزامات | chunk-17 | مصوب |
+| Concurrent Users | کاربران هم‌زمان | chunk-17 | مصوب |
+| Domain Analyst | تحلیلگر حوزه | chunk-17 | مصوب |
+| Integration Point | نقطهٔ یکپارچه‌سازی | chunk-17 | مصوب |
+| Third-Party | شخص ثالث | chunk-17 | مصوب |
+| Overspecifying (Architectural Characteristics) | تعیین بیش‌ازحد (ویژگی‌های معماری) | chunk-17 | مصوب |
+| Brittleness | شکنندگی | chunk-17 | مصوب |
+| User Experience (UX) | تجربهٔ کاربری (UX) | chunk-17 | مصوب |
+| Native Application | برنامهٔ بومی | chunk-17 | مصوب |
+| Customizability | سفارشی‌پذیری | chunk-17 | مصوب |
+| Microkernel Architectural Style | سبک معماری میکروکرنل | chunk-17 | مصوب |
+| Plug-in Architecture | معماری افزونه‌ای | chunk-17 | مصوب |
+| Core (microkernel) | هسته | chunk-17 | مصوب |
+| Plug-in | افزونه | chunk-17 | مصوب |
+| Sacrificial Architecture | معماری قربانی‌شدنی | chunk-17 | مصوب |
+| Internationalization (i18n) | بین‌المللی‌سازی (i18n) | chunk-17 | مصوب |
