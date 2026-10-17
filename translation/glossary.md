@@ -605,3 +605,17 @@
 | Application Layer | لایهٔ کاربرد | chunk-35 | مصوب |
 | Frame Synchronization | همگام‌سازی قاب | chunk-35 | مصوب |
 | Routing | مسیریابی | chunk-35 | مصوب |
+| Web Archive (WAR) | آرشیو وب | chunk-36 | مصوب |
+| Assembly (.NET) | اسمبلی | chunk-36 | مصوب |
+| Enterprise Archive (EAR) | آرشیو سازمانی | chunk-36 | مصوب |
+| Isomorphic Shape | شکل هم‌ریخت | chunk-36 | مصوب |
+| Monolithic Structure | ساختار تک‌پارچه | chunk-36 | مصوب |
+| Modular Structure | ساختار ماژولار | chunk-36 | مصوب |
+| Self-Contained Artifact | مصنوع خودبسنده | chunk-36 | مصوب |
+| Peer-to-Peer | همتابه‌همتا | chunk-36 | مصوب |
+| Compile-Time Dependency | وابستگی زمان کامپایل | chunk-36 | مصوب |
+| Shared Interface Class | کلاس واسط مشترک | chunk-36 | مصوب |
+| DLL Hell (antipattern) | جهنم DLL | chunk-36 | مصوب |
+| JAR Hell (antipattern) | جهنم JAR | chunk-36 | مصوب |
+| Mediator | میانجی | chunk-36 | مصوب |
+| Abstraction Layer | لایهٔ انتزاعی | chunk-36 | مصوب |
