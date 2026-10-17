@@ -367,3 +367,20 @@
 | Well-factored | خوش‌تجزیه | chunk-19 | مصوب |
 | Code Coverage | پوشش کد | chunk-19 | مصوب |
 | Test-Driven Development (TDD) | توسعهٔ آزمون‌محور (TDD) | chunk-19 | مصوب |
+| Process Measures | سنجه‌های فرایندی | chunk-20 | مصوب |
+| Assertion (testing) | ادعا | chunk-20 | مصوب |
+| Fitness Function | تابع برازش | chunk-20 | مصوب |
+| Architectural Fitness Function | تابع برازش معماری | chunk-20 | مصوب |
+| Continuous Integration (CI) | یکپارچه‌سازی مداوم (CI) | chunk-20 | مصوب |
+| Evolutionary Computing | محاسبات تکاملی | chunk-20 | مصوب |
+| Genetic Algorithm | الگوریتم ژنتیک | chunk-20 | مصوب |
+| Object (Objective) Function | تابع هدف | chunk-20 | مصوب |
+| Traveling Salesperson Problem | مسئلهٔ فروشندهٔ دوره‌گرد | chunk-20 | مصوب |
+| Evolutionary Architecture | معماری تکامل‌پذیر | chunk-20 | مصوب |
+| Chaos Engineering | مهندسی آشوب | chunk-20 | مصوب |
+| Monitor | پایشگر | chunk-20 | مصوب |
+| Unit Testing Library | کتابخانهٔ آزمون واحد | chunk-20 | مصوب |
+| Cyclic Dependencies (antipattern) | وابستگی‌های چرخه‌ای | chunk-20 | مصوب |
+| Import / Auto-import | درون‌بُرد / درون‌بُرد خودکار | chunk-20 | مصوب |
+| Big Ball of Mud (antipattern) | توپِ بزرگِ گِل | chunk-20 | مصوب |
+| Continuous Build | ساخت مداوم | chunk-20 | مصوب |
