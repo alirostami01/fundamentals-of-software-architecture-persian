@@ -659,3 +659,11 @@
 | Custom Attribute (C#) | صفت سفارشی | chunk-40 | مصوب |
 | Metadata | فراداده | chunk-40 | مصوب |
 | Entry Point | نقطهٔ ورود | chunk-40 | مصوب |
+| Deterministic | قطعی | chunk-41 | مصوب |
+| Back-and-Forth Communication | ارتباط رفت‌وبرگشتی | chunk-41 | مصوب |
+| Nondeterministic Workflow | گردش‌کار غیرقطعی | chunk-41 | مصوب |
+| Electronic Data Interchange (EDI) | تبادل الکترونیکی داده | chunk-41 | مصوب |
+| Extract, Transform, Load (ETL) | استخراج، تبدیل و بارگذاری | chunk-41 | مصوب |
+| Telemetry | تله‌متری | chunk-41 | مصوب |
+| Uptime | زمان فعالیت | chunk-41 | مصوب |
+| Topic (Kafka) | موضوع | chunk-41 | مصوب |
