@@ -384,3 +384,11 @@
 | Import / Auto-import | درون‌بُرد / درون‌بُرد خودکار | chunk-20 | مصوب |
 | Big Ball of Mud (antipattern) | توپِ بزرگِ گِل | chunk-20 | مصوب |
 | Continuous Build | ساخت مداوم | chunk-20 | مصوب |
+| Layered Monolith | تک‌پارچهٔ لایه‌ای | chunk-21 | مصوب |
+| Game the System | دور زدن سیستم | chunk-21 | مصوب |
+| Production Fitness Function | تابع برازش محیط تولید | chunk-21 | مصوب |
+| Instance (cloud) | نمونه | chunk-21 | مصوب |
+| Automated Governance | حاکمیت خودکار | chunk-21 | مصوب |
+| Orphan Service | سرویس یتیم | chunk-21 | مصوب |
+| Checklist | فهرست وارسی | chunk-21 | مصوب |
+| Substrate (of the architecture) | بستر (معماری) | chunk-21 | مصوب |
