@@ -156,3 +156,19 @@
 | Encapsulation | کپسوله‌سازی | chunk-09 | مصوب |
 | Meta-Object Protocol | پروتکل فراداده | chunk-09 | مصوب |
 | Implicit Architecture Characteristic | ویژگی نامشهود معماری | chunk-09 | مصوب |
+| Cohesion | انسجام | chunk-10 | مصوب |
+| Connascence | اتّناب | chunk-10 | مصوب |
+| Functional Cohesion | انسجام کارکردی | chunk-10 | مصوب |
+| Sequential Cohesion | انسجام ترتیبی | chunk-10 | مصوب |
+| Communicational Cohesion | انسجام ارتباطی | chunk-10 | مصوب |
+| Procedural Cohesion | انسجام رویه‌ای | chunk-10 | مصوب |
+| Temporal Cohesion | انسجام زمانی | chunk-10 | مصوب |
+| Logical Cohesion | انسجام منطقی | chunk-10 | مصوب |
+| Coincidental Cohesion | انسجام اتفاقی | chunk-10 | مصوب |
+| Lack of Cohesion | فقدان انسجام | chunk-10 | مصوب |
+| Lack of Cohesion in Methods (LCOM) | فقدان انسجام در متدها (LCOM) | chunk-10 | مصوب |
+| Cyclomatic Complexity | پیچیدگی چرخه‌ای | chunk-10 | مصوب |
+| Call Graph | گراف فراخوانی | chunk-10 | مصوب |
+| Afferent Coupling | کوپلینگ ورودی | chunk-10 | مصوب |
+| Efferent Coupling | کوپلینگ خروجی | chunk-10 | مصوب |
+| Incidental Coupling | کوپلینگ ناخواسته | chunk-10 | مصوب |
