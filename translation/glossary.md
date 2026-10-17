@@ -580,3 +580,28 @@
 | 80-20 Rule | قاعدهٔ ۸۰-۲۰ | chunk-34 | مصوب |
 | Cross-Cutting Team Members | اعضای میان‌بُرشی تیم | chunk-34 | مصوب |
 | Operational Data | دادهٔ عملیاتی | chunk-34 | مصوب |
+| Characteristics Ratings | رتبه‌بندی ویژگی‌ها | chunk-35 | مصوب |
+| Scorecard | کارنامه | chunk-35 | مصوب |
+| Overall Cost | هزینهٔ کلی | chunk-35 | مصوب |
+| Ceremony (deployment) | تشریفات | chunk-35 | مصوب |
+| Regression Test Suite | مجموعهٔ آزمون رگرسیون | chunk-35 | مصوب |
+| Mock | ساختگی‌سازی | chunk-35 | مصوب |
+| Stub | جانشین‌سازی | chunk-35 | مصوب |
+| Engineering Characteristics | ویژگی‌های مهندسی | chunk-35 | مصوب |
+| Multithreading | چندریسمانی | chunk-35 | مصوب |
+| Internal Messaging | پیام‌رسانی داخلی | chunk-35 | مصوب |
+| Parallel Processing | پردازش موازی | chunk-35 | مصوب |
+| Responsiveness | پاسخ‌گویی | chunk-35 | مصوب |
+| Inheritance Tree | درخت وراثت | chunk-35 | مصوب |
+| Hardware Layer | لایهٔ سخت‌افزار | chunk-35 | مصوب |
+| Kernel Layer | لایهٔ کرنل | chunk-35 | مصوب |
+| System Call Interface Layer | لایهٔ واسط فراخوانی سیستمی | chunk-35 | مصوب |
+| User Layer | لایهٔ کاربر | chunk-35 | مصوب |
+| Open Systems Interconnection (OSI) Model | مدل اتصال متقابل سیستم‌های باز (OSI) | chunk-35 | مصوب |
+| Physical Layer | لایهٔ فیزیکی | chunk-35 | مصوب |
+| Data Link Layer | لایهٔ پیوند داده | chunk-35 | مصوب |
+| Network Layer | لایهٔ شبکه | chunk-35 | مصوب |
+| Transport Layer | لایهٔ انتقال | chunk-35 | مصوب |
+| Application Layer | لایهٔ کاربرد | chunk-35 | مصوب |
+| Frame Synchronization | همگام‌سازی قاب | chunk-35 | مصوب |
+| Routing | مسیریابی | chunk-35 | مصوب |
