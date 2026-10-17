@@ -420,3 +420,24 @@
 | Container | کانتینر | chunk-23 | مصوب |
 | Cloud Provider | ارائه‌دهندهٔ ابر | chunk-23 | مصوب |
 | Triggered Function | تابع رویدادانگیخته | chunk-23 | مصوب |
+| Component-Based Thinking | تفکر مؤلفه‌محور | chunk-24 | مصوب |
+| Building Block | بلوک سازنده | chunk-24 | مصوب |
+| Floor Plan | نقشهٔ طبقه | chunk-24 | مصوب |
+| Leaf Node | گرهٔ برگ | chunk-24 | مصوب |
+| Subdomain | زیرحوزه | chunk-24 | مصوب |
+| Logical Architecture | معماری منطقی | chunk-24 | مصوب |
+| Physical Architecture | معماری فیزیکی | chunk-24 | مصوب |
+| Actor | کنشگر | chunk-24 | مصوب |
+| Repository | مخزن | chunk-24 | مصوب |
+| Physical Artifact | مصنوع فیزیکی | chunk-24 | مصوب |
+| Deployment Unit | واحد استقرار | chunk-24 | مصوب |
+| Component Identification | شناسایی مؤلفه‌ها | chunk-24 | مصوب |
+| Candidate Component | مؤلفهٔ نامزد | chunk-24 | مصوب |
+| Feedback Loop | حلقهٔ بازخورد | chunk-24 | مصوب |
+| Core Component | مؤلفهٔ اصلی | chunk-24 | مصوب |
+| Refactoring | بازآرایی | chunk-24 | مصوب |
+| Greenfield System | سیستم نوساخت | chunk-24 | مصوب |
+| Placeholder | جانگهدار | chunk-24 | مصوب |
+| Workflow Approach | رویکرد گردش‌کار | chunk-24 | مصوب |
+| Actor/Action Approach | رویکرد کنشگر/کنش | chunk-24 | مصوب |
+| Entity Trap | تلهٔ موجودیت | chunk-24 | مصوب |
