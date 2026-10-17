@@ -626,3 +626,7 @@
 | Intermodule Communication | ارتباط میان‌ماژولی | chunk-37 | مصوب |
 | Package Structure | ساختار بسته‌ها | chunk-37 | مصوب |
 | Pseudocode | شبه‌کد | chunk-37 | مصوب |
+| Architectural Direction | جهت‌گیری معماری | chunk-38 | مصوب |
+| Domain-Focused Team | تیم حوزه‌محور | chunk-38 | مصوب |
+| Wishlist | فهرست علاقه‌مندی‌ها | chunk-38 | مصوب |
+| Loyalty Points | امتیازهای وفاداری | chunk-38 | مصوب |
