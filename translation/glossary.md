@@ -517,3 +517,29 @@
 | Space-Based Architecture | معماری مبتنی بر فضا | chunk-30 | مصوب |
 | Service-Oriented Architecture | معماری سرویس‌گرا | chunk-30 | مصوب |
 | Fallacies of Distributed Computing | مغالطه‌های محاسبات توزیع‌شده | chunk-30 | مصوب |
+| Timeout | مهلت زمانی | chunk-31 | مصوب |
+| Circuit Breaker | قطع‌کنندهٔ مدار | chunk-31 | مصوب |
+| Round-Trip Latency | تأخیر رفت‌وبرگشت | chunk-31 | مصوب |
+| Percentile | صدک | chunk-31 | مصوب |
+| Long-Tail Latency | تأخیر دنبالهٔ بلند | chunk-31 | مصوب |
+| Network Administrator | مدیر شبکه | chunk-31 | مصوب |
+| Bandwidth | پهنای باند | chunk-31 | مصوب |
+| Wish List | فهرست علاقه‌مندی‌ها | chunk-31 | مصوب |
+| Response Contract | قرارداد پاسخ | chunk-31 | مصوب |
+| Interservice Call | فراخوانی میان‌سرویسی | chunk-31 | مصوب |
+| Stamp Coupling | کوپلینگ مُهری | chunk-31 | مصوب |
+| Endpoint | نقطهٔ پایانی | chunk-31 | مصوب |
+| Field Selector | انتخاب‌گر فیلد | chunk-31 | مصوب |
+| Value-Driven Contract | قرارداد ارزش‌محور | chunk-31 | مصوب |
+| Consumer-Driven Contract | قرارداد مصرف‌کننده‌محور | chunk-31 | مصوب |
+| Virtual Private Network (VPN) | شبکهٔ خصوصی مجازی | chunk-31 | مصوب |
+| Trusted Network | شبکهٔ مورد اعتماد | chunk-31 | مصوب |
+| Attack Surface | سطح حمله | chunk-31 | مصوب |
+| Network Topology | توپولوژی شبکه | chunk-31 | مصوب |
+| Router | مسیریاب | chunk-31 | مصوب |
+| Transport Cost | هزینهٔ انتقال | chunk-31 | مصوب |
+| Gateway | دروازه | chunk-31 | مصوب |
+| Subnet | زیرشبکه | chunk-31 | مصوب |
+| Security Zone | ناحیهٔ امنیتی | chunk-31 | مصوب |
+| Homogeneous Network | شبکهٔ همگن | chunk-31 | مصوب |
+| Network Packet | بستهٔ شبکه | chunk-31 | مصوب |
