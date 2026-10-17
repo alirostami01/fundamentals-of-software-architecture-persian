@@ -392,3 +392,19 @@
 | Orphan Service | سرویس یتیم | chunk-21 | مصوب |
 | Checklist | فهرست وارسی | chunk-21 | مصوب |
 | Substrate (of the architecture) | بستر (معماری) | chunk-21 | مصوب |
+| Scope (of Architectural Characteristics) | دامنه (ویژگی‌های معماری) | chunk-22 | مصوب |
+| Structural Evolvability | تکامل‌پذیری ساختاری | chunk-22 | مصوب |
+| Architecture Quantum (pl. Quanta) | کوانتوم معماری (ج. کوانتوم‌ها) | chunk-22 | مصوب |
+| Coupling Point | نقطهٔ کوپلینگ | chunk-22 | مصوب |
+| Independently Deployable | به‌طور مستقل استقرارپذیر | chunk-22 | مصوب |
+| Legacy System | سیستم میراثی | chunk-22 | مصوب |
+| Event-Driven Architecture | معماری رویدادمحور | chunk-22 | مصوب |
+| Semantic Coupling | کوپلینگ معنایی | chunk-22 | مصوب |
+| Implementation Coupling | کوپلینگ پیاده‌سازی | chunk-22 | مصوب |
+| Static Coupling | کوپلینگ ایستا | chunk-22 | مصوب |
+| Dynamic Coupling | کوپلینگ پویا | chunk-22 | مصوب |
+| Loose Coupling | کوپلینگ سست | chunk-22 | مصوب |
+| Tight Coupling | کوپلینگ تنگاتنگ | chunk-22 | مصوب |
+| Low External Implementation Static Coupling | کوپلینگ ایستای پیاده‌سازی بیرونی پایین | chunk-22 | مصوب |
+| Synchronous Communication | ارتباط هم‌گام | chunk-22 | مصوب |
+| Mass Noun | اسم غیرشمارش‌پذیر | chunk-22 | مصوب |
