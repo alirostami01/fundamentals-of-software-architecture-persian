@@ -76,3 +76,14 @@
 | Scaffolding | اسکفولد | chunk-03 | مصوب |
 | Named Topology | توپولوژی نام‌دار | chunk-03 | مصوب |
 | Soft Skills | مهارت‌های نرم | chunk-03 | مصوب |
+| Architectural Thinking | تفکر معماری | chunk-04 | مصوب |
+| Business Driver | محرک کسب‌وکار | chunk-04 | مصوب |
+| Strategic Decision | تصمیم راهبردی | chunk-04 | مصوب |
+| Tactical Decision | تصمیم تاکتیکی | chunk-04 | مصوب |
+| Level of Effort | سطح تلاش | chunk-04 | مصوب |
+| Monolithic Architecture | معماری تک‌پارچه | chunk-04 | مصوب |
+| Elasticity | کشسانی | chunk-04 | مصوب |
+| Fault Tolerance | تحمل خطا | chunk-04 | مصوب |
+| Service Coupling | کوپلینگ سرویس‌ها | chunk-04 | مصوب |
+| Maintainability | قابلیت نگهداری | chunk-04 | مصوب |
+| Readability | خوانایی | chunk-04 | مصوب |
