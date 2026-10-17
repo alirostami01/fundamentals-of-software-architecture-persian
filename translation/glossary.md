@@ -556,3 +556,18 @@
 | Cognitive Load | بار شناختی | chunk-32 | مصوب |
 | Platform Team | تیم پلتفرم | chunk-32 | مصوب |
 | Sweet Spot | نقطهٔ مطلوب | chunk-32 | مصوب |
+| N-Tiered Architecture | معماری چندلایه | chunk-33 | مصوب |
+| Architecture by Implication (antipattern) | معماری ضمنی | chunk-33 | مصوب |
+| Accidental Architecture (antipattern) | معماری اتفاقی | chunk-33 | مصوب |
+| Physical Layering | لایه‌بندی فیزیکی | chunk-33 | مصوب |
+| Filesystem | سیستم فایل | chunk-33 | مصوب |
+| In-Memory Database | پایگاه‌دادهٔ درون‌حافظه‌ای | chunk-33 | مصوب |
+| On-Premises (On-Prem) | درون‌سازمانی | chunk-33 | مصوب |
+| Separation of Concerns | جداسازی دغدغه‌ها | chunk-33 | مصوب |
+| Holistic Agility | چابکی کل‌نگر | chunk-33 | مصوب |
+| Closed Layer | لایهٔ بسته | chunk-33 | مصوب |
+| Open Layer | لایهٔ باز | chunk-33 | مصوب |
+| Layers of Isolation | لایه‌های جداسازی | chunk-33 | مصوب |
+| Fast-Lane Reader (pattern) | الگوی Fast-Lane Reader (بدون ترجمه) | chunk-33 | مصوب |
+| Business Delegate (pattern) | الگوی Business Delegate (بدون ترجمه) | chunk-33 | مصوب |
+| Adapter | مبدل | chunk-33 | مصوب |
