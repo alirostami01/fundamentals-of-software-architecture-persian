@@ -110,3 +110,18 @@
 | Technology Portfolio | سبد فناوری | chunk-06 | مصوب |
 | CTO | مدیر فناوری (CTO) | chunk-06 | مصوب |
 | Rapid Application Development (RAD) | توسعهٔ سریع برنامه | chunk-06 | مصوب |
+| Trade-off Analysis | تحلیل مصالحه‌ها | chunk-07 | مصوب |
+| Large Language Model (LLM) | مدل زبانی بزرگ (LLM) | chunk-07 | مصوب |
+| Point-to-Point Messaging | پیام‌رسانی نقطه‌به‌نقطه | chunk-07 | مصوب |
+| Publish-and-Subscribe | انتشار-اشتراک | chunk-07 | مصوب |
+| Topic | موضوع | chunk-07 | مصوب |
+| Queue | صف | chunk-07 | مصوب |
+| Architectural Extensibility | گسترش‌پذیری معماری | chunk-07 | مصوب |
+| Service Decoupling | جداسازی سرویس‌ها | chunk-07 | مصوب |
+| Data Contract | قرارداد داده | chunk-07 | مصوب |
+| Homogeneous Contract | قرارداد همگون | chunk-07 | مصوب |
+| Autoscaling | مقیاس‌پذیری خودکار | chunk-07 | مصوب |
+| Load Balancing | توازن‌بار | chunk-07 | مصوب |
+| Advanced Message Queuing Protocol (AMQP) | پروتکل پیام‌رسانی پیشرفتهٔ پیام (AMQP) | chunk-07 | مصوب |
+| Exchange | مبادله‌گر (Exchange) | chunk-07 | مصوب |
+| Rogue Service | سرویس مزاحم | chunk-07 | مصوب |
