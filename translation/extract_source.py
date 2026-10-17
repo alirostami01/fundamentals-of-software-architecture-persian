@@ -41,6 +41,10 @@ def classify(top, left, size, bold, inner, txt):
         return "H3"
     if 14 <= size < 15.5 and bold:
         return "SIDEBOXTITLE"
+    if 11 <= size < 12.5 and bold and left < 80:
+        return "H4"
+    if "monospace" in inner and size <= 9.5 and left >= 100:
+        return "CODE"
     if txt.startswith("—"):
         return "ATTRIB"
     if size <= 9.5 and left >= 110:
@@ -54,7 +58,8 @@ def classify(top, left, size, bold, inner, txt):
     coh_types = ("Functional cohesion", "Sequential cohesion",
                  "Communicational cohesion", "Procedural cohesion",
                  "Temporal cohesion", "Logical cohesion", "Coincidental cohesion")
-    if full_ital and left < 80 and txt.startswith(coh_types):
+    if full_ital and left < 80 and (txt.startswith(coh_types) or txt.startswith("Connascence of")
+                                    or txt in ("Strength", "Locality", "Degree")):
         return "DEFTERM"
     if size == 10.5 and left == 72.0:
         return "MAIN"
@@ -64,7 +69,7 @@ def classify(top, left, size, bold, inner, txt):
         return "BULLET"
     if size == 10.0 and 76 <= left <= 86:
         return "BOX"
-    if size == 10.5 and 86 < left < 97:
+    if size in (10.0, 10.5) and 86 < left < 97:
         return "INDENT"                               # wrap of BULLET/DEFTERM
     return "DROP"                                     # equation pieces etc.
 
@@ -123,8 +128,8 @@ def main():
         cur = None
 
     for pg, top, size, cls, txt in lines:
-        if cls == "INDENT" and last_cls in ("BULLET", "DEFTERM"):
-            cls = last_cls                            # continuation inherits
+        if cls == "INDENT" and last_cls == "BULLET":
+            cls = last_cls                            # bullet wrap inherits
         if cur is None:
             cur = (cls, [(pg, top, txt)])
         elif cls != last_cls:
@@ -176,6 +181,12 @@ def main():
                 parts.append(f"## {txt}")
             elif cls == "H3":
                 parts.append(f"### {txt}")
+            elif cls == "H4":
+                parts.append(f"#### {txt}")
+            elif cls == "CODE":
+                parts.append("```\n" + "\n".join(ls) + "\n```")
+            elif cls == "DEFTERM" and len(ls) == 1:
+                parts.append(f"*{txt}*")
             else:
                 parts.append(txt)
         i += 1

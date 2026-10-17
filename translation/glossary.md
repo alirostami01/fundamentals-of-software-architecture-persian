@@ -188,3 +188,30 @@
 | Accidental Complexity | پیچیدگی عارضی | chunk-11 | مصوب |
 | Baseline | خط مبنا | chunk-11 | مصوب |
 | Governance | حاکمیت | chunk-11 | مصوب |
+| Connascent | دارای اتّناب | chunk-12 | مصوب |
+| Static Connascence | اتّناب ایستا | chunk-12 | مصوب |
+| Dynamic Connascence | اتّناب پویا | chunk-12 | مصوب |
+| Connascence of Name | اتّناب نام | chunk-12 | مصوب |
+| Connascence of Type | اتّناب نوع | chunk-12 | مصوب |
+| Connascence of Meaning | اتّناب معنا | chunk-12 | مصوب |
+| Connascence of Convention | اتّناب قرارداد | chunk-12 | مصوب |
+| Connascence of Position | اتّناب موقعیت | chunk-12 | مصوب |
+| Connascence of Algorithm | اتّناب الگوریتم | chunk-12 | مصوب |
+| Connascence of Execution | اتّناب اجرا | chunk-12 | مصوب |
+| Connascence of Timing | اتّناب زمان‌بندی | chunk-12 | مصوب |
+| Connascence of Values | اتّناب مقادیر | chunk-12 | مصوب |
+| Connascence of Identity | اتّناب هویت | chunk-12 | مصوب |
+| Strength (of Connascence) | قدرت (اتّناب) | chunk-12 | مصوب |
+| Locality (of Connascence) | محلی‌بودن (اتّناب) | chunk-12 | مصوب |
+| Degree (of Connascence) | درجه (اتّناب) | chunk-12 | مصوب |
+| Statically Typed | دارای نوع‌دهی ایستا | chunk-12 | مصوب |
+| Dynamically Typed | دارای نوع‌دهی پویا | chunk-12 | مصوب |
+| Hardcoded | سخت‌کدشده | chunk-12 | مصوب |
+| Handshake | دست‌دهی | chunk-12 | مصوب |
+| Race Condition | شرایط رقابتی | chunk-12 | مصوب |
+| Thread | ریسمان | chunk-12 | مصوب |
+| Magic Value | مقدار جادویی | chunk-12 | مصوب |
+| Bounded Context | زمینهٔ محدود | chunk-12 | مصوب |
+| Domain-Driven Design (DDD) | طراحی حوزه‌محور (DDD) | chunk-12 | مصوب |
+| Code Smell | بوی کد | chunk-12 | مصوب |
+| Component | مؤلفه | chunk-12 | مصوب |

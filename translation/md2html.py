@@ -4,7 +4,7 @@
 Usage:
     python3 md2html.py chunk-10.md chunk-10.html --terms source/chunk-10.terms --num ۱۰
 
-Supported blocks: H1 / H2(→h3) / H3(→h4) / paragraphs (inline **bold**) /
+Supported blocks: H1 / H2(→h3) / H3(→h4) / H4(→h5) / plain "> …" quotes / paragraphs (inline **bold**) /
 fenced code (any language, LTR <pre>) / "- " lists (consecutive → one <ul>) /
 "> **شکل …**" figures / "> … > — Name" aphorisms / "> **title** …" sideboxes /
 "---" separators (rendered as <hr> between top-level sections) / final glossary.
@@ -24,6 +24,9 @@ ART = ('<article dir="rtl" lang="fa" style="font-family:\'Vazirmatn\',\'IRANSans
 H1 = 'font-size:1.7rem;margin:0 0 1rem;border-bottom:3px solid #2c5f8a;padding-bottom:.5rem;'
 H3 = "font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;"
 H4 = "font-size:1.15rem;color:#2c5f8a;margin:1.2rem 0 .6rem;"
+H5 = "font-size:1.05rem;color:#2c5f8a;margin:1rem 0 .5rem;"
+PLAINQ = ('margin:1rem 0;padding:.6rem 1.2rem;background:#fafbfc;border-right:3px solid #9bb4cc;'
+          'border-radius:4px;font-size:.98rem;text-align:justify;')
 PAD = ("display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;"
        "background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;")
 PAD92 = PAD.replace("monospace;", "monospace;font-size:.92em;")
@@ -62,7 +65,17 @@ def build_wrapper(terms):
         out.append(htmllib.escape(seg[last:], quote=False))
         return "".join(out)
 
+    code_terms = [t for t in terms if "(" in t or ")" in t]   # e.g. main(), f(x, y): atomic
+    code_re = re.compile("(" + "|".join(re.escape(t) for t in code_terms) + ")") if code_terms else None
+
     def plain(text):
+        if code_re is not None:
+            pieces = code_re.split(text)
+            if len(pieces) > 1:
+                return "".join(bdi(x) if i % 2 else plain_parens(x) for i, x in enumerate(pieces))
+        return plain_parens(text)
+
+    def plain_parens(text):
         out, last = [], 0
         for m in paren_re.finditer(text):
             out.append(bare(text[last:m.start()]))
@@ -169,6 +182,9 @@ def main():
             return (f'    <blockquote style="{QUOTA}">\n      {inline(unb(first))}\n'
                     f'      <footer style="{FOOTER}">— {bdi(attrib.lstrip("—").strip(), iso=True)}</footer>\n'
                     f'    </blockquote>')
+        if not first.startswith("**"):                 # plain quotation (no title, no attribution)
+            ps = [f'      <p style="margin:.35rem 0;">{inline(p)}</p>' for p in paras]
+            return f'    <blockquote style="{PLAINQ}">\n' + "\n".join(ps) + "\n    </blockquote>"
         ps = [f'    <p style="font-weight:bold;text-align:center;margin:0 0 .7rem;">{inline(unb(first))}</p>']
         ps += [f'    <p style="text-align:justify;margin:.55rem 0;">{inline(p)}</p>' for p in paras[1:]]
         return f'    <blockquote style="{SIDEBAR}">\n' + "\n".join(ps) + "\n    </blockquote>"
@@ -183,7 +199,10 @@ def main():
         joined = "\n".join(b)
         if joined.strip() == "---":
             continue
-        if b[0].startswith("### "):
+        if b[0].startswith("#### "):
+            ensure(); close_ul()
+            current.append(f'    <h5 style="{H5}">{inline(b[0][5:].strip())}</h5>')
+        elif b[0].startswith("### "):
             ensure(); close_ul()
             current.append(f'    <h4 style="{H4}">{inline(b[0][4:].strip())}</h4>')
         elif b[0].startswith("## "):
