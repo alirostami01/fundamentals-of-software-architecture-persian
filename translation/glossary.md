@@ -630,3 +630,21 @@
 | Domain-Focused Team | تیم حوزه‌محور | chunk-38 | مصوب |
 | Wishlist | فهرست علاقه‌مندی‌ها | chunk-38 | مصوب |
 | Loyalty Points | امتیازهای وفاداری | chunk-38 | مصوب |
+| Pipes and Filters Architecture | معماری لوله‌ها و فیلترها | chunk-39 | مصوب |
+| Pipe | لوله | chunk-39 | مصوب |
+| Filter | فیلتر | chunk-39 | مصوب |
+| Shell | پوسته | chunk-39 | مصوب |
+| Shell Script | اسکریپت پوسته | chunk-39 | مصوب |
+| Functional Programming | برنامه‌نویسی تابعی | chunk-39 | مصوب |
+| Unidirectional | یک‌سویه | chunk-39 | مصوب |
+| Stateless | بی‌حالت | chunk-39 | مصوب |
+| Producer (filter) | تولیدکننده | chunk-39 | مصوب |
+| Source (filter) | منبع | chunk-39 | مصوب |
+| Transformer (filter) | تبدیل‌گر | chunk-39 | مصوب |
+| Tester (filter) | آزماینده | chunk-39 | مصوب |
+| Consumer (filter) | مصرف‌کننده | chunk-39 | مصوب |
+| Compositional Reuse | بازاستفادهٔ ترکیبی | chunk-39 | مصوب |
+| Payload | محموله | chunk-39 | مصوب |
+| Streaming | جریان‌سازی داده | chunk-39 | مصوب |
+| Embedded Messaging | پیام‌رسانی تعبیه‌شده | chunk-39 | مصوب |
+| Continuous Fitness Function | تابع برازش مداوم | chunk-39 | مصوب |
