@@ -470,3 +470,17 @@
 | Read-Only | فقط‌خواندنی | chunk-27 | مصوب |
 | System of Record | سیستم مرجع | chunk-27 | مصوب |
 | Least Worst (Trade-offs) | کم‌بدترین (مجموعهٔ مصالحه‌ها) | chunk-27 | مصوب |
+| Architecture Pattern | الگوی معماری | chunk-28 | مصوب |
+| Component Topology | توپولوژی مؤلفه‌ها | chunk-28 | مصوب |
+| Modular Monolith | تک‌پارچهٔ ماژولار | chunk-28 | مصوب |
+| Automated Provisioning | تأمین خودکار منابع | chunk-28 | مصوب |
+| Deployment Cadence | آهنگ استقرار | chunk-28 | مصوب |
+| Communication Style | سبک ارتباطی | chunk-28 | مصوب |
+| Network Protocol | پروتکل شبکه | chunk-28 | مصوب |
+| Data Topology | توپولوژی داده | chunk-28 | مصوب |
+| Fundamental Patterns | الگوهای بنیادین | chunk-28 | مصوب |
+| Spaghetti Code | کد اسپاگتی | chunk-28 | مصوب |
+| Event Handler | گردانندهٔ رویداد | chunk-28 | مصوب |
+| Unitary Architecture | معماری یکتا | chunk-28 | مصوب |
+| Mainframe | رایانهٔ بزرگ | chunk-28 | مصوب |
+| Personal Computer (PC) | رایانهٔ شخصی | chunk-28 | مصوب |
