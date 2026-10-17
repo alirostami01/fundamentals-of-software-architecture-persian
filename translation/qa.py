@@ -38,9 +38,9 @@ for md in sorted(list(here.glob("chunk-*.md")) + list(here.glob("chapter-*.md"))
             continue
         if not s or s == "---" or s.startswith(("#", "|", "<!--")): continue
         if s.startswith(">"): s = re.sub(r"^(?:>\s*)+", "", s).strip()   # nested "> >" too
-        if not s: continue
+        if not s or s.startswith("```"): continue                      # fence markers inside sideboxes
         if s.startswith("- "): s = s[2:]
-        blocks.append(norm(s))
+        blocks.append(norm(s.replace("`", "")))          # inline-code markers (prose only)
     miss = [b for b in blocks if b not in text_tight and b not in text]
     heads = [norm(re.sub(r"^#+\s*", "", l)) for l in src if l.startswith("##")]
     hmiss = [h for h in heads if h not in text_tight]
@@ -52,6 +52,8 @@ for md in sorted(list(here.glob("chunk-*.md")) + list(here.glob("chapter-*.md"))
     n = len(miss) + len(hmiss) + len(rmiss); total += n
     print(f"{'OK ' if not n else 'FAIL'} {md.name}: {len(blocks)}b/{len(heads)}h/{len(rows)}r miss {len(miss)}/{len(hmiss)}/{len(rmiss)}")
     for x in (miss + hmiss + rmiss)[:6]: print("    MISS:", x[:150])
+bad_bt = [h.name for h in here.glob("*.html") if "`" in re.sub(r"<pre.*?</pre>", "", h.read_text(encoding="utf-8"), flags=re.S)]
+total += len(bad_bt); print("leaked backticks:", bad_bt or "none")
 foot = re.compile(r"(?m)^(\d+\s*\|\s*Chapter|Chapter \d+:|[A-Z][A-Za-z ]+\s*\|\s*\d+\s*$)")
 bad_f = [str(f) for f in here.rglob("*") if f.is_file() and f.suffix in (".md", ".html") and foot.search(f.read_text(encoding="utf-8"))]
 total += len(bad_f); print("footers:", bad_f or "clean")

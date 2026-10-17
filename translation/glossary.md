@@ -345,3 +345,25 @@
 | Generic Architecture | معماری عام | chunk-18 | مصوب |
 | Architectural Characteristics Worksheet | کاربرگ ویژگی‌های معماری | chunk-18 | مصوب |
 | Others Considered (worksheet category) | موارد بررسی‌شدهٔ دیگر | chunk-18 | مصوب |
+| Measure | سنجه | chunk-19 | مصوب |
+| Operational Measures | سنجه‌های عملیاتی | chunk-19 | مصوب |
+| Structural Measures | سنجه‌های ساختاری | chunk-19 | مصوب |
+| Average Response Time | میانگین زمان پاسخ | chunk-19 | مصوب |
+| Boundary Condition | شرط مرزی | chunk-19 | مصوب |
+| Outlier | دادهٔ پرت | chunk-19 | مصوب |
+| Performance Budget | بودجهٔ کارایی | chunk-19 | مصوب |
+| First Contentful Paint | نخستین رنگ‌آمیزی محتوایی | chunk-19 | مصوب |
+| First CPU Idle | نخستین بیکاری CPU | chunk-19 | مصوب |
+| First-Page Render | نخستین رندر صفحه | chunk-19 | مصوب |
+| K-weight Budget | بودجهٔ وزن کیلوبایتی | chunk-19 | مصوب |
+| Graph Theory | نظریهٔ گراف | chunk-19 | مصوب |
+| Decision Point | نقطهٔ تصمیم | chunk-19 | مصوب |
+| Node (graph) | گره | chunk-19 | مصوب |
+| Edge (graph) | یال | chunk-19 | مصوب |
+| Fan-out Call | فراخوانی انشعابی | chunk-19 | مصوب |
+| Connected Components | مؤلفه‌های همبند | chunk-19 | مصوب |
+| Brute Force | زور خام | chunk-19 | مصوب |
+| Threshold | آستانه | chunk-19 | مصوب |
+| Well-factored | خوش‌تجزیه | chunk-19 | مصوب |
+| Code Coverage | پوشش کد | chunk-19 | مصوب |
+| Test-Driven Development (TDD) | توسعهٔ آزمون‌محور (TDD) | chunk-19 | مصوب |

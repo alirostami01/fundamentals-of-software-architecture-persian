@@ -72,6 +72,10 @@ def build_wrapper(terms):
     code_re = re.compile("(" + "|".join(re.escape(t) for t in code_terms) + ")") if code_terms else None
 
     def plain(text):
+        if "`" in text:                                   # inline code / inline LaTeX: `x`, `$CC = E - N + 2$`
+            pieces = re.split(r"`([^`]+)`", text)
+            if len(pieces) > 1:
+                return "".join(bdi(x) if i % 2 else plain(x) for i, x in enumerate(pieces))
         if code_re is not None:
             pieces = code_re.split(text)
             if len(pieces) > 1:
@@ -165,10 +169,23 @@ def main():
 
     def quote(b):
         qs = [l[1:].strip() for l in b]
+        raw = [l[2:] if l.startswith("> ") else l[1:] for l in b]   # keeps code indentation
         paras, buf, nested = [], [], {}
         i = 0
         while i < len(qs):
             q = qs[i]
+            if q.startswith("```"):                   # fenced code inside a sidebox
+                if buf: paras.append(" ".join(buf)); buf = []
+                lang = q[3:].strip() or "text"
+                j = i + 1
+                while j < len(qs) and not qs[j].startswith("```"):
+                    j += 1
+                code = htmllib.escape("\n".join(raw[i + 1:j]), quote=False)
+                key = f"\x00NEST{len(nested)}\x00"
+                nested[key] = f'  <pre dir="ltr" style="{PRE}"><code class="language-{lang}">{code}</code></pre>'
+                paras.append(key)
+                i = j + 1
+                continue
             if q.startswith(">"):                     # nested quote inside a sidebox ("> > …")
                 if buf: paras.append(" ".join(buf)); buf = []
                 nb = []
@@ -205,7 +222,11 @@ def main():
             ps = [f'      <p style="margin:.35rem 0;">{inline(p)}</p>' for p in paras]
             return f'    <blockquote style="{PLAINQ}">\n' + "\n".join(ps) + "\n    </blockquote>"
         ps = [f'    <p style="font-weight:bold;text-align:center;margin:0 0 .7rem;">{inline(unb(first))}</p>']
-        ps += [("  " + nested[p]) if p in nested else f'    <p style="text-align:justify;margin:.55rem 0;">{inline(p)}</p>' for p in paras[1:]]
+        def body(p):
+            if p in nested: return "  " + nested[p]
+            if p.startswith("**شکل"): return "  " + quote(["> " + p]).replace("\n", "\n  ")   # figure inside a sidebox
+            return f'    <p style="text-align:justify;margin:.55rem 0;">{inline(p)}</p>'
+        ps += [body(p) for p in paras[1:]]
         return f'    <blockquote style="{SIDEBAR}">\n' + "\n".join(ps) + "\n    </blockquote>"
 
     for kind, b in blocks:
