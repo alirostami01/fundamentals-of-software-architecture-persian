@@ -543,3 +543,16 @@
 | Security Zone | ناحیهٔ امنیتی | chunk-31 | مصوب |
 | Homogeneous Network | شبکهٔ همگن | chunk-31 | مصوب |
 | Network Packet | بستهٔ شبکه | chunk-31 | مصوب |
+| Contract | قرارداد | chunk-32 | مصوب |
+| Versioning | نسخه‌بندی | chunk-32 | مصوب |
+| Deprecate | منسوخ کردن | chunk-32 | مصوب |
+| Compensating Update | به‌روزرسانی جبرانی | chunk-32 | مصوب |
+| Orchestrator | هماهنگ‌کننده | chunk-32 | مصوب |
+| Observability | مشاهده‌پذیری | chunk-32 | مصوب |
+| Failure Mode | حالت شکست | chunk-32 | مصوب |
+| Stream-Aligned Team | تیم هم‌راستا با جریان | chunk-32 | مصوب |
+| Enabling Team | تیم توانمندساز | chunk-32 | مصوب |
+| Complicated-Subsystem Team | تیم زیرسیستم پیچیده | chunk-32 | مصوب |
+| Cognitive Load | بار شناختی | chunk-32 | مصوب |
+| Platform Team | تیم پلتفرم | chunk-32 | مصوب |
+| Sweet Spot | نقطهٔ مطلوب | chunk-32 | مصوب |
