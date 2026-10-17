@@ -157,7 +157,7 @@
 | Meta-Object Protocol | پروتکل فراداده | chunk-09 | مصوب |
 | Implicit Architecture Characteristic | ویژگی نامشهود معماری | chunk-09 | مصوب |
 | Cohesion | انسجام | chunk-10 | مصوب |
-| Connascence | اتّناب | chunk-10 | مصوب |
+| Connascence | هم‌بستگی | chunk-10 | مصوب |
 | Functional Cohesion | انسجام کارکردی | chunk-10 | مصوب |
 | Sequential Cohesion | انسجام ترتیبی | chunk-10 | مصوب |
 | Communicational Cohesion | انسجام ارتباطی | chunk-10 | مصوب |
@@ -188,22 +188,22 @@
 | Accidental Complexity | پیچیدگی عارضی | chunk-11 | مصوب |
 | Baseline | خط مبنا | chunk-11 | مصوب |
 | Governance | حاکمیت | chunk-11 | مصوب |
-| Connascent | دارای اتّناب | chunk-12 | مصوب |
-| Static Connascence | اتّناب ایستا | chunk-12 | مصوب |
-| Dynamic Connascence | اتّناب پویا | chunk-12 | مصوب |
-| Connascence of Name | اتّناب نام | chunk-12 | مصوب |
-| Connascence of Type | اتّناب نوع | chunk-12 | مصوب |
-| Connascence of Meaning | اتّناب معنا | chunk-12 | مصوب |
-| Connascence of Convention | اتّناب قرارداد | chunk-12 | مصوب |
-| Connascence of Position | اتّناب موقعیت | chunk-12 | مصوب |
-| Connascence of Algorithm | اتّناب الگوریتم | chunk-12 | مصوب |
-| Connascence of Execution | اتّناب اجرا | chunk-12 | مصوب |
-| Connascence of Timing | اتّناب زمان‌بندی | chunk-12 | مصوب |
-| Connascence of Values | اتّناب مقادیر | chunk-12 | مصوب |
-| Connascence of Identity | اتّناب هویت | chunk-12 | مصوب |
-| Strength (of Connascence) | قدرت (اتّناب) | chunk-12 | مصوب |
-| Locality (of Connascence) | محلی‌بودن (اتّناب) | chunk-12 | مصوب |
-| Degree (of Connascence) | درجه (اتّناب) | chunk-12 | مصوب |
+| Connascent | هم‌بسته | chunk-12 | مصوب |
+| Static Connascence | هم‌بستگی ایستا | chunk-12 | مصوب |
+| Dynamic Connascence | هم‌بستگی پویا | chunk-12 | مصوب |
+| Connascence of Name | هم‌بستگی نام | chunk-12 | مصوب |
+| Connascence of Type | هم‌بستگی نوع | chunk-12 | مصوب |
+| Connascence of Meaning | هم‌بستگی معنا | chunk-12 | مصوب |
+| Connascence of Convention | هم‌بستگی قرارداد | chunk-12 | مصوب |
+| Connascence of Position | هم‌بستگی موقعیت | chunk-12 | مصوب |
+| Connascence of Algorithm | هم‌بستگی الگوریتم | chunk-12 | مصوب |
+| Connascence of Execution | هم‌بستگی اجرا | chunk-12 | مصوب |
+| Connascence of Timing | هم‌بستگی زمان‌بندی | chunk-12 | مصوب |
+| Connascence of Values | هم‌بستگی مقادیر | chunk-12 | مصوب |
+| Connascence of Identity | هم‌بستگی هویت | chunk-12 | مصوب |
+| Strength (of Connascence) | قدرت (هم‌بستگی) | chunk-12 | مصوب |
+| Locality (of Connascence) | محلی‌بودن (هم‌بستگی) | chunk-12 | مصوب |
+| Degree (of Connascence) | درجه (هم‌بستگی) | chunk-12 | مصوب |
 | Statically Typed | دارای نوع‌دهی ایستا | chunk-12 | مصوب |
 | Dynamically Typed | دارای نوع‌دهی پویا | chunk-12 | مصوب |
 | Hardcoded | سخت‌کدشده | chunk-12 | مصوب |
