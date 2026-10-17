@@ -264,3 +264,35 @@
 | Supportability | پشتیبانی‌پذیری | chunk-14 | مصوب |
 | Usability/Achievability | کاربردپذیری/دستیابی‌پذیری | chunk-14 | مصوب |
 | Logging | ثبت وقایع | chunk-14 | مصوب |
+| Interoperability | همکنش‌پذیری | chunk-15 | مصوب |
+| Compatibility | سازگاری | chunk-15 | مصوب |
+| Learnability | یادگیری‌پذیری | chunk-15 | مصوب |
+| Performance Efficiency | کارایی و بهره‌وری | chunk-15 | مصوب |
+| Time Behavior | رفتار زمانی | chunk-15 | مصوب |
+| Resource Utilization | بهره‌برداری از منابع | chunk-15 | مصوب |
+| Capacity | ظرفیت | chunk-15 | مصوب |
+| Coexistence | همزیستی | chunk-15 | مصوب |
+| Usability | کاربردپذیری | chunk-15 | مصوب |
+| Appropriateness Recognizability | تشخیص‌پذیری تناسب | chunk-15 | مصوب |
+| User Error Protection | محافظت در برابر خطای کاربر | chunk-15 | مصوب |
+| Maturity | بلوغ | chunk-15 | مصوب |
+| Confidentiality | محرمانگی | chunk-15 | مصوب |
+| Integrity | یکپارچگی | chunk-15 | مصوب |
+| Nonrepudiation | انکارناپذیری | chunk-15 | مصوب |
+| Accountability | پاسخ‌گویی‌پذیری | chunk-15 | مصوب |
+| Authenticity | اصالت | chunk-15 | مصوب |
+| Reusability | بازاستفاده‌پذیری | chunk-15 | مصوب |
+| Analyzability | تحلیل‌پذیری | chunk-15 | مصوب |
+| Modifiability | اصلاح‌پذیری | chunk-15 | مصوب |
+| Testability | آزمون‌پذیری | chunk-15 | مصوب |
+| Adaptability | انطباق‌پذیری | chunk-15 | مصوب |
+| Replaceability | جایگزین‌پذیری | chunk-15 | مصوب |
+| Functional Suitability | تناسب کارکردی | chunk-15 | مصوب |
+| Functional Completeness | کامل‌بودن کارکردی | chunk-15 | مصوب |
+| Functional Correctness | درستی کارکردی | chunk-15 | مصوب |
+| Functional Appropriateness | مناسب‌بودن کارکردی | chunk-15 | مصوب |
+| Ubiquitous Language | زبان فراگیر | chunk-15 | مصوب |
+| Synergistic | هم‌افزا | chunk-15 | مصوب |
+| Indirection | غیرمستقیم‌سازی | chunk-15 | مصوب |
+| Least Worst Architecture | کم‌بدترین معماری | chunk-15 | مصوب |
+| Agile | چابک | chunk-15 | مصوب |

@@ -6,7 +6,7 @@ Usage:
 
 Supported blocks: H1 / H2(→h3) / H3(→h4) / H4(→h5) / plain "> …" quotes / paragraphs (inline **bold**) /
 fenced code (any language, LTR <pre>) / "- " lists (consecutive → one <ul>) /
-"> **شکل …**" figures / "**جدول …**" + body tables / "> … > — Name" aphorisms / "> **title** …" sideboxes /
+"> **شکل …**" figures / "**جدول …**" + body tables / "> **نکته:** …" tip callouts / "> … > — Name" aphorisms / "> **title** …" sideboxes /
 "---" separators (rendered as <hr> between top-level sections) / final glossary.
 
 English wrapping: parenthesised Latin-only content → one <bdi>(…)</bdi>; mixed
@@ -36,6 +36,8 @@ QUOTA = ('margin:1rem 0;padding:1rem 1.2rem;background:#eef4fa;border-right:5px 
 SIDEBAR = ('margin:1.2rem 0;padding:1rem 1.2rem;background:#f7f9fb;border:1px solid #dde3e8;'
            'border-right:4px solid #2c5f8a;border-radius:4px;font-size:.98rem;text-align:justify;')
 FOOTER = 'display:block;margin-top:.6rem;font-size:.9rem;font-weight:normal;color:#555;'
+TIP = ('margin:1rem 0;padding:.8rem 1.1rem;background:#eef8f1;border:1px solid #cfe8d6;'
+       'border-right:5px solid #2e8b57;border-radius:4px;font-size:1rem;text-align:justify;')
 FIG = 'margin:1rem 0;padding:.7rem 1rem;background:#f9f9f9;border-right:4px solid #2c5f8a;border-radius:4px;'
 PRE = ('direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;'
        'background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;'
@@ -182,6 +184,8 @@ def main():
             return (f'    <blockquote style="{QUOTA}">\n      {inline(unb(first))}\n'
                     f'      <footer style="{FOOTER}">— {bdi(attrib.lstrip("—").strip(), iso=True)}</footer>\n'
                     f'    </blockquote>')
+        if first.startswith("**نکته") and len(paras) == 1:   # tip callout (book's lemur/tip icon)
+            return (f'    <aside role="note" style="{TIP}">\n      <p style="margin:0;">{inline(first)}</p>\n    </aside>')
         if not first.startswith("**"):                 # plain quotation (no title, no attribution)
             ps = [f'      <p style="margin:.35rem 0;">{inline(p)}</p>' for p in paras]
             return f'    <blockquote style="{PLAINQ}">\n' + "\n".join(ps) + "\n    </blockquote>"
