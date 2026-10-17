@@ -619,3 +619,10 @@
 | JAR Hell (antipattern) | جهنم JAR | chunk-36 | مصوب |
 | Mediator | میانجی | chunk-36 | مصوب |
 | Abstraction Layer | لایهٔ انتزاعی | chunk-36 | مصوب |
+| Monolithic Database Topology | توپولوژی پایگاه‌دادهٔ تک‌پارچه | chunk-37 | مصوب |
+| Contextual Data | دادهٔ زمینه‌ای | chunk-37 | مصوب |
+| On-Demand Provisioning | تأمین منابع بر حسب تقاضا | chunk-37 | مصوب |
+| Unstructured Monolith | تک‌پارچهٔ بی‌ساختار | chunk-37 | مصوب |
+| Intermodule Communication | ارتباط میان‌ماژولی | chunk-37 | مصوب |
+| Package Structure | ساختار بسته‌ها | chunk-37 | مصوب |
+| Pseudocode | شبه‌کد | chunk-37 | مصوب |
