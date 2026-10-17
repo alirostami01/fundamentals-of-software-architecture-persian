@@ -141,3 +141,18 @@
 | Command-Line Tool | ابزار خط فرمان | chunk-08 | مصوب |
 | Code Refactoring | بازآرایی کد | chunk-08 | مصوب |
 | Code Review | بازبینی کد | chunk-08 | مصوب |
+| Modularity | ماژولاریتی | chunk-09 | مصوب |
+| Module | ماژول | chunk-09 | مصوب |
+| Granularity | دانه‌بندی | chunk-09 | مصوب |
+| Spaghetti Architecture | معماری اسپاگتی | chunk-09 | مصوب |
+| Distributed Monolith | تک‌پارچهٔ توزیع‌شده | chunk-09 | مصوب |
+| Big Ball of Distributed Mud | توپِ بزرگِ گِلِ توزیع‌شده | chunk-09 | مصوب |
+| Coupling | کوپلینگ | chunk-09 | مصوب |
+| Object-Oriented | شی‌گرا | chunk-09 | مصوب |
+| Package | بسته | chunk-09 | مصوب |
+| Namespace | فضای نام | chunk-09 | مصوب |
+| Backward Compatibility | سازگاری رو به عقب | chunk-09 | مصوب |
+| Structured Programming | برنامه‌نویسی ساخت‌یافته | chunk-09 | مصوب |
+| Encapsulation | کپسوله‌سازی | chunk-09 | مصوب |
+| Meta-Object Protocol | پروتکل فراداده | chunk-09 | مصوب |
+| Implicit Architecture Characteristic | ویژگی نامشهود معماری | chunk-09 | مصوب |
