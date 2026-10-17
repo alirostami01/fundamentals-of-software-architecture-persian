@@ -172,3 +172,19 @@
 | Afferent Coupling | کوپلینگ ورودی | chunk-10 | مصوب |
 | Efferent Coupling | کوپلینگ خروجی | chunk-10 | مصوب |
 | Incidental Coupling | کوپلینگ ناخواسته | chunk-10 | مصوب |
+| Metric | معیار | chunk-11 | مصوب |
+| Derived Metric | معیار مشتق | chunk-11 | مصوب |
+| Abstractness | میزان انتزاع | chunk-11 | مصوب |
+| Abstract Class | کلاس انتزاعی | chunk-11 | مصوب |
+| Interface | واسط | chunk-11 | مصوب |
+| Concrete Artifact | مصنوع عینی | chunk-11 | مصوب |
+| Instability | ناپایداری | chunk-11 | مصوب |
+| Volatility | نوسان‌پذیری | chunk-11 | مصوب |
+| Distance from the Main Sequence | فاصله از دنبالهٔ اصلی | chunk-11 | مصوب |
+| Main Sequence | دنبالهٔ اصلی | chunk-11 | مصوب |
+| Zone of Uselessness | منطقهٔ بی‌فایدگی | chunk-11 | مصوب |
+| Zone of Pain | منطقهٔ درد | chunk-11 | مصوب |
+| Essential Complexity | پیچیدگی ذاتی | chunk-11 | مصوب |
+| Accidental Complexity | پیچیدگی عارضی | chunk-11 | مصوب |
+| Baseline | خط مبنا | chunk-11 | مصوب |
+| Governance | حاکمیت | chunk-11 | مصوب |

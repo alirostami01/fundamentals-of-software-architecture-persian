@@ -104,6 +104,10 @@ def main():
                 break
             if cls == "DROP":
                 continue
+            full_ital = bool(re.match(r"^<i>.*</i>$", inner.strip(), re.S))
+            if (cls == "MAIN" and full_ital and lines and lines[-1][3] in ("FIGCAP", "EQCAP")
+                    and lines[-1][0] == pno and top - lines[-1][1] <= GAP_LIMIT):
+                cls = lines[-1][3]                    # wrapped caption line
             lines.append([pno, top, size, cls, txt])
         else:
             continue

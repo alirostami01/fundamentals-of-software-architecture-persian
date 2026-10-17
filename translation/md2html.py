@@ -45,7 +45,7 @@ FIGNOTE = '(تصویر شکل در پی‌دی‌اف اصلی کتاب موجو
 def build_wrapper(terms):
     terms = sorted({t for t in terms if t}, key=len, reverse=True)
     bare_re = re.compile(r"(?<![\w])(" + "|".join(re.escape(t) for t in terms) + r")(?![\w])") if terms else None
-    paren_re = re.compile(r"\([^()]*\)")
+    paren_re = re.compile(r"\([^()]+\)")
 
     def bdi(inner, paren=False, iso=False):
         style = ISO if iso else (PAD92 if paren else PAD)
