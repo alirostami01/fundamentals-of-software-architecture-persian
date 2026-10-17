@@ -72,7 +72,7 @@ FOREACH namespace IN namespace_list {
       send_alert(namespace)
    }
 }</code></pre>
-    <p style="text-align:justify;">راهِ دیگرِ حاکمیت بر معماری تک‌پارچهٔ ماژولار، کنترلِ میزانِ ارتباط میانِ ماژول‌هاست. تعریفِ ارتباطِ «بیش از حد» بسیار ذهنی است و از سیستمی به سیستمِ دیگر فرق می‌کند، اما در بیشترِ موارد معماران باید بکوشند شمارِ وابستگی‌های متقابلِ میانِ ماژول‌ها را به کمترین حد برسانند. مثال ۱۱-۳ شبه‌کدی را نشان می‌دهد که تضمین می‌کند بیشینهٔ کلِ وابستگی‌های متقابل از حدِ پنج نقطهٔ ارتباط (یا نقطهٔ کوپلینگ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(coupling point)</bdi>) فراتر نرود.</p>
+    <p style="text-align:justify;">راهِ دیگرِ حاکمیت بر معماری تک‌پارچهٔ ماژولار، کنترلِ میزانِ ارتباط میانِ ماژول‌هاست. تعریفِ ارتباطِ «بیش از حد» بسیار ذهنی است و از سیستمی به سیستمِ دیگر فرق می‌کند، اما در بیشترِ موارد معماران باید بکوشند شمارِ وابستگی‌های متقابلِ میانِ ماژول‌ها را به کمترین حد برسانند. مثال ۱۱-۳ شبه‌کدی را نشان می‌دهد که تضمین می‌کند بیشینهٔ کلِ وابستگی‌های متقابل از حدِ پنج نقطهٔ ارتباط (یا نقطهٔ کوپلینگ) فراتر نرود.</p>
     <p style="text-align:justify;"><b>مثال ۱۱-۳.</b> شبه‌کد برای محدود کردنِ شمارِ کلِ وابستگی‌های هر ماژول</p>
     <pre dir="ltr" style="direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:.92rem;line-height:1.6;"><code class="language-text"># Walk the directory structure, gathering modules and the source code files
 # contained within those modules
@@ -145,7 +145,6 @@ FOREACH module, source_file_list IN module_source_file_map {
         <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Package Structure</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">ساختار بسته‌ها</td></tr>
         <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Automated Governance</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">حاکمیت خودکار</td></tr>
         <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Pseudocode</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">شبه‌کد</td></tr>
-        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Coupling Point</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">نقطهٔ کوپلینگ</td></tr>
         <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Cross-Functional Team</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">تیم چندتخصصی</td></tr>
       </tbody>
     </table>
