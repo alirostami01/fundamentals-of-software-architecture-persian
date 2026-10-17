@@ -125,3 +125,19 @@
 | Advanced Message Queuing Protocol (AMQP) | پروتکل پیام‌رسانی پیشرفتهٔ پیام (AMQP) | chunk-07 | مصوب |
 | Exchange | مبادله‌گر (Exchange) | chunk-07 | مصوب |
 | Rogue Service | سرویس مزاحم | chunk-07 | مصوب |
+| Hands-On Coding | کدنویسی مستقیم | chunk-08 | مصوب |
+| Bottleneck Trap | تلهٔ گلوگاه | chunk-08 | مصوب |
+| Critical Path | مسیر بحرانی | chunk-08 | مصوب |
+| Iteration | تکرار | chunk-08 | مصوب |
+| Production Code | کد تولیدی | chunk-08 | مصوب |
+| Proof of Concept (POC) | اثبات مفهوم (POC) | chunk-08 | مصوب |
+| Throwaway Code | کد یک‌بارمصرف | chunk-08 | مصوب |
+| Source Code Repository | مخزن کد منبع | chunk-08 | مصوب |
+| Reference Architecture | معماری مرجع | chunk-08 | مصوب |
+| Technical Debt | بدهی فنی | chunk-08 | مصوب |
+| User Story | داستان کاربری | chunk-08 | مصوب |
+| Bug Fix | رفع اشکال | chunk-08 | مصوب |
+| Automation | خودکارسازی | chunk-08 | مصوب |
+| Command-Line Tool | ابزار خط فرمان | chunk-08 | مصوب |
+| Code Refactoring | بازآرایی کد | chunk-08 | مصوب |
+| Code Review | بازبینی کد | chunk-08 | مصوب |
