@@ -87,3 +87,11 @@
 | Service Coupling | کوپلینگ سرویس‌ها | chunk-04 | مصوب |
 | Maintainability | قابلیت نگهداری | chunk-04 | مصوب |
 | Readability | خوانایی | chunk-04 | مصوب |
+| Knowledge Pyramid | هرم دانش | chunk-05 | مصوب |
+| Antipattern | ضدالگو | chunk-05 | مصوب |
+| Frozen Caveman Antipattern | ضدالگوی انسان یخ‌زده | chunk-05 | مصوب |
+| Stale Expertise | تخصص کهن‌شده | chunk-05 | مصوب |
+| Risk Assessment | ارزیابی ریسک | chunk-05 | مصوب |
+| 20-Minute Rule | قانون بیست‌دققه‌ای | chunk-05 | مصوب |
+| Buzzword | واژهٔ داغ | chunk-05 | مصوب |
+| Portfolio of Knowledge | سبد دانش | chunk-05 | مصوب |
