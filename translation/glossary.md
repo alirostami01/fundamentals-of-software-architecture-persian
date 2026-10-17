@@ -504,3 +504,16 @@
 | Technical Top-Level Partitioning | افراز فنی سطح بالا | chunk-29 | مصوب |
 | Model-View-Controller (MVC) | Model-View-Controller (بدون ترجمه) | chunk-29 | مصوب |
 | Conway’s Law | قانون Conway | chunk-29 | مصوب |
+| Domain Partitioning | افراز حوزه‌ای | chunk-30 | مصوب |
+| Inverse Conway Maneuver | مانور معکوس Conway | chunk-30 | مصوب |
+| Team Topologies | توپولوژی‌های تیم | chunk-30 | مصوب |
+| Separation of Technical Concerns | جداسازی دغدغه‌های فنی | chunk-30 | مصوب |
+| Customization | سفارشی‌سازی | chunk-30 | مصوب |
+| Cross-Functional Team | تیم چندتخصصی | chunk-30 | مصوب |
+| Global Coupling | کوپلینگ سراسری | chunk-30 | مصوب |
+| Data Architect | معمار داده | chunk-30 | مصوب |
+| Pipeline Architecture | معماری خط لوله | chunk-30 | مصوب |
+| Service-Based Architecture | معماری مبتنی بر سرویس | chunk-30 | مصوب |
+| Space-Based Architecture | معماری مبتنی بر فضا | chunk-30 | مصوب |
+| Service-Oriented Architecture | معماری سرویس‌گرا | chunk-30 | مصوب |
+| Fallacies of Distributed Computing | مغالطه‌های محاسبات توزیع‌شده | chunk-30 | مصوب |
