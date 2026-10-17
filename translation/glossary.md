@@ -296,3 +296,26 @@
 | Indirection | غیرمستقیم‌سازی | chunk-15 | مصوب |
 | Least Worst Architecture | کم‌بدترین معماری | chunk-15 | مصوب |
 | Agile | چابک | chunk-15 | مصوب |
+| Domain Concern | دغدغهٔ حوزه | chunk-16 | مصوب |
+| Implicit Domain Knowledge | دانش ضمنی حوزه | chunk-16 | مصوب |
+| Data Integrity | یکپارچگی داده | chunk-16 | مصوب |
+| Mergers and Acquisitions | ادغام و تملک | chunk-16 | مصوب |
+| User Satisfaction | رضایت کاربر | chunk-16 | مصوب |
+| Time to Market | زمان عرضه به بازار | chunk-16 | مصوب |
+| Competitive Advantage | مزیت رقابتی | chunk-16 | مصوب |
+| Deployability | استقرارپذیری | chunk-16 | مصوب |
+| Simplicity | سادگی | chunk-16 | مصوب |
+| Feasibility | امکان‌پذیری | chunk-16 | مصوب |
+| Time and Budget | زمان و بودجه | chunk-16 | مصوب |
+| False Equivalence | هم‌ارزی نادرست | chunk-16 | مصوب |
+| Composite Architectural Characteristic | ویژگی معماری مرکب | chunk-16 | مصوب |
+| End-of-Day Fund Pricing | قیمت‌گذاری پایان روز صندوق‌ها | chunk-16 | مصوب |
+| Auditability | ممیزی‌پذیری | chunk-16 | مصوب |
+| Requirements Document | سند الزامات | chunk-16 | مصوب |
+| Architecture Kata | کاتای معماری | chunk-16 | مصوب |
+| Kata | کاتا | chunk-16 | مصوب |
+| Description (kata section) | توصیف | chunk-16 | مصوب |
+| Users (kata section) | کاربران | chunk-16 | مصوب |
+| Additional Context | زمینهٔ تکمیلی | chunk-16 | مصوب |
+| Brown-Bag Lunch | جلسهٔ ناهار آموزشی | chunk-16 | مصوب |
+| Timeboxed | با زمان محدود و ازپیش‌تعیین‌شده | chunk-16 | مصوب |

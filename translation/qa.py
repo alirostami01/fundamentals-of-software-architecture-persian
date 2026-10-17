@@ -37,7 +37,7 @@ for md in sorted(list(here.glob("chunk-*.md")) + list(here.glob("chapter-*.md"))
             if s: blocks.append(norm(s))
             continue
         if not s or s == "---" or s.startswith(("#", "|", "<!--")): continue
-        if s.startswith(">"): s = s.lstrip(">").strip()
+        if s.startswith(">"): s = re.sub(r"^(?:>\s*)+", "", s).strip()   # nested "> >" too
         if not s: continue
         if s.startswith("- "): s = s[2:]
         blocks.append(norm(s))

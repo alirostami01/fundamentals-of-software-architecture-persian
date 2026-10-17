@@ -164,12 +164,24 @@ def main():
 
     def quote(b):
         qs = [l[1:].strip() for l in b]
-        paras, buf = [], []
-        for q in qs:
+        paras, buf, nested = [], [], {}
+        i = 0
+        while i < len(qs):
+            q = qs[i]
+            if q.startswith(">"):                     # nested quote inside a sidebox ("> > …")
+                if buf: paras.append(" ".join(buf)); buf = []
+                nb = []
+                while i < len(qs) and qs[i].startswith(">"):
+                    nb.append(qs[i]); i += 1
+                key = f"\x00NEST{len(nested)}\x00"
+                nested[key] = quote(nb).replace("\n", "\n  ")
+                paras.append(key)
+                continue
             if q == "":
                 if buf: paras.append(" ".join(buf)); buf = []
             else:
                 buf.append(q)
+            i += 1
         if buf: paras.append(" ".join(buf))
         first = paras[0]
         unb = lambda s: s[2:-2] if s.startswith("**") and s.endswith("**") else s
@@ -190,7 +202,7 @@ def main():
             ps = [f'      <p style="margin:.35rem 0;">{inline(p)}</p>' for p in paras]
             return f'    <blockquote style="{PLAINQ}">\n' + "\n".join(ps) + "\n    </blockquote>"
         ps = [f'    <p style="font-weight:bold;text-align:center;margin:0 0 .7rem;">{inline(unb(first))}</p>']
-        ps += [f'    <p style="text-align:justify;margin:.55rem 0;">{inline(p)}</p>' for p in paras[1:]]
+        ps += [("  " + nested[p]) if p in nested else f'    <p style="text-align:justify;margin:.55rem 0;">{inline(p)}</p>' for p in paras[1:]]
         return f'    <blockquote style="{SIDEBAR}">\n' + "\n".join(ps) + "\n    </blockquote>"
 
     for kind, b in blocks:
