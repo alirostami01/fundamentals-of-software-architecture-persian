@@ -408,3 +408,15 @@
 | Low External Implementation Static Coupling | کوپلینگ ایستای پیاده‌سازی بیرونی پایین | chunk-22 | مصوب |
 | Synchronous Communication | ارتباط هم‌گام | chunk-22 | مصوب |
 | Mass Noun | اسم غیرشمارش‌پذیر | chunk-22 | مصوب |
+| Asynchronous Communication | ارتباط ناهم‌گام | chunk-23 | مصوب |
+| Message Queue | صف پیام | chunk-23 | مصوب |
+| Buffer | میانگیر | chunk-23 | مصوب |
+| Scoping | دامنه‌گذاری | chunk-23 | مصوب |
+| Decision Tree | درخت تصمیم | chunk-23 | مصوب |
+| Persistence Mechanism | سازوکار ماندگاری | chunk-23 | مصوب |
+| Kiosk | کیوسک | chunk-23 | مصوب |
+| Public-Facing | روبه‌عموم | chunk-23 | مصوب |
+| Back-Office | پشتیبانی اداری | chunk-23 | مصوب |
+| Container | کانتینر | chunk-23 | مصوب |
+| Cloud Provider | ارائه‌دهندهٔ ابر | chunk-23 | مصوب |
+| Triggered Function | تابع رویدادانگیخته | chunk-23 | مصوب |
