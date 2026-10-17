@@ -37,7 +37,6 @@ two. Keeping things at the top of the pyramid requires a time investment to main
 expertise. This top part represents the individual’s technical depth: the things they
 know really well.
 Figure 2-3. Developers must maintain expertise to retain it
-Technical Breadth | 21
 However, the nature of knowledge changes as developers transition into the architect
 role. A large part of the value of an architect is that they have a broad understanding
 of technology and how to use it to solve particular problems. For example, it’s better
@@ -63,7 +62,6 @@ and working themselves ragged in the process. Second, it manifests as stale expe
 this often in large companies where the developers who founded the company have
 moved into leadership roles, yet still make technology decisions using ancient criteria
 (see “Frozen Caveman Antipattern” on page 24).
-Technical Breadth | 23
 Frozen Caveman Antipattern
 An antipattern is what programmer Andrew Koenig defines as something that seems
 like a good idea when you begin, but leads you into trouble. A behavioral antipattern

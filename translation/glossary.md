@@ -95,3 +95,18 @@
 | 20-Minute Rule | قانون بیست‌دققه‌ای | chunk-05 | مصوب |
 | Buzzword | واژهٔ داغ | chunk-05 | مصوب |
 | Portfolio of Knowledge | سبد دانش | chunk-05 | مصوب |
+| Technology Radar | رادار فناوری | chunk-06 | مصوب |
+| Personal Radar | رادار شخصی | chunk-06 | مصوب |
+| Memetic Bubble | حباب میمی | chunk-06 | مصوب |
+| Echo Chamber | اتاق پژواک | chunk-06 | مصوب |
+| Technology Advisory Board (TAB) | هیئت مشاورهٔ فناوری | chunk-06 | مصوب |
+| Quadrant | ربع | chunk-06 | مصوب |
+| Ring | حلقه | chunk-06 | مصوب |
+| Blip | نقطهٔ رادار | chunk-06 | مصوب |
+| Development Spike | اسپایک توسعه | chunk-06 | مصوب |
+| Code Base | پایگاه کد | chunk-06 | مصوب |
+| Technology Gambit | شرط‌بندی فناوری | chunk-06 | مصوب |
+| Embedded IoT Device | دستگاه اینترنت اشیای تعبیه‌شده | chunk-06 | مصوب |
+| Technology Portfolio | سبد فناوری | chunk-06 | مصوب |
+| CTO | مدیر فناوری (CTO) | chunk-06 | مصوب |
+| Rapid Application Development (RAD) | توسعهٔ سریع برنامه | chunk-06 | مصوب |

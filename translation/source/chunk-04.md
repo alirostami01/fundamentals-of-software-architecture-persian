@@ -82,6 +82,5 @@ poor data consistency, and doesn’t perform well due to service coupling. These
 some pretty significant trade-offs. We can conclude that this decision is more on the
 architectural side of the spectrum than design.
 Even design decisions have trade-offs. For example, breaking apart a class file provides better maintainability and readability—at the cost of managing more classes.
-Architecture Versus Design | 19
 These trade-offs are not overly significant (especially compared to microservices’
 trade-offs), so this decision is more on the design side of the spectrum.
