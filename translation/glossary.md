@@ -667,3 +667,13 @@
 | Telemetry | تله‌متری | chunk-41 | مصوب |
 | Uptime | زمان فعالیت | chunk-41 | مصوب |
 | Topic (Kafka) | موضوع | chunk-41 | مصوب |
+| Product-Based Application | برنامهٔ محصول‌محور | chunk-42 | مصوب |
+| Core System | سیستم هسته | chunk-42 | مصوب |
+| Integrated Development Environment (IDE) | محیط توسعهٔ یکپارچه | chunk-42 | مصوب |
+| Registry | رجیستری | chunk-42 | مصوب |
+| Domain Service | سرویس حوزه‌ای | chunk-42 | مصوب |
+| Volatile (code) | پرنوسان | chunk-42 | مصوب |
+| Compile-Based Plug-in | افزونهٔ مبتنی بر کامپایل | chunk-42 | مصوب |
+| Runtime-Based Plug-in | افزونهٔ مبتنی بر زمان اجرا | chunk-42 | مصوب |
+| Shared Library | کتابخانهٔ مشترک | chunk-42 | مصوب |
+| Throughput | توان عملیاتی | chunk-42 | مصوب |
