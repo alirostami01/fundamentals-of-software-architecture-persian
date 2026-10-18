@@ -1355,3 +1355,9 @@
 | Overall Change Risk | ریسک کلی تغییر | chunk-106 | مصوب |
 | In-Process | درون‌فرایندی | chunk-106 | مصوب |
 | Weighting | وزن‌دهی | chunk-106 | مصوب |
+| Point-to-Point | نقطه‌به‌نقطه | chunk-107 | مصوب |
+| Call Point | نقطهٔ فراخوانی | chunk-107 | مصوب |
+| Low Volatility | نوسان‌پذیری پایین | chunk-107 | مصوب |
+| Breaking Change | تغییر شکننده | chunk-107 | مصوب |
+| Decoupling | جداسازی | chunk-107 | مصوب |
+| Institutional Reuse | بازاستفادهٔ سازمانی | chunk-107 | مصوب |
