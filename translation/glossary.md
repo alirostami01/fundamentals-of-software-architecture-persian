@@ -768,3 +768,18 @@
 | Poison Event | رویداد سمی | chunk-49 | مصوب |
 | Relay Race | مسابقهٔ دوی امدادی | chunk-49 | مصوب |
 | Backup (load) | انباشت | chunk-49 | مصوب |
+| Message | پیام | chunk-50 | مصوب |
+| Command | فرمان | chunk-50 | مصوب |
+| Query | پرس‌وجو | chunk-50 | مصوب |
+| Notification Service | سرویس اعلان | chunk-50 | مصوب |
+| Messaging Service | سرویس پیام‌رسانی | chunk-50 | مصوب |
+| Mediated Event-Driven Architecture | معماری رویدادمحورِ میانجی‌دار | chunk-50 | مصوب |
+| Request-Reply Processing | پردازش درخواست-پاسخ | chunk-50 | مصوب |
+| Fraud Detection | تشخیص تقلب | chunk-50 | مصوب |
+| Credit Limit | سقف اعتبار | chunk-50 | مصوب |
+| Event Payload | محمولهٔ رویداد | chunk-50 | مصوب |
+| Downstream (event processor) | پایین‌دستی | chunk-50 | مصوب |
+| Swarm of Gnats Antipattern | ضدالگوی دستهٔ پشه‌ها | chunk-50 | مصوب |
+| Extensible Derived Event | رویداد مشتقِ گسترش‌پذیر | chunk-50 | مصوب |
+| Hook | قلاب | chunk-50 | مصوب |
+| Event Streaming | جریان‌سازی رویداد | chunk-50 | مصوب |
