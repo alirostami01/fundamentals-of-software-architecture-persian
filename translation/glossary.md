@@ -1106,3 +1106,12 @@
 | Data Architecture | معماری داده | chunk-76 | مصوب |
 | Architectural Destination | مقصد معماری | chunk-76 | مصوب |
 | Commodity | کالای همگانی | chunk-76 | مصوب |
+| Architecture Isomorphism | هم‌ریختیِ معماری | chunk-77 | مصوب |
+| Domain/Architecture Isomorphism | هم‌ریختیِ حوزه و معماری | chunk-77 | مصوب |
+| Isomorphism | هم‌ریختی | chunk-77 | مصوب |
+| Data Synchronization | هم‌گام‌سازیِ داده | chunk-77 | مصوب |
+| Deadlock | بن‌بست | chunk-77 | مصوب |
+| Architecture Topology | توپولوژی معماری | chunk-77 | مصوب |
+| Architectural Decision Record (ADR) | سابقهٔ تصمیم معماری (ADR) | chunk-77 | مصوب |
+| Backends for Frontends (BFF) | Backends for Frontends (بدون ترجمه؛ نام الگو) | chunk-77 | مصوب |
+| Pagination | صفحه‌بندی | chunk-77 | مصوب |
