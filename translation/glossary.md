@@ -1298,3 +1298,5 @@
 | Strategic Thinking | تفکر راهبردی | chunk-98 | مصوب |
 | Skill Set | مجموعهٔ مهارت‌ها | chunk-98 | مصوب |
 | Lead by Example | رهبری با الگو بودن | chunk-98 | مصوب |
+| Workplace Harassment | آزار در محیط کار | chunk-99 | مصوب |
+| Go-to Person | فرد مرجع | chunk-99 | مصوب |
