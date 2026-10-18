@@ -1192,3 +1192,9 @@
 | Signal-to-Noise Ratio | نسبت سیگنال به نویز | chunk-85 | مصوب |
 | Direction of Risk | جهت ریسک | chunk-85 | مصوب |
 | Key (legend) | راهنما | chunk-85 | مصوب |
+| Senior Developer | توسعه‌دهندهٔ ارشد | chunk-86 | مصوب |
+| Contextual Architecture Diagram | نمودار معماری بافتاری | chunk-86 | مصوب |
+| Facilitator | تسهیل‌گر | chunk-86 | مصوب |
+| Identification (risk storming) | شناسایی | chunk-86 | مصوب |
+| Sticky Notes | برگه‌های یادداشت چسب‌دار | chunk-86 | مصوب |
+| Consensus (risk storming) | اجماع | chunk-86 | مصوب |
