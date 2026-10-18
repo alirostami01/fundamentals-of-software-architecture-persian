@@ -1249,3 +1249,12 @@
 | Overall Experience | تجربهٔ کلی | chunk-92 | مصوب |
 | Project Complexity | پیچیدگی پروژه | chunk-92 | مصوب |
 | Project Duration | مدت پروژه | chunk-92 | مصوب |
+| Process Loss | اتلاف فرایند | chunk-93 | مصوب |
+| Brooks’s Law | قانون Brooks | chunk-93 | مصوب |
+| Group Potential | توان بالقوهٔ گروه | chunk-93 | مصوب |
+| Merge Conflict | تعارض ادغام | chunk-93 | مصوب |
+| Project Manager | مدیر پروژه | chunk-93 | مصوب |
+| Parallel Work Streams | جریان‌های کاری موازی | chunk-93 | مصوب |
+| Pluralistic Ignorance | نادانی جمعی | chunk-93 | مصوب |
+| Diffusion of Responsibility | پخش مسئولیت | chunk-93 | مصوب |
+| Law of Diminishing Returns | قانون بازده نزولی | chunk-93 | مصوب |
