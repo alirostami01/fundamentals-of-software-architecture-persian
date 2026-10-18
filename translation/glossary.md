@@ -1285,3 +1285,6 @@
 | Product Sponsor | حامی محصول | chunk-96 | مصوب |
 | Unplanned Downtime | زمان ازکارافتادگیِ برنامه‌ریزی‌نشده | chunk-96 | مصوب |
 | Divide and Conquer | تفرقه بینداز و حکومت کن | chunk-96 | مصوب |
+| Asynchronous Messaging | پیام‌رسانی ناهم‌گام | chunk-97 | مصوب |
+| Demonstration Defeats Discussion | نمایش عملی بر بحث چیره می‌شود | chunk-97 | مصوب |
+| Buy-in | همراهی | chunk-97 | مصوب |
