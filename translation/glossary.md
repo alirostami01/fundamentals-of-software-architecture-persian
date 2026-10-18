@@ -1126,3 +1126,14 @@
 | Data Fidelity | وفاداری داده | chunk-79 | مصوب |
 | Orthogonal Reuse (pattern) | بازاستفادهٔ متعامد | chunk-79 | مصوب |
 | Orthogonal Coupling | کوپلینگ متعامد | chunk-79 | مصوب |
+| Mediation | میانجی‌گری | chunk-80 | مصوب |
+| Centralized Workflow | گردش‌کار متمرکز | chunk-80 | مصوب |
+| Retry | تلاش دوباره | chunk-80 | مصوب |
+| Redundancy | افزونگی | chunk-80 | مصوب |
+| Parallelism | موازی‌سازی | chunk-80 | مصوب |
+| Distributed Workflow | گردش‌کار توزیع‌شده | chunk-80 | مصوب |
+| Command-Query-Responsibility-Segregation (CQRS) | تفکیک مسئولیت فرمان و پرس‌وجو (CQRS) | chunk-80 | مصوب |
+| Data Model | مدل داده | chunk-80 | مصوب |
+| Broker-Domain / Domain-Broker (pattern) | الگوی کارگزار حوزه‌ای | chunk-80 | مصوب |
+| Broker | کارگزار | chunk-80 | مصوب |
+| Single-Broker (pattern) | الگوی کارگزار واحد | chunk-80 | مصوب |
