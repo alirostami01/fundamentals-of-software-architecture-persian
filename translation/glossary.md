@@ -1040,3 +1040,18 @@
 | Automated Machine Provisioning | تأمین خودکار ماشین‌ها | chunk-70 | مصوب |
 | Network Call | فراخوانی شبکه‌ای | chunk-70 | مصوب |
 | Method Call | فراخوانی متد | chunk-70 | مصوب |
+| Data Isolation | جداسازی داده | chunk-71 | مصوب |
+| Relational Database | پایگاه‌دادهٔ رابطه‌ای | chunk-71 | مصوب |
+| Single Source of Truth | منبع واحد حقیقت | chunk-71 | مصوب |
+| Database Replication | تکثیر پایگاه‌داده | chunk-71 | مصوب |
+| API Layer | لایهٔ API | chunk-71 | مصوب |
+| Naming Service | سرویس نام‌گذاری | chunk-71 | مصوب |
+| Technical Partitioning | افراز فنی | chunk-71 | مصوب |
+| Request Routing | مسیریابی درخواست | chunk-71 | مصوب |
+| Monitoring | پایش | chunk-71 | مصوب |
+| Sidecar (pattern) | Sidecar (بدون ترجمه؛ نام الگو) | chunk-71 | مصوب |
+| Service Mesh | مش سرویس | chunk-71 | مصوب |
+| Service Plane | صفحهٔ سرویس | chunk-71 | مصوب |
+| Service Instance | نمونهٔ سرویس | chunk-71 | مصوب |
+| Monolithic Frontend | سمت کاربرِ تک‌پارچه | chunk-71 | مصوب |
+| Micro-Frontends | میکروفرانت‌اندها | chunk-71 | مصوب |
