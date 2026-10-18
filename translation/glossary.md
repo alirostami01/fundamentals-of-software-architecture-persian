@@ -1331,3 +1331,11 @@
 | Iterative Process | فرایند تکرارشونده | chunk-103 | مصوب |
 | Feature Toggles | کلیدهای قابلیت | chunk-103 | مصوب |
 | Machine Provisioning | تأمین ماشین | chunk-103 | مصوب |
+| Unknown Change | تغییر ناشناخته | chunk-104 | مصوب |
+| Known Unknowns | نادانسته‌های دانسته | chunk-104 | مصوب |
+| Unknown Unknowns | نادانسته‌های نادانسته | chunk-104 | مصوب |
+| Big Design Up Front | طراحی بزرگ از پیش | chunk-104 | مصوب |
+| Complexity Theory | نظریهٔ پیچیدگی | chunk-104 | مصوب |
+| Residuality Theory | نظریهٔ باقی‌ماندگی | chunk-104 | مصوب |
+| Stressor | عامل فشار | chunk-104 | مصوب |
+| Residue | باقی‌مانده | chunk-104 | مصوب |
