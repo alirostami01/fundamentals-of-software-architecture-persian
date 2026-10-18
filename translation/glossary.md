@@ -887,3 +887,13 @@
 | Cloud Vendor | فروشندهٔ ابر | chunk-58 | مصوب |
 | Side Effect | اثر جانبی | chunk-58 | مصوب |
 | State Management | مدیریت حالت | chunk-58 | مصوب |
+| Nonstructural (governance) | غیرساختاری | chunk-59 | مصوب |
+| Governance Mesh | شبکهٔ حاکمیت | chunk-59 | مصوب |
+| Rate of Change | نرخ تغییر | chunk-59 | مصوب |
+| Schema | طرح‌واره | chunk-59 | مصوب |
+| Artifact (architecture) | مصنوع | chunk-59 | مصوب |
+| Programmatic Load Balancing | توازن‌بارِ برنامه‌نویسی‌شده | chunk-59 | مصوب |
+| Competing Consumers | مصرف‌کنندگان رقیب | chunk-59 | مصوب |
+| Consumer Group | گروه مصرف‌کننده | chunk-59 | مصوب |
+| Event Tree Diagram | نمودار درخت رویداد | chunk-59 | مصوب |
+| Business Transaction | تراکنش کسب‌وکار | chunk-59 | مصوب |
