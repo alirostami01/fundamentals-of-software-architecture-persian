@@ -1343,3 +1343,15 @@
 | Evals (evaluations) | ارزیابی‌ها | chunk-105 | مصوب |
 | Anonymize | ناشناس‌سازی | chunk-105 | مصوب |
 | Machine-Readable Format | قالب ماشین‌خوان | chunk-105 | مصوب |
+| Silver Bullet | گلولهٔ نقره‌ای | chunk-106 | مصوب |
+| Objective Arbiter | داور بی‌طرف | chunk-106 | مصوب |
+| Evangelism | مبلغ‌گری | chunk-106 | مصوب |
+| Social Capital | سرمایهٔ اجتماعی | chunk-106 | مصوب |
+| Build Time | زمان ساخت | chunk-106 | مصوب |
+| Runtime | زمان اجرا | chunk-106 | مصوب |
+| Heterogeneous Code | کد ناهمگون | chunk-106 | مصوب |
+| High Code Volatility | نوسان‌پذیری بالای کد | chunk-106 | مصوب |
+| Ability to Version Changes | توانایی نسخه‌بندی تغییرات | chunk-106 | مصوب |
+| Overall Change Risk | ریسک کلی تغییر | chunk-106 | مصوب |
+| In-Process | درون‌فرایندی | chunk-106 | مصوب |
+| Weighting | وزن‌دهی | chunk-106 | مصوب |
