@@ -1241,3 +1241,11 @@
 | Effective Architect | معمار اثربخش | chunk-91 | مصوب |
 | Naming Conventions | قراردادهای نام‌گذاری | chunk-91 | مصوب |
 | Parallel Loader Pattern | الگوی بارگذار موازی | chunk-91 | مصوب |
+| Trade Compliance Engine | موتور انطباق معاملات | chunk-92 | مصوب |
+| Velocity | سرعت (تیم) | chunk-92 | مصوب |
+| Elastic Leadership | رهبری کشسان | chunk-92 | مصوب |
+| Team Familiarity | آشنایی اعضای تیم با یکدیگر | chunk-92 | مصوب |
+| Team Size | اندازهٔ تیم | chunk-92 | مصوب |
+| Overall Experience | تجربهٔ کلی | chunk-92 | مصوب |
+| Project Complexity | پیچیدگی پروژه | chunk-92 | مصوب |
+| Project Duration | مدت پروژه | chunk-92 | مصوب |
