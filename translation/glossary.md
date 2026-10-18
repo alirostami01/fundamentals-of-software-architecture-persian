@@ -1361,3 +1361,6 @@
 | Breaking Change | تغییر شکننده | chunk-107 | مصوب |
 | Decoupling | جداسازی | chunk-107 | مصوب |
 | Institutional Reuse | بازاستفادهٔ سازمانی | chunk-107 | مصوب |
+| Architecture Diagram | نمودار معماری | chunk-108 | مصوب |
+| Out of Context Antipattern | ضدالگوی خارج از بافتار | chunk-108 | مصوب |
+| Companion Website | وب‌سایت همراه کتاب | chunk-108 | مصوب |
