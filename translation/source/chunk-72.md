@@ -62,8 +62,10 @@ In Figure 18-11, a service acts as a mediator across multiple service calls to c
 
 > **Figure 18-11.** The Saga pattern in microservices architecture
 
-If the first part of the transaction succeeds but the second part fails, the mediator must send a request to all other participating services of the transaction that were successful and tell them to undo the previous request. This style of transactional coordination is called a compensating transaction framework. Developers usually implement this pattern by having each request from the mediator enter a pending state until the mediator indicates overall success. However, juggling asynchronous requests can become complex, especially if new requests appear that are contingent on pending transactional state. Regardless of the protocol used, compensating transactions create a lot of coordination traffic at the network level.
+If the first part of the transaction succeeds but the second part fails, the mediator must send a request to all other participating services of the transaction that were successful and tell them to undo the previous request. This style of transactional coordination is called a compensating transaction framework. Developers usually implement this pattern by having each request from the mediator enter a `pending` state until the mediator indicates overall success. However, juggling asynchronous requests can become complex, especially if new requests appear that are contingent on pending transactional state. Regardless of the protocol used, compensating transactions create a lot of coordination traffic at the network level.
 
 > **Figure 18-12.** Saga pattern compensating transactions for error conditions
+
+> **Tip:** It’s sometimes necessary for a few transactions to cross services; however, if it’s the dominant feature of the architecture, then microservices is likely not the right choice!
 
 Managing transactions in microservices is complicated, and you can dive much deeper. We’ve identified eight different transactional Saga patterns to solve a variety of scenarios, which you can find in Chapter 12 of our book *Software Architecture: The Hard Parts* (O’Reilly, 2021), coauthored with Pramod Sadalage and Zhamak Dehghani.

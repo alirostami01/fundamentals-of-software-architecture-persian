@@ -1065,4 +1065,15 @@
 | Atomicity | اتمی‌بودن | chunk-72 | مصوب |
 | Saga Pattern | الگوی Saga | chunk-72 | مصوب |
 | Compensating Transaction Framework | چارچوب تراکنش جبرانی | chunk-72 | مصوب |
-| Pending State | وضعیت معلق | chunk-72 | مصوب |
+| Pending (state) | وضعیت معلق | chunk-72 | مصوب |
+| Domain Database | پایگاه‌دادهٔ حوزه‌ای | chunk-73 | مصوب |
+| Database Connection | اتصال پایگاه‌داده | chunk-73 | مصوب |
+| Backup (data) | نسخهٔ پشتیبان | chunk-73 | مصوب |
+| Domain-Based Database Topology | توپولوژی پایگاه‌دادهٔ حوزه‌ای | chunk-73 | مصوب |
+| Database Connection Pool | مخزن اتصال پایگاه‌داده | chunk-73 | مصوب |
+| Owning Service | سرویسِ مالک | chunk-73 | مصوب |
+| Document Database | پایگاه‌دادهٔ سندمحور | chunk-73 | مصوب |
+| Service Orchestration Platform | پلتفرم ارکستراسیون سرویس | chunk-73 | مصوب |
+| Cloud-Native | بومیِ ابر | chunk-73 | مصوب |
+| Serverless | بدون سرور | chunk-73 | مصوب |
+| Deployment Model | مدل استقرار | chunk-73 | مصوب |
