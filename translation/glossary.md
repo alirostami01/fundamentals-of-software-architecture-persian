@@ -1364,3 +1364,5 @@
 | Architecture Diagram | نمودار معماری | chunk-108 | مصوب |
 | Out of Context Antipattern | ضدالگوی خارج از بافتار | chunk-108 | مصوب |
 | Companion Website | وب‌سایت همراه کتاب | chunk-108 | مصوب |
+| Discussion Questions | پرسش‌های بحث | chunk-109 | مصوب |
+| Knowledge Triangle | مثلث دانش | chunk-109 | مصوب |
