@@ -1288,3 +1288,13 @@
 | Asynchronous Messaging | پیام‌رسانی ناهم‌گام | chunk-97 | مصوب |
 | Demonstration Defeats Discussion | نمایش عملی بر بحث چیره می‌شود | chunk-97 | مصوب |
 | Buy-in | همراهی | chunk-97 | مصوب |
+| 4 Cs of Architecture | چهار C معماری | chunk-98 | مصوب |
+| Communication | ارتباط | chunk-98 | مصوب |
+| Collaboration | همکاری | chunk-98 | مصوب |
+| Clear | روشن | chunk-98 | مصوب |
+| Concise | موجز | chunk-98 | مصوب |
+| Visionary | دوراندیش | chunk-98 | مصوب |
+| Pragmatic | عمل‌گرا | chunk-98 | مصوب |
+| Strategic Thinking | تفکر راهبردی | chunk-98 | مصوب |
+| Skill Set | مجموعهٔ مهارت‌ها | chunk-98 | مصوب |
+| Lead by Example | رهبری با الگو بودن | chunk-98 | مصوب |
