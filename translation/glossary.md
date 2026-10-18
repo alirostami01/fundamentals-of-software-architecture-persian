@@ -928,3 +928,18 @@
 | Service Orchestrator | هماهنگ‌کنندهٔ سرویس | chunk-61 | مصوب |
 | Round-Robin Algorithm | الگوریتم نوبت‌گردشی | chunk-61 | مصوب |
 | Next-Available Algorithm | الگوریتم «نخستین واحد در دسترس» | chunk-61 | مصوب |
+| In-Memory Replicated Cache | کش تکثیرشدهٔ درون‌حافظه‌ای | chunk-62 | مصوب |
+| External Controller | کنترل‌گر بیرونی | chunk-62 | مصوب |
+| Remote Call | فراخوانی دور | chunk-62 | مصوب |
+| Caching Provider | ارائه‌دهندهٔ کش | chunk-62 | مصوب |
+| Broadcast | پخش | chunk-62 | مصوب |
+| Member List | فهرست اعضا | chunk-62 | مصوب |
+| Port (network) | درگاه | chunk-62 | مصوب |
+| In-Memory Replicated Caching | کش‌گذاری تکثیریِ درون‌حافظه‌ای | chunk-62 | مصوب |
+| Distributed Caching | کش‌گذاری توزیع‌شده | chunk-62 | مصوب |
+| High Data Volume | حجم بالای داده | chunk-62 | مصوب |
+| Virtual Machine | ماشین مجازی | chunk-62 | مصوب |
+| High-Throughput | پرتوان | chunk-62 | مصوب |
+| Proprietary Protocol | پروتکل اختصاصیِ فروشنده | chunk-62 | مصوب |
+| Mirroring (cache) | آینه‌سازی | chunk-62 | مصوب |
+| Reference Data | دادهٔ مرجع | chunk-62 | مصوب |
