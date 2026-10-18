@@ -24,7 +24,7 @@ for f in htmls:
     total += len(errs)
     if errs: print(f"{f.name}: {errs}")
 print(f"HTML well-formed: {len(htmls)} files, errors {total}")
-for md in sorted(list(here.glob("chunk-*.md")) + list(here.glob("chapter-*.md"))):
+for md in sorted(list(here.glob("chunk-*.md")) + list(here.glob("chapter-*.md")) + list(here.glob("appendix.md"))):
     ht = md.with_suffix(".html").read_text(encoding="utf-8")
     text = norm(H.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"<!--.*?-->", "", ht, flags=re.S))))
     text_tight = norm(H.unescape(re.sub(r"<[^>]+>", "", re.sub(r"<!--.*?-->", "", ht, flags=re.S))))

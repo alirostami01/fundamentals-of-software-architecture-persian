@@ -1366,3 +1366,7 @@
 | Companion Website | وب‌سایت همراه کتاب | chunk-108 | مصوب |
 | Discussion Questions | پرسش‌های بحث | chunk-109 | مصوب |
 | Knowledge Triangle | مثلث دانش | chunk-109 | مصوب |
+| Replicated Cache | کش تکثیرشده | chunk-110 | مصوب |
+| Distributed Cache | کش توزیع‌شده | chunk-110 | مصوب |
+| Domain Reuse | بازاستفادهٔ حوزه | chunk-110 | مصوب |
+| Risk Assessment Matrix | ماتریس ارزیابی ریسک | chunk-110 | مصوب |

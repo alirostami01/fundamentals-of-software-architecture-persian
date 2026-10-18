@@ -4,6 +4,8 @@
 Usage:
     python3 build_chapter.py <chapter> <chunk> [chunk ...] [--drop "heading text"]
 
+    python3 build_chapter.py 0 109 110 --out appendix --unit پیوست
+
 Example:
     python3 build_chapter.py 1 1 2 3 --drop "ادامهٔ قوانین معماری نرم‌افزار" \
                                    --drop "انتظارات از یک معمار (ادامه)"
@@ -125,6 +127,10 @@ def main():
     p.add_argument("chunks", type=int, nargs="+")
     p.add_argument("--drop", action="append", default=[],
                    help="عنوان ادامه‌ای که باید از MD و HTML حذف شود")
+    p.add_argument("--out", default=None,
+                   help="نام پایهٔ فایل خروجی (مثلاً appendix)؛ پیش‌فرض chapter-NN")
+    p.add_argument("--unit", default="فصل",
+                   help="نام واحد در برچسب‌ها (مثلاً «پیوست»)؛ پیش‌فرض «فصل»")
     a = p.parse_args()
     first_line = (HERE / f"chunk-{a.chunks[0]:02d}.md").read_text(encoding="utf-8").split("\n")[0]
     assert first_line.startswith("# "), first_line
@@ -132,9 +138,13 @@ def main():
     rows = collect_rows(a.chunks)
     md, _ = merge_md(title, a.chunks, a.drop)
     htm = merge_html(a.chunks, a.drop, rows)
-    (HERE / f"chapter-{a.chapter:02d}.md").write_text(md, encoding="utf-8")
-    (HERE / f"chapter-{a.chapter:02d}.html").write_text(htm, encoding="utf-8")
-    print(f"chapter-{a.chapter:02d}.md/html written; glossary rows: {len(rows)}")
+    if a.unit != "فصل":
+        md = md.replace("این فصل", f"این {a.unit}")
+        htm = htm.replace("این فصل", f"این {a.unit}").replace("کامل فصل", f"کامل {a.unit}")
+    out = a.out or f"chapter-{a.chapter:02d}"
+    (HERE / f"{out}.md").write_text(md, encoding="utf-8")
+    (HERE / f"{out}.html").write_text(htm, encoding="utf-8")
+    print(f"{out}.md/html written; glossary rows: {len(rows)}")
 
 
 if __name__ == "__main__":
