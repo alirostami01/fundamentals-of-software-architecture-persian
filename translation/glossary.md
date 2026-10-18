@@ -1055,3 +1055,14 @@
 | Service Instance | نمونهٔ سرویس | chunk-71 | مصوب |
 | Monolithic Frontend | سمت کاربرِ تک‌پارچه | chunk-71 | مصوب |
 | Micro-Frontends | میکروفرانت‌اندها | chunk-71 | مصوب |
+| Protocol-Aware Heterogeneous Interoperability | همکنش‌پذیریِ ناهمگونِ آگاه از پروتکل | chunk-72 | مصوب |
+| Protocol-Aware | آگاه از پروتکل | chunk-72 | مصوب |
+| Technology Stack | پشتهٔ فناوری | chunk-72 | مصوب |
+| Polyglot Environment | محیط چندزبانه | chunk-72 | مصوب |
+| Enforced Heterogeneity | ناهمگونیِ اجباری | chunk-72 | مصوب |
+| Orchestration Service | سرویس ارکستراسیون | chunk-72 | مصوب |
+| Front Controller (pattern) | Front Controller (بدون ترجمه؛ نام الگو) | chunk-72 | مصوب |
+| Atomicity | اتمی‌بودن | chunk-72 | مصوب |
+| Saga Pattern | الگوی Saga | chunk-72 | مصوب |
+| Compensating Transaction Framework | چارچوب تراکنش جبرانی | chunk-72 | مصوب |
+| Pending State | وضعیت معلق | chunk-72 | مصوب |
