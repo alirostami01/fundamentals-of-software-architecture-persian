@@ -1175,3 +1175,11 @@
 | Shared State | حالت مشترک | chunk-83 | مصوب |
 | Backpressure | فشار معکوس | chunk-83 | مصوب |
 | High Availability | در دسترس‌بودن بالا | chunk-83 | مصوب |
+| Shared File Server | سرور فایل مشترک | chunk-84 | مصوب |
+| Attribute (C#) | خصیصه | chunk-84 | مصوب |
+| Enterprise Architecture | معماری سازمانی | chunk-84 | مصوب |
+| Landing Page | صفحهٔ فرود | chunk-84 | مصوب |
+| Production | محیط تولید | chunk-84 | مصوب |
+| Brain Trust | گنجینهٔ دانش | chunk-84 | مصوب |
+| Event Sourcing | رویدادنگاری | chunk-84 | مصوب |
+| Prompt | پرامپت | chunk-84 | مصوب |
