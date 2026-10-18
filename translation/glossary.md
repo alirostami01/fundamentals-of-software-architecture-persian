@@ -1304,3 +1304,13 @@
 | Developer Flow State | حالت غرقگی توسعه‌دهنده | chunk-100 | مصوب |
 | Productivity Flow | جریان بهره‌وری | chunk-100 | مصوب |
 | Remote Teams | تیم‌های دورکار | chunk-100 | مصوب |
+| Intersections of Architecture | تقاطع‌های معماری | chunk-101 | مصوب |
+| Implementation | پیاده‌سازی | chunk-101 | مصوب |
+| Infrastructure | زیرساخت | chunk-101 | مصوب |
+| Data Topologies | توپولوژی‌های داده | chunk-101 | مصوب |
+| Engineering Practices | رویه‌های مهندسی | chunk-101 | مصوب |
+| Systems Integration | یکپارچه‌سازی سیستم‌ها | chunk-101 | مصوب |
+| The Enterprise | سازمان | chunk-101 | مصوب |
+| Business Environment | محیط کسب‌وکار | chunk-101 | مصوب |
+| Operational Concerns | دغدغه‌های عملیاتی | chunk-101 | مصوب |
+| Internal Memory | حافظهٔ داخلی | chunk-101 | مصوب |
