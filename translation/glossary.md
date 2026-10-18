@@ -1300,3 +1300,7 @@
 | Lead by Example | رهبری با الگو بودن | chunk-98 | مصوب |
 | Workplace Harassment | آزار در محیط کار | chunk-99 | مصوب |
 | Go-to Person | فرد مرجع | chunk-99 | مصوب |
+| Flow (state) | غرقگی | chunk-100 | مصوب |
+| Developer Flow State | حالت غرقگی توسعه‌دهنده | chunk-100 | مصوب |
+| Productivity Flow | جریان بهره‌وری | chunk-100 | مصوب |
+| Remote Teams | تیم‌های دورکار | chunk-100 | مصوب |
