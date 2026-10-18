@@ -763,7 +763,7 @@
 | Event Processor | پردازندهٔ رویداد | chunk-49 | مصوب |
 | Derived Event | رویداد مشتق | chunk-49 | مصوب |
 | Event Channel | کانال رویداد | chunk-49 | مصوب |
-| Topic Exchange (AMQP) | مبادلهٔ موضوعی | chunk-49 | مصوب |
+| Topic Exchange (AMQP) | مبادله‌گر موضوعی | chunk-49 | مصوب |
 | Stream (event) | جریان | chunk-49 | مصوب |
 | Poison Event | رویداد سمی | chunk-49 | مصوب |
 | Relay Race | مسابقهٔ دوی امدادی | chunk-49 | مصوب |
@@ -838,3 +838,24 @@
 | Out of Sequence | خارج از ترتیب | chunk-54 | مصوب |
 | Brokerage Account | حساب کارگزاری | chunk-54 | مصوب |
 | First-In, First-Out (FIFO) | نخست وارد، نخست خارج | chunk-54 | مصوب |
+| Data Loss | گم‌شدن داده | chunk-55 | مصوب |
+| Binding Rules | قواعد اتصال | chunk-55 | مصوب |
+| Event Forwarding Pattern | الگوی هدایت رویداد | chunk-55 | مصوب |
+| Durable Subscriber | مشترک بادوام | chunk-55 | مصوب |
+| Persistent Message Queue | صف پیامِ ماندگار | chunk-55 | مصوب |
+| Synchronous Send | ارسال هم‌گام | chunk-55 | مصوب |
+| Guaranteed Delivery | تحویل تضمین‌شده | chunk-55 | مصوب |
+| Blocking Wait | انتظار مسدودکننده | chunk-55 | مصوب |
+| Event Producer | تولیدکنندهٔ رویداد | chunk-55 | مصوب |
+| Client Acknowledge Mode | حالت تأیید از سوی کلاینت | chunk-55 | مصوب |
+| Auto Acknowledge Mode | حالت تأیید خودکار | chunk-55 | مصوب |
+| Database Commit | ثبت در پایگاه‌داده | chunk-55 | مصوب |
+| Last Participant Support (LPS) | پشتیبانی از آخرین مشارکت‌کننده | chunk-55 | مصوب |
+| Request-Reply Messaging | پیام‌رسانی درخواست-پاسخ | chunk-55 | مصوب |
+| Pseudosynchronous Communication | ارتباط شبه‌هم‌گام | chunk-55 | مصوب |
+| Request Queue / Reply Queue | صف درخواست / صف پاسخ | chunk-55 | مصوب |
+| Message Producer / Consumer | تولیدکننده / مصرف‌کنندهٔ پیام | chunk-55 | مصوب |
+| Correlation ID (CID) | شناسهٔ تناظر | chunk-55 | مصوب |
+| Message Filter / Message Selector | پالایهٔ پیام / گزینشگر پیام | chunk-55 | مصوب |
+| Temporary Queue | صف موقت | chunk-55 | مصوب |
+| Concurrency | هم‌روندی | chunk-55 | مصوب |
