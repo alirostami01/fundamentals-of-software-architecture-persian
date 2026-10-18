@@ -958,3 +958,17 @@
 | Map Message | پیام نگاشتی | chunk-63 | مصوب |
 | Data Hub | هاب داده | chunk-63 | مصوب |
 | Domain-Based Data Writer | نویسندهٔ دادهٔ حوزه‌محور | chunk-63 | مصوب |
+| Reverse Data Pump | پمپ دادهٔ معکوس | chunk-64 | مصوب |
+| Archive Data | دادهٔ بایگانی‌شده | chunk-64 | مصوب |
+| Lock | قفل | chunk-64 | مصوب |
+| Temporary Cache Owner | مالک موقت کش | chunk-64 | مصوب |
+| Wait State | حالت انتظار | chunk-64 | مصوب |
+| Data Abstraction Layer | لایهٔ انتزاعیِ داده | chunk-64 | مصوب |
+| Data Access Layer | لایهٔ دسترسی به داده | chunk-64 | مصوب |
+| Incremental Change | تغییر تدریجی | chunk-64 | مصوب |
+| Transformation Logic | منطق تبدیل | chunk-64 | مصوب |
+| Data Analytics | تحلیل داده | chunk-64 | مصوب |
+| Data Mesh | مش داده | chunk-64 | مصوب |
+| Hybrid Topology | توپولوژی ترکیبی | chunk-64 | مصوب |
+| Cold Start | راه‌اندازی سرد | chunk-64 | مصوب |
+| Persisted Queue | صف ماندگار | chunk-64 | مصوب |
