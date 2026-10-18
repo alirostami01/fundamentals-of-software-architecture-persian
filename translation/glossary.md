@@ -822,3 +822,19 @@
 | Anemic Event | رویداد کم‌خون | chunk-53 | مصوب |
 | User Profile | نمایهٔ کاربری | chunk-53 | مصوب |
 | Event Payload Granularity | دانه‌بندیِ محمولهٔ رویداد | chunk-53 | مصوب |
+| Coarse-Grained Event | رویداد درشت‌دانه | chunk-54 | مصوب |
+| Churn (event flow) | آشفتگی | chunk-54 | مصوب |
+| State Change | تغییر حالت | chunk-54 | مصوب |
+| Error Handling | مدیریت خطا | chunk-54 | مصوب |
+| Resiliency | تاب‌آوری | chunk-54 | مصوب |
+| Workflow Delegate | نمایندهٔ گردش‌کار | chunk-54 | مصوب |
+| Delegation | واگذاری | chunk-54 | مصوب |
+| Containment | دربرگیری | chunk-54 | مصوب |
+| Repair | ترمیم | chunk-54 | مصوب |
+| Message Channel | کانال پیام | chunk-54 | مصوب |
+| Anomaly | ناهنجاری | chunk-54 | مصوب |
+| Basket (of trade orders) | سبد | chunk-54 | مصوب |
+| Exception | استثنا | chunk-54 | مصوب |
+| Out of Sequence | خارج از ترتیب | chunk-54 | مصوب |
+| Brokerage Account | حساب کارگزاری | chunk-54 | مصوب |
+| First-In, First-Out (FIFO) | نخست وارد، نخست خارج | chunk-54 | مصوب |
