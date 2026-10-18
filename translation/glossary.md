@@ -1137,3 +1137,12 @@
 | Broker-Domain / Domain-Broker (pattern) | الگوی کارگزار حوزه‌ای | chunk-80 | مصوب |
 | Broker | کارگزار | chunk-80 | مصوب |
 | Single-Broker (pattern) | الگوی کارگزار واحد | chunk-80 | مصوب |
+| Covering Your Assets (antipattern) | ضدالگوی «خود را پوشش بده» | chunk-81 | مصوب |
+| Groundhog Day (antipattern) | ضدالگوی «روز موش‌خرما» | chunk-81 | مصوب |
+| Email-Driven Architecture (antipattern) | ضدالگوی «معماری ایمیل‌محور» | chunk-81 | مصوب |
+| Last Responsible Moment | آخرین لحظهٔ مسئولانه | chunk-81 | مصوب |
+| Analysis Paralysis (antipattern) | فلج تحلیلی | chunk-81 | مصوب |
+| In-Process Memory | حافظهٔ درون‌فرایندی | chunk-81 | مصوب |
+| Technical Justification | توجیه فنی | chunk-81 | مصوب |
+| Business Justification | توجیه کسب‌وکاری | chunk-81 | مصوب |
+| Strategic Positioning | جایگاه‌یابی راهبردی | chunk-81 | مصوب |
