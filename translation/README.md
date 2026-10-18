@@ -13,6 +13,7 @@
 4. **قالب‌بندی محتوا:** کدها، نام توابع/متغیرها، مسیرها و دستورات ترمینال هرگز ترجمه نمی‌شوند و LTR می‌مانند؛ فرمول‌ها با LaTeX.
 5. **فایل کامل فصل:** در پایان ترجمهٔ هر فصل، `build_chapter.py` بسته‌های آن فصل را ادغام می‌کند → `chapter-NN.md` / `chapter-NN.html`؛ تیتر H1 یکتا، حذف سرفصل‌های «ادامه»ٔ بسته‌ها، و یک واژه‌نامهٔ ادغام‌شدهٔ فصل (حذف تکرارها بر اساس واژهٔ انگلیسی).
 6. **تبدیل و کنترل کیفیت:** `md2html.py` کامپوننت HTML را از Markdown می‌سازد (واژه‌های LTR هر بسته در `source/chunk-NN.terms`) و `qa.py` دروازهٔ کیفیت را اجرا می‌کند: خوش‌ساختی HTML، تطابق کامل MD↔HTML (متن، فهرست، کد)، فوترهای PDF، غلط‌های تایپی و تکرار در واژه‌نامه.
+7. **تصاویر شکل‌ها:** `extract_figures.py` هر ۲۴۱ شکل کتاب را از PDF اصلی برش می‌دهد → `figures/chapter-NN/figure-N-M.png` (۲۰۰dpi)، و `insert_figures.py` تصویر هر شکل را درست بالای عنوان ترجمه‌شده‌اش در `<figure>` فایل‌های HTML (بسته‌ها، فصل‌ها و پیوست) جای می‌دهد. `md2html.py` نیز هنگام ساخت HTML به‌طور خودکار تصویر را می‌افزاید.
 
 ## وضعیت بسته‌ها
 
@@ -163,6 +164,39 @@
 | فصل ۲۶: تقاطع‌های معماری | chunk-101…105 | `chapter-26.md` / `chapter-26.html` ✅ |
 | فصل ۲۷: بازنگری در قوانین معماری نرم‌افزار | chunk-106…108 | `chapter-27.md` / `chapter-27.html` ✅ |
 | پیوست: پرسش‌های بحث | chunk-109…110 | `appendix.md` / `appendix.html` ✅ |
+
+## تصاویر شکل‌ها
+
+| فصل | پوشه | شمار شکل‌ها |
+|---|---|---|
+| فصل ۱ | `figures/chapter-01/` | ۵ |
+| فصل ۲ | `figures/chapter-02/` | ۱۰ |
+| فصل ۳ | `figures/chapter-03/` | ۵ |
+| فصل ۴ | `figures/chapter-04/` | ۲ |
+| فصل ۵ | `figures/chapter-05/` | ۳ |
+| فصل ۶ | `figures/chapter-06/` | ۴ |
+| فصل ۷ | `figures/chapter-07/` | ۷ |
+| فصل ۸ | `figures/chapter-08/` | ۱۷ |
+| فصل ۹ | `figures/chapter-09/` | ۱۴ |
+| فصل ۱۰ | `figures/chapter-10/` | ۶ |
+| فصل ۱۱ | `figures/chapter-11/` | ۸ |
+| فصل ۱۲ | `figures/chapter-12/` | ۴ |
+| فصل ۱۳ | `figures/chapter-13/` | ۹ |
+| فصل ۱۴ | `figures/chapter-14/` | ۱۰ |
+| فصل ۱۵ | `figures/chapter-15/` | ۴۰ |
+| فصل ۱۶ | `figures/chapter-16/` | ۱۸ |
+| فصل ۱۷ | `figures/chapter-17/` | ۶ |
+| فصل ۱۸ | `figures/chapter-18/` | ۱۷ |
+| فصل ۱۹ | `figures/chapter-19/` | ۶ |
+| فصل ۲۰ | `figures/chapter-20/` | ۷ |
+| فصل ۲۱ | `figures/chapter-21/` | ۵ |
+| فصل ۲۲ | `figures/chapter-22/` | ۱۲ |
+| فصل ۲۳ | `figures/chapter-23/` | ۳ |
+| فصل ۲۴ | `figures/chapter-24/` | ۱۱ |
+| فصل ۲۵ | `figures/chapter-25/` | ۵ |
+| فصل ۲۶ | `figures/chapter-26/` | ۴ |
+| فصل ۲۷ | `figures/chapter-27/` | ۳ |
+| **جمع** | `figures/` | **۲۴۱** |
 
 ## نکات نگارشی
 

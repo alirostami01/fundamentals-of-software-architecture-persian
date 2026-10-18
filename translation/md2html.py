@@ -14,6 +14,7 @@ parentheses keep "(" ")" and bare-wrap inside; bare terms come from the --terms
 file (one per line) and are matched in ONE combined regex pass (no nesting).
 """
 import argparse
+import insert_figures
 import html as htmllib
 import re
 from pathlib import Path
@@ -208,10 +209,11 @@ def main():
         unb = lambda s: s[2:-2] if s.startswith("**") and s.endswith("**") else s
         if first.startswith("**شکل"):
             m = re.match(r"\*\*(.+?)\*\*\s*(.*)", first)
-            return (f'    <figure style="{FIG}">\n'
-                    f'      <figcaption style="font-size:.95rem;color:#333;"><b>{inline(m.group(1))}</b> {inline(m.group(2))}</figcaption>\n'
-                    f'      <small style="color:#777;">{FIGNOTE}</small>\n'
-                    f'    </figure>')
+            fig = (f'    <figure style="{FIG}">\n'
+                   f'      <figcaption style="font-size:.95rem;color:#333;"><b>{inline(m.group(1))}</b> {inline(m.group(2))}</figcaption>\n'
+                   f'      <small style="color:#777;">{FIGNOTE}</small>\n'
+                   f'    </figure>')
+            return insert_figures.process(fig, [])[0]   # image from figures/chapter-NN/ when available
         attrib = next((p for p in paras if p.startswith("—")), None)
         if attrib:
             at = attrib.lstrip("—").strip()
