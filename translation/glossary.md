@@ -714,3 +714,14 @@
 | Reverse Proxy | پراکسی معکوس | chunk-45 | مصوب |
 | Cross-Cutting Concerns | دغدغه‌های میان‌بُرشی | chunk-45 | مصوب |
 | Service Discovery | کشف سرویس | chunk-45 | مصوب |
+| Database Topology | توپولوژی پایگاه‌داده | chunk-46 | مصوب |
+| Domain-Scoped Database | پایگاه‌دادهٔ هم‌دامنه با حوزه | chunk-46 | مصوب |
+| Interservice Communication | ارتباط میان‌سرویسی | chunk-46 | مصوب |
+| Entity Objects | اشیای موجودیت | chunk-46 | مصوب |
+| Logical Partitioning | افراز منطقی | chunk-46 | مصوب |
+| Rippling Side Effects | اثرات جانبیِ موجی | chunk-46 | مصوب |
+| Containerized Service | سرویس کانتینری | chunk-46 | مصوب |
+| Structural Integrity | یکپارچگی ساختاری | chunk-46 | مصوب |
+| Domain Boundaries | مرزهای حوزه | chunk-46 | مصوب |
+| Technically Partitioned Teams | تیم‌های افرازشده به‌صورت فنی | chunk-46 | مصوب |
+| Interteam Communication | ارتباط میان‌تیمی | chunk-46 | مصوب |
