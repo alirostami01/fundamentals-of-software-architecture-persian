@@ -735,3 +735,17 @@
 | Database-Connection Pooling | تجمیع اتصال‌های پایگاه‌داده | chunk-47 | مصوب |
 | Unit of Work | واحد کار | chunk-47 | مصوب |
 | Eventual Consistency | سازگاری نهایی | chunk-47 | مصوب |
+| Quoting (domain) | قیمت‌دهی | chunk-48 | مصوب |
+| Receiving (domain) | دریافت | chunk-48 | مصوب |
+| Assessment (domain) | ارزیابی | chunk-48 | مصوب |
+| Accounting (domain) | حسابداری | chunk-48 | مصوب |
+| Item Status (domain) | وضعیت قلم | chunk-48 | مصوب |
+| Recycling (domain) | بازیافت | chunk-48 | مصوب |
+| Reporting (domain) | گزارش‌دهی | chunk-48 | مصوب |
+| Network Zone | ناحیهٔ شبکه‌ای | chunk-48 | مصوب |
+| Data Protection | حفاظت از داده | chunk-48 | مصوب |
+| One-Way Access | دسترسیِ یک‌طرفه | chunk-48 | مصوب |
+| Internal Table Mirroring | آینه‌سازیِ داخلیِ جدول‌ها | chunk-48 | مصوب |
+| External Table Synchronization | همگام‌سازیِ بیرونیِ جدول‌ها | chunk-48 | مصوب |
+| Migration Target | مقصد مهاجرت | chunk-48 | مصوب |
+| Stepping Stone | پلهٔ میانی | chunk-48 | مصوب |
