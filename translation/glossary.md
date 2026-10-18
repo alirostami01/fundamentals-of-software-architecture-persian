@@ -1208,3 +1208,6 @@
 | Service-Level Agreement (SLA) | توافق‌نامهٔ سطح خدمت (SLA) | chunk-87 | مصوب |
 | Service-Level Objective (SLO) | هدف سطح خدمت (SLO) | chunk-87 | مصوب |
 | Downtime | زمان ازکارافتادگی | chunk-87 | مصوب |
+| Variable Scalability | مقیاس‌پذیری متغیر | chunk-88 | مصوب |
+| Ambulance Pattern | الگوی Ambulance (آمبولانس) | chunk-88 | مصوب |
+| Regulatory Requirements | الزامات قانونی | chunk-88 | مصوب |
