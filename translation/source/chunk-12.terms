@@ -1,0 +1,15 @@
+# bare English terms wrapped LTR in chunk-12.html
+What Every Programmer Should Know about Object-Oriented Design
+Emerging Technologies for the Enterprise
+void updateSeat(String name, String seatLocation)
+updateSeat("14D", "Ford, N")
+int TRUE = 1; int FALSE = 0
+Connescence Examined
+Meilir Page-Jones
+Page-Jones
+Dorset House
+Clojure Spec
+Clojure
+Jim Weirich
+Singleton
+DDD

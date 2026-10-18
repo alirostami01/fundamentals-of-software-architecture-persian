@@ -1,0 +1,153 @@
+<!-- بخش دوم: خروجی HTML — کامپوننت محتوای داخلی (بدون html/head) — بستهٔ ۳۷ -->
+<article dir="rtl" lang="fa" style="font-family:'Vazirmatn','IRANSans','Tahoma',sans-serif;line-height:2;max-width:46rem;margin:0 auto;color:#1a1a1a;background:#fff;padding:1.5rem;border:1px solid #e5e5e5;border-radius:8px;">
+
+  <h1 style="font-size:1.7rem;margin:0 0 1rem;border-bottom:3px solid #2c5f8a;padding-bottom:.5rem;">فصل ۱۱: سبک معماری تک‌پارچهٔ ماژولار (ادامه — بستهٔ ۳۷)</h1>
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">توپولوژی‌های داده</h3>
+    <p style="text-align:justify;">از آنجا که معماری تک‌پارچهٔ ماژولار معمولاً به‌صورتِ تنها یک واحدِ نرم‌افزاری مستقر می‌شود، به‌طورِ معمول بر توپولوژیِ پایگاه‌دادهٔ تک‌پارچه <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(monolithic database topology)</bdi> تکیه دارد. به‌کارگیریِ یک پایگاه‌دادهٔ واحد به کاهشِ ارتباط میانِ ماژول‌ها کمک می‌کند، زیرا داده‌ها مشترک‌اند. اما اگر ماژول‌ها از یکدیگر مستقل باشند و کارکردهای مشخصی انجام دهند، می‌توانند پایگاه‌داده‌های خودشان را نیز داشته باشند که دادهٔ زمینه‌ایِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(contextual data)</bdi> مشخصی را در خود جای می‌دهند؛ حتی با اینکه خودِ معماری تک‌پارچه است. شکل ۱۱-۶ این دو گزینهٔ توپولوژیِ پایگاه‌داده را نشان می‌دهد.</p>
+    <figure style="margin:1rem 0;padding:.7rem 1rem;background:#f9f9f9;border-right:4px solid #2c5f8a;border-radius:4px;">
+      <img src="figures/chapter-11/figure-11-6.png" alt="شکل ۱۱-۶. داده‌ها می‌توانند تک‌پارچه باشند یا هر ماژول می‌تواند پایگاه‌دادهٔ خودش را داشته باشد" loading="lazy" style="display:block;max-width:100%;height:auto;margin:0 auto .7rem;background:#fff;border:1px solid #e3e3e3;border-radius:3px;">
+      <figcaption style="font-size:.95rem;color:#333;"><b>شکل ۱۱-۶.</b> داده‌ها می‌توانند تک‌پارچه باشند یا هر ماژول می‌تواند پایگاه‌دادهٔ خودش را داشته باشد</figcaption>
+    </figure>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">ملاحظات ابری</h3>
+    <p style="text-align:justify;">هرچند معماری‌های تک‌پارچهٔ ماژولار را می‌توان در محیط‌های ابری مستقر کرد (به‌ویژه اگر سیستم کوچک باشد)، این معماری‌ها به‌طورِ کلی برای استقرار در ابر چندان مناسب نیستند: ماهیتِ تک‌پارچه‌شان احتمالِ بهره‌گیری از تأمینِ منابع بر حسبِ تقاضا <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(on-demand provisioning)</bdi> را که محیط‌های ابری عرضه می‌کنند، کاهش می‌دهد. با این حال، سیستم‌های کوچک‌تری که با این سبک معماری پیاده‌سازی شده‌اند، همچنان می‌توانند از بسیاری از سرویس‌های ابری، مانندِ ذخیره‌سازیِ فایل، پایگاه‌داده و پیام‌رسانی، بهره ببرند.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">ریسک‌های رایج</h3>
+    <p style="text-align:justify;">مانندِ هر سیستمِ تک‌پارچهٔ دیگری، ریسکِ اصلیِ سبک معماری تک‌پارچهٔ ماژولار آن است که ممکن است چنان بزرگ شود که نتوان آن را به‌درستی نگه‌داری، آزمون و مستقر کرد. معماری‌های تک‌پارچه به‌خودیِ خود بد نیستند؛ مشکلات زمانی آغاز می‌شوند که بیش از حد بزرگ شوند. معنای «بیش از حد بزرگ» از سیستمی به سیستمِ دیگر فرق می‌کند، اما برخی از نشانه‌های هشداردهنده‌ای که از بزرگیِ بیش از حدِ سیستم خبر می‌دهند از این قرارند:</p>
+    <ul style="margin:.6rem 1.2rem;padding:0;line-height:1.9;">
+      <li>اعمالِ تغییرات بیش از حد طول می‌کشد.</li>
+      <li>وقتی بخشی از سیستم تغییر می‌کند، بخش‌های دیگر به‌طورِ غیرمنتظره از کار می‌افتند.</li>
+      <li>اعضای تیم هنگامِ اعمالِ تغییرات سرِ راهِ یکدیگر قرار می‌گیرند.</li>
+      <li>راه‌اندازیِ سیستم بیش از حد طول می‌کشد.</li>
+    </ul>
+    <p style="text-align:justify;">ریسکِ دیگر، زیاده‌روی در بازاستفادهٔ کد است. بازاستفاده و اشتراکِ کد بخشی ضروری از توسعهٔ نرم‌افزار است، اما در این سبک معماری، بازاستفادهٔ بیش از حدِ کد مرزهای ماژول‌ها را محو می‌کند و معماری را به قلمروِ پرخطرِ تک‌پارچهٔ بی‌ساختار <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(unstructured monolith)</bdi> می‌کشاند: معماری‌ای تک‌پارچه با کدی چنان درهم‌تنیده که دیگر نمی‌توان گره‌اش را گشود.</p>
+    <p style="text-align:justify;">ارتباطِ میان‌ماژولیِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(intermodule communication)</bdi> بیش از حد ریسکِ دیگری در این سبک معماری است. در حالتِ آرمانی، ماژول‌ها باید مستقل و خودبسنده باشند. چنان‌که اشاره کردیم، ارتباطِ برخی ماژول‌ها با ماژول‌های دیگر، به‌ویژه در یک گردش‌کارِ پیچیده، عادی (و گاهی ضروری) است. اما اگر ارتباطِ متقابلِ میانِ ماژول‌ها بیش از حد باشد، نشانهٔ خوبی است که حوزه‌ها احتمالاً از همان ابتدا به‌درستی تعریف نشده‌اند. در چنین مواردی، ارزش دارد اندیشهٔ بیشتری صرفِ بازتعریفِ حوزه‌ها کنید تا گردش‌کارهای پیچیده و وابستگی‌های متقابل را در خود جای دهند.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">حاکمیت</h3>
+    <p style="text-align:justify;">مصنوعِ اصلی در سبک تک‌پارچهٔ ماژولار، ماژول است؛ ماژول نمایانگرِ یک حوزه یا زیرحوزهٔ مشخص است و معمولاً با ساختارِ دایرکتوری یا فضای نام (یا ساختارِ بسته‌ها <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(package structure)</bdi> در پلتفرم <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Java</bdi>) بازنمایی می‌شود. بنابراین، یکی از نخستین شکل‌های حاکمیت خودکار که معماران می‌توانند به کار گیرند، تعریفِ ماژول‌های به‌کاررفته در معماری و تضمینِ انطباق با آن‌هاست.</p>
+    <p style="text-align:justify;">معماران برای نوشتنِ وارسی‌های حاکمیتِ خودکار از انبوهی از ابزارها بهره می‌گیرند، از جمله <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">ArchUnit</bdi> برای پلتفرم <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Java</bdi>، <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">ArchUnitNet</bdi> و <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">NetArchTest</bdi> برای پلتفرم <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">.NET</bdi>، <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">PyTestArch</bdi> برای <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Python</bdi> و <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">TSArch</bdi> برای <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">TypeScript</bdi> و <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">JavaScript</bdi>. شبه‌کدِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(pseudocode)</bdi> مثال ۱۱-۱ تضمین می‌کند که همهٔ کدِ منبعِ بازنمایی‌شده در نمونهٔ معماریِ شکل ۱۱-۲ زیرِ یکی از فضاهای نامِ فهرست‌شده قرار گیرد؛ فضاهای نامی که هر یک نمایانگرِ یکی از ماژول‌های تعریف‌شدهٔ سیستم‌اند.</p>
+    <p style="text-align:justify;"><b>مثال ۱۱-۱.</b> شبه‌کد برای تضمینِ پیرویِ کد از ماژول‌های تعریف‌شدهٔ سیستم</p>
+    <pre dir="ltr" style="direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:.92rem;line-height:1.6;"><code class="language-text"># The following namespaces represent the modules in the system
+LIST module_list = {
+   com.orderentry.orderplacement,
+   com.orderentry.inventorymanagement,
+   com.orderentry.paymentprocessing,
+   com.orderentry.notification,
+   com.orderentry.fulfillment,
+   com.orderentry.shipping
+   }
+
+# Get the list of namespaces in the system
+LIST namespace_list = get_all_namespaces(root_directory)
+
+# Make sure all the namespaces start with one of the listed modules
+FOREACH namespace IN namespace_list {
+   IF NOT namespace.starts_with(module_list) {
+      send_alert(namespace)
+   }
+}</code></pre>
+    <p style="text-align:justify;">اگر توسعه‌دهنده‌ای هر فضای نام یا دایرکتوریِ سطح‌بالای دیگری بیرون از ماژول‌های تعریف‌شده و فضاهای نام (یا دایرکتوری‌های) متناظرشان بسازد، هشداری دریافت می‌کند که نشان می‌دهد کدِ منبع با معماری منطبق نیست.</p>
+    <p style="text-align:justify;">این شکل از حاکمیت با گزینهٔ ساختارِ تک‌پارچهٔ این سبک معماری به‌خوبی کار می‌کند (بخش «ساختارِ تک‌پارچه» را در صفحهٔ ۱۶۷ ببینید)، اما با گزینهٔ ساختارِ ماژولار (بخش «ساختارِ ماژولار» را در صفحهٔ ۱۶۸ ببینید) چالش‌برانگیز است، زیرا ممکن است کد در یک مخزن کد منبعِ تک‌پارچهٔ واحد قرار نداشته باشد. در گزینهٔ ساختارِ ماژولار، هر ماژول باید جداگانه آزموده شود؛ چنان‌که در مثال ۱۱-۲ نشان داده شده است.</p>
+    <p style="text-align:justify;"><b>مثال ۱۱-۲.</b> شبه‌کد برای اعتبارسنجیِ ماژولِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">InventoryManagement</bdi></p>
+    <pre dir="ltr" style="direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:.92rem;line-height:1.6;"><code class="language-text"># Get the list of namespaces in the system
+LIST namespace_list = get_all_namespaces(root_directory)
+
+# Make sure all the namespaces start with com.orderentry.inventorymanagement
+FOREACH namespace IN namespace_list {
+   IF NOT namepace.starts_with("com.orderentry.inventorymanagement") {
+      send_alert(namespace)
+   }
+}</code></pre>
+    <p style="text-align:justify;">راهِ دیگرِ حاکمیت بر معماری تک‌پارچهٔ ماژولار، کنترلِ میزانِ ارتباط میانِ ماژول‌هاست. تعریفِ ارتباطِ «بیش از حد» بسیار ذهنی است و از سیستمی به سیستمِ دیگر فرق می‌کند، اما در بیشترِ موارد معماران باید بکوشند شمارِ وابستگی‌های متقابلِ میانِ ماژول‌ها را به کمترین حد برسانند. مثال ۱۱-۳ شبه‌کدی را نشان می‌دهد که تضمین می‌کند بیشینهٔ کلِ وابستگی‌های متقابل از حدِ پنج نقطهٔ ارتباط (یا نقطهٔ کوپلینگ) فراتر نرود.</p>
+    <p style="text-align:justify;"><b>مثال ۱۱-۳.</b> شبه‌کد برای محدود کردنِ شمارِ کلِ وابستگی‌های هر ماژول</p>
+    <pre dir="ltr" style="direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:.92rem;line-height:1.6;"><code class="language-text"># Walk the directory structure, gathering modules and the source code files
+# contained within those modules
+LIST module_list = {
+   com.orderentry.orderplacement,
+   com.orderentry.inventorymanagement,
+   com.orderentry.paymentprocessing,
+   com.orderentry.notification,
+   com.orderentry.fulfillment,
+   com.orderentry.shipping
+   }
+MAP module_source_file_map
+FOREACH module IN module_list {
+  LIST source_file_list = get_source_files(module)
+  ADD module, source_file_list TO module_source_file_map
+}
+
+# Determine how many references exist for each source file and send an alert if
+# the system's total dependency count is greater than 5
+FOREACH module, source_file_list IN module_source_file_map {
+  FOREACH source_file IN source_file_list {
+    incoming count = used_by_other_module(source_file, module_source_file_map) {
+    outgoing_count = uses_other_module(source_file) {
+    total_count = incoming count + outgoing count
+  }
+  IF total_count &gt; 5 {
+    send_alert(module, total_count)
+  }
+}</code></pre>
+    <p style="text-align:justify;">آخرین شکلِ حاکمیتِ خودکار، تضمینِ استقلالِ ماژول‌ها از یکدیگر با منعِ ارتباطِ یک ماژولِ مشخص با ماژولی دیگر است. برای نمونه، در شکل ۱۱-۲، ماژولِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">OrderPlacement</bdi> نباید با ماژولِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Shipping</bdi> ارتباط برقرار کند. مثال ۱۱-۴ کدِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">ArchUnit</bdi> به زبانِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Java</bdi> را برای حاکمیت بر این وابستگی نشان می‌دهد.</p>
+    <p style="text-align:justify;"><b>مثال ۱۱-۴.</b> کدِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">ArchUnit</bdi> برای حاکمیت بر محدودیت‌های وابستگی میانِ ماژول‌های مشخص</p>
+    <pre dir="ltr" style="direction:ltr;text-align:left;unicode-bidi:isolate;margin:.8rem 0;padding:.8rem 1rem;background:#f4f6f8;border:1px solid #dde3e8;border-radius:4px;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:.92rem;line-height:1.6;"><code class="language-java">public void order_placement_cannot_access_shipping() {
+   noClasses().that()
+   .resideInAPackage("..com.orderentry.orderplacement..")
+   .should().accessClassesThat()
+   .resideInAPackage("..com.orderentry.shipping..")
+   .check(myClasses);
+}</code></pre>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">ملاحظاتِ توپولوژی تیم</h3>
+    <p style="text-align:justify;">از آنجا که تک‌پارچهٔ ماژولار معماری‌ای افرازشدهٔ حوزه‌ای به شمار می‌آید، بهترین کارکرد را زمانی دارد که تیم‌ها نیز بر پایهٔ ناحیهٔ حوزه هم‌راستا شده باشند (مانندِ تیم‌های چندتخصصی با تخصص‌یابی). وقتی نیازمندی‌ای حوزه‌محور از راه می‌رسد، یک تیمِ چندتخصصیِ متمرکز بر حوزه می‌تواند با هم روی آن قابلیت کار کند؛ از منطقِ ارائه گرفته تا پایگاه‌داده. در مقابل، تیم‌هایی که بر پایهٔ دسته‌بندی‌های فنی سازمان یافته‌اند (مانندِ تیم‌های رابط کاربری، تیم‌های سمت سرور، تیم‌های پایگاه‌داده و مانندِ آن‌ها)، عمدتاً به دلیلِ افراز حوزه‌ایِ این سبک معماری، با آن به‌خوبی کار نمی‌کنند. سپردنِ نیازمندی‌های حوزه‌محور به تیم‌هایی که بر پایهٔ فن سازمان یافته‌اند، ارتباط و همکاریِ فراوانی می‌طلبد که اغلب دشوار از آب درمی‌آید.</p>
+    <p style="text-align:justify;">در ادامه چند ملاحظه برای هم‌راستاسازیِ توپولوژی‌های تیمِ مشخصی که در بخش «توپولوژی‌های تیم و معماری» در صفحهٔ ۱۵۱ معرفی شدند، با سبک تک‌پارچهٔ ماژولار آمده است:</p>
+    <p style="text-align:justify;"><b>تیم‌های هم‌راستا با جریان:</b> تیم‌های هم‌راستا با جریان معمولاً مالکِ جریان در سیستم از آغاز تا پایان‌اند و این با شکلِ تک‌پارچه و به‌طورِ کلی خودبسندهٔ تک‌پارچهٔ ماژولار به‌خوبی جور درمی‌آید.</p>
+    <p style="text-align:justify;"><b>تیم‌های توانمندساز:</b> به دلیلِ سطحِ بالای ماژولاریتی و جداسازی دغدغه‌ها در این سبک، توپولوژی‌های تیمِ توانمندساز نیز به‌خوبی کار می‌کنند. متخصصان و اعضای میان‌بُرشی تیم می‌توانند با افزودنِ ماژول‌های تازه به سیستم، پیشنهادهایی بدهند و آزمایش‌هایی انجام دهند، با کمترین اثر بر ماژول‌های موجودِ دیگر.</p>
+    <p style="text-align:justify;"><b>تیم‌های زیرسیستم پیچیده:</b> هر ماژول در معماری تک‌پارچهٔ ماژولار معمولاً بر پایهٔ حوزه یا زیرحوزه‌اش نقشِ مشخصی انجام می‌دهد (مانندِ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">PaymentProcessing</bdi>). این ویژگی با توپولوژیِ تیمِ زیرسیستم پیچیده به‌خوبی کار می‌کند، زیرا اعضای مختلفِ تیم می‌توانند مستقل از دیگر اعضای تیم (و دیگر ماژول‌ها) بر پردازشِ پیچیدهٔ یک حوزه یا زیرحوزه تمرکز کنند.</p>
+    <p style="text-align:justify;"><b>تیم‌های پلتفرم:</b> توسعه‌دهندگان می‌توانند با به‌کارگیریِ ابزارها، سرویس‌ها، <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">API</bdi>‌ها و کارهای مشترک از مزایای توپولوژیِ تیم‌های پلتفرم بهره ببرند؛ این امر عمدتاً به لطفِ درجهٔ بالای ماژولاریتی در این سبک معماری ممکن است.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">واژه‌نامهٔ اختصاصی این بخش</h3>
+    <table dir="rtl" style="width:100%;border-collapse:collapse;font-size:.95rem;">
+      <thead>
+        <tr style="background:#2c5f8a;color:#fff;">
+          <th style="border:1px solid #ccc;padding:.5rem .7rem;text-align:right;">واژهٔ انگلیسی</th>
+          <th style="border:1px solid #ccc;padding:.5rem .7rem;text-align:right;">معادل مصوب/به‌کاررفته در این بخش</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Monolithic Database Topology</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">توپولوژی پایگاه‌دادهٔ تک‌پارچه</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Contextual Data</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">دادهٔ زمینه‌ای</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">On-Demand Provisioning</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">تأمین منابع بر حسب تقاضا</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Unstructured Monolith</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">تک‌پارچهٔ بی‌ساختار</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Intermodule Communication</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">ارتباط میان‌ماژولی</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Package Structure</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">ساختار بسته‌ها</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Automated Governance</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">حاکمیت خودکار</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Pseudocode</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">شبه‌کد</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Cross-Functional Team</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">تیم چندتخصصی</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</article>

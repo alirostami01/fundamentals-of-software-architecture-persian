@@ -1,0 +1,90 @@
+<!-- بخش دوم: خروجی HTML — کامپوننت محتوای داخلی (بدون html/head) — بستهٔ ۸ -->
+<article dir="rtl" lang="fa" style="font-family:'Vazirmatn','IRANSans','Tahoma',sans-serif;line-height:2;max-width:46rem;margin:0 auto;color:#1a1a1a;background:#fff;padding:1.5rem;border:1px solid #e5e5e5;border-radius:8px;">
+
+  <h1 style="font-size:1.7rem;margin:0 0 1rem;border-bottom:3px solid #2c5f8a;padding-bottom:.5rem;">فصل ۲: تفکر معماری (ادامه — بستهٔ ۰۸)</h1>
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">توازن میان معماری و کدنویسی مستقیم</h3>
+    <p style="text-align:justify;">یکی از کارهای دشواری که یک معمار با آن روبه‌روست، یافتن توازن میان کدنویسی مستقیم <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Hands-On Coding)</bdi> و معماری نرم‌افزار است. ما با اطمینان باور داریم که هر معماری باید کدنویسی کند و باید سطح معینی از ژرفای فنی را حفظ کند (بخش «گستردگی فنی» را در صفحهٔ ۲۰ ببینید). با اینکه این کار ساده به نظر می‌رسد، انجام‌دادنش گاهی دشوار است.</p>
+    <p style="text-align:justify;">نخستین توصیهٔ ما به هر کسی که می‌کوشد میان کدنویسی مستقیم و معمار بودن توازن برقرار کند، پرهیز از تلهٔ گلوگاه <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Bottleneck Trap)</bdi> است. ضدالگوی تلهٔ گلوگاه زمانی رخ می‌دهد که معمار مالکیت کدِ مسیر بحرانی <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Critical Path)</bdi> یک سیستم را —معمولاً کدِ چارچوبِ زیرین یا بخش‌های دشوارتر— بر عهده می‌گیرد و برای تیم به گلوگاهی بدل می‌شود. دلیلش این است که معمار توسعه‌دهندهٔ تمام‌وقت نیست و بنابراین باید میان کار توسعه —مثل نوشتن و آزمودن کد منبع— و نقش معماری —رسم نمودارها، شرکت در جلسات، و خب، شرکت در جلساتِ بیشتر— توازن بدهد.</p>
+    <p style="text-align:justify;">یک راه برای پرهیز از تلهٔ گلوگاه این است که معمار بخش‌های حیاتی سیستم را به دیگران در تیم توسعه واگذار کند و خودش روی کدنویسی تکه‌ای کوچک از کارکرد کسب‌وکار —مثل یک سرویس یا صفحهٔ رابط کاربری— متمرکز شود، تکه‌ای که یک تا سه تکرار <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Iteration)</bdi> بعدتر اجرا خواهد شد. این کار سه اثر مثبت دارد. نخست، معمار با نوشتن کد تولیدی <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Production Code)</bdi> تجربهٔ عملی به دست می‌آورد و در عین حال گلوگاه تیم نمی‌شود. دوم، کدِ مسیر بحرانی و کدِ چارچوب در تیم توسعه —که جای اصلی‌شان همان‌جاست— توزیع می‌شود و این به تیم مالکیت و درک بهتری از بخش‌های دشوار سیستم می‌دهد. سوم، و شاید مهم‌تر از همه، معمار دقیقاً همان کدِ منبعِ مرتبط با کسب‌وکاری را می‌نویسد که تیم توسعه می‌نویسد. این کار به او کمک می‌کند با دردهای تیم توسعه دربارهٔ فرایندها، روش‌ها و محیط توسعه بهتر همدلی کند —و امیدواریم برای بهبود آن‌ها نیز دست به کار شود.</p>
+    <p style="text-align:justify;">حال فرض کنیم معمار نتواند با تیم توسعه کد بنویسد. چگونه می‌تواند همچنان دست‌به‌کد بماند و سطحی از ژرفای فنی را حفظ کند؟ چند توصیه و تکنیک برای معمارانی که می‌خواهند به تعمیق توانایی‌های فنی‌شان ادامه دهند:</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h4 style="font-size:1.15rem;color:#2c5f8a;margin:0 0 .6rem;">اثبات‌های مفهوم مکرر</h4>
+    <p style="text-align:justify;">انجام پیاپیِ اثبات مفهوم‌ها <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(<bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">POC</bdi>)</bdi> از معمار می‌خواهد کد منبع بنویسد؛ همچنین این کار به راستی‌آزمایی یک تصمیم معماری با درنظرگرفتن جزئیات پیاده‌سازی کمک می‌کند. برای نمونه، فرض کنید معماری بر سر انتخاب میان دو راه‌حل کش‌گذاری گیر کرده است. یک راه مؤثر برای تصمیم‌گیری این است که در هر دو محصولِ کش یک نمونهٔ کارآمد پیاده‌سازی کنید و نتایج را مقایسه کنید. این کار به معمار اجازه می‌دهد جزئیات پیاده‌سازی و میزان تلاش لازم برای ساخت راه‌حل کامل را از نزدیک ببیند. همچنین می‌تواند ویژگی‌های معماریِ راه‌حل‌های مختلف کش —مثل مقیاس‌پذیری، کارایی و در کل تحمل خطا— را بهتر مقایسه کند.</p>
+    <p style="text-align:justify;">هر جا ممکن بود، معمار باید بهترین کدِ تولیدی‌ای را که از دستش برمی‌آید بنویسد. این تمرین را به دو دلیل توصیه می‌کنیم. نخست، کدِ اثبات مفهومِ «یک‌بارمصرف» <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Throwaway Code)</bdi> در بسیاری اوقات راهش را به مخزن کد منبع <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Source Code Repository)</bdi> باز می‌کند و به معماری مرجع <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Reference Architecture)</bdi> یا نمونه‌ای راهنما برای دیگران بدل می‌شود. هیچ معماری دوست ندارد کدِ شلختهٔ یک‌بارمصرفش را نمایندهٔ کیفیت معمول کارش بدانند. دوم، نوشتن کدِ اثبات مفهومِ باکیفیتِ تولیدی یعنی تمرین نوشتن کدِ باکیفیت و خوش‌ساخت، به‌جای آنکه مدام با ساختن <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">POC</bdi>‌های سریع و شلخته، عادات بدِ کدنویسی را در خود پرورش دهد.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h4 style="font-size:1.15rem;color:#2c5f8a;margin:0 0 .6rem;">پرداختن به بدهی فنی</h4>
+    <p style="text-align:justify;">راه دیگری برای دست‌به‌کد ماندن، دست‌زدن به بخشی از بدهی فنی <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Technical Debt)</bdi> است؛ با این کار تیم توسعه آزاد می‌شود تا روی داستان‌های کاربری <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(User Stories)</bdi> حیاتیِ کارکردی کار کند. بدهی فنی معمولاً اولویت پایینی دارد، پس اگر معمار فرصت نکند وظیفهٔ مرتبط با بدهی فنی را در یک تکرارِ مشخص تمام کند، دنیا به آخر نمی‌رسد و این کار در کل بر موفقیت آن تکرار اثر نمی‌گذارد.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h4 style="font-size:1.15rem;color:#2c5f8a;margin:0 0 .6rem;">رفع اشکال‌ها</h4>
+    <p style="text-align:justify;">به همین ترتیب، کار روی رفع اشکال‌ها <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Bug Fixes)</bdi> درونِ یک تکرار، راه دیگری برای حفظ مهارت‌های کدنویسی مستقیم است که هم‌زمان به تیم توسعه کمک می‌کند. این تکنیک هرچند اصلاً جلوهٔ درخشانی ندارد، به معمار اجازه می‌دهد مشکلات و ضعف‌های درونِ پایگاه کد —و شاید خودِ معماری— را شناسایی کند.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h4 style="font-size:1.15rem;color:#2c5f8a;margin:0 0 .6rem;">خودکارسازی</h4>
+    <p style="text-align:justify;">بهره‌گیری از خودکارسازی <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Automation)</bdi> با ساختن ابزارهای سادهٔ خط فرمان <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Command-Line Tools)</bdi> و تحلیل‌گرها برای کمک به کارهای روزمرهٔ تیم توسعه، راه عالی دیگری برای حفظ مهارت‌های کدنویسی مستقیم است که هم‌زمان تیم توسعه را کارآمدتر می‌کند. کارهای تکراری‌ای را که تیم توسعه انجام می‌دهد پیدا کنید و خودکارشان کنید؛ از خودکارسازی سپاسگزار خواهند بود. چند نمونه: اعتبارسنج‌های خودکارِ کد منبع برای بررسی استانداردهای مشخصِ کدنویسی که در آزمون‌های <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">lint</bdi> دیگر پیدا نمی‌شوند، چک‌لیست‌های خودکار، و وظایف تکراریِ بازآرایی کد <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Code Refactoring)</bdi> به‌صورت دستی.</p>
+    <p style="text-align:justify;">خودکارسازی به شکل تحلیل معماری و توابع برازش خودکار، برای تضمین سرزندگی و انطباق معماری، راه عالی دیگری برای دست‌به‌کد ماندن است. برای نمونه، معمار می‌تواند با نوشتن کد <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Java</bdi> در <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">ArchUnit</bdi> روی پلتفرم <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Java</bdi>، انطباق معماری را خودکار کند، یا توابع برازشِ سفارشی‌ای بنویسد که هم انطباق معماری را تضمین کند و هم تجربهٔ عملی به دست آورد. دربارهٔ این تکنیک‌ها در فصل ۶ صحبت می‌کنیم.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h4 style="font-size:1.15rem;color:#2c5f8a;margin:0 0 .6rem;">بازبینی کد</h4>
+    <p style="text-align:justify;">آخرین تکنیک برای دست‌به‌کد ماندن به‌عنوان معمار، انجام پیاپی بازبینی کد <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(Code Reviews)</bdi> است. معمار هرچند عملاً کد نمی‌نویسد، دست‌کم این کار او را درگیرِ کد منبع نگه می‌دارد. فایده‌های دیگر بازبینی کد عبارت‌اند از تضمینِ انطباق با معماری و شناسایی فرصت‌های مربی‌گری و راهنمایی در تیم.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">چیزهای بیشتری در تفکر معماری هست</h3>
+    <p style="text-align:justify;">این فصل بنیان‌های آغازِ اندیشیدن مثل یک معمار را شکل می‌دهد. با این حال، اندیشیدن مثل یک معمار بسیار فراتر از آن چیزی است که در این فصل آمد. اندیشیدن مثل یک معمار یعنی درکِ ساختار کلیِ یک سیستم (این موضوع را در فصل ۳ دنبال می‌کنیم)، درکِ دغدغه‌های کسب‌وکار و ترجمهٔ آن دغدغه‌ها به ویژگی‌های معماری (چهار فصل به همین موضوع اختصاص داریم)، و سرانجام، دیدن سیستم از راه مؤلفه‌های منطقی‌اش —بلوک‌های سازندهٔ یک سیستم— (این موضوع را در فصل ۸ بررسی می‌کنیم).</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">واژه‌نامهٔ اختصاصی این بخش</h3>
+    <table dir="rtl" style="width:100%;border-collapse:collapse;font-size:.95rem;">
+      <thead>
+        <tr style="background:#2c5f8a;color:#fff;">
+          <th style="border:1px solid #ccc;padding:.5rem .7rem;text-align:right;">واژهٔ انگلیسی</th>
+          <th style="border:1px solid #ccc;padding:.5rem .7rem;text-align:right;">معادل مصوب/به‌کاررفته در این بخش</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Hands-On Coding</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">کدنویسی مستقیم</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Bottleneck Trap</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">تلهٔ گلوگاه</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Critical Path</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">مسیر بحرانی</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Iteration</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">تکرار</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Production Code</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">کد تولیدی</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Proof of Concept (POC)</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">اثبات مفهوم (POC)</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Throwaway Code</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">کد یک‌بارمصرف</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Source Code Repository</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">مخزن کد منبع</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Reference Architecture</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">معماری مرجع</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Technical Debt</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">بدهی فنی</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">User Story</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">داستان کاربری</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Bug Fix</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">رفع اشکال</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Automation</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">خودکارسازی</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Command-Line Tool</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">ابزار خط فرمان</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Code Refactoring</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">بازآرایی کد</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Code Review</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">بازبینی کد</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</article>

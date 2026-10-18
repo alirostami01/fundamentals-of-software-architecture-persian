@@ -1,0 +1,52 @@
+<!-- بخش دوم: خروجی HTML — کامپوننت محتوای داخلی (بدون html/head) — بستهٔ ۱۰۵ -->
+<article dir="rtl" lang="fa" style="font-family:'Vazirmatn','IRANSans','Tahoma',sans-serif;line-height:2;max-width:46rem;margin:0 auto;color:#1a1a1a;background:#fff;padding:1.5rem;border:1px solid #e5e5e5;border-radius:8px;">
+
+  <h1 style="font-size:1.7rem;margin:0 0 1rem;border-bottom:3px solid #2c5f8a;padding-bottom:.5rem;">فصل ۲۶: تقاطع‌های معماری (ادامه — بستهٔ ۱۰۵)</h1>
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">معماری و هوش مصنوعی مولد</h3>
+    <p style="text-align:justify;">اکنون که ویراست دوم این کتاب را در اوایل ۲۰۲۵ می‌نویسیم، <b>هوش مصنوعی مولد</b> (generative artificial intelligence یا <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Gen AI</bdi>) و مدل‌های زبانی بزرگ <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(LLMs)</bdi> به دنیای توسعه و طراحی نرم‌افزار راه یافته‌اند. بسیاری از شرکت‌ها آن‌ها را در سیستم‌ها به کار می‌گیرند تا کارهایی را انجام دهند که پیش‌تر تنها انسان‌ها به‌صورت دستی انجام می‌دادند. شگفت‌آور نیست که هوش مصنوعی مولد با معماری نرم‌افزار نیز تقاطع دارد: معماران مدل‌های زبانی بزرگ را در معماری‌های نرم‌افزار می‌گنجانند و برخی حتی از ابزارهای هوش مصنوعی مولد کمک می‌گیرند تا در مسائل دشوار بیندیشند.</p>
+    <h4 style="font-size:1.15rem;color:#2c5f8a;margin:1.2rem 0 .6rem;">گنجاندن هوش مصنوعی مولد در معماری</h4>
+    <p style="text-align:justify;">یکی از رویکردهایی که برای گنجاندن هوش مصنوعی مولد در معماری توصیه می‌کنیم، بهره‌گیری از <b>انتزاع</b> <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(abstraction)</bdi> و <b>ماژولاریتی</b> است. مهم است که بتوان یک مدل زبانی بزرگ را به‌سرعت با مدلی دیگر جایگزین کرد، و امکانِ نرده‌های محافظ (guardrails یا rails) و ارزیابی نتایج (evaluations یا evals) مدل‌های زبانی گوناگون را فراهم کرد.</p>
+    <p style="text-align:justify;">برای مثال، فرض کنید یک شرکت کاریابی می‌خواهد از هوش مصنوعی مولد برای ناشناس‌سازی <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(anonymize)</bdi> رزومه‌ها بهره بگیرد، با این هدف که سوگیری کاهش یابد و تمرکز بر مهارت‌های کارجویان باشد، نه بر ویژگی‌های جمعیت‌شناختی یا عواملی از این دست. این کار معمولاً به دست انسان‌ها انجام می‌شود، اما یک مدل زبانی بزرگ نیز به‌آسانی از عهده‌اش برمی‌آید. اما آیا نتایج مدل زبانی دقیق است؟ آیا اطلاعات بیش از حدی را از رزومه حذف می‌کند؟ آیا اطلاعات جمعیت‌شناختیِ بیش از حدی را باقی می‌گذارد؟ برای این نوع سیستم، حیاتی است که بتوان نمونه‌ها و سنجه‌ها را گرد آورد و موتورهای مدل زبانی را با هم مقایسه کرد. ابزارهایی مانند <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Langfuse</bdi> به ایجاد این نوع مشاهده‌پذیری در معماری کمک می‌کنند.</p>
+    <h4 style="font-size:1.15rem;color:#2c5f8a;margin:1.2rem 0 .6rem;">هوش مصنوعی مولد به‌عنوان دستیار معمار</h4>
+    <p style="text-align:justify;">یک مدل زبانی بزرگ (مانند <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Copilot</bdi>) با پرامپت مناسب می‌تواند کد منبعی تولید کند که در زمان و تلاش توسعه‌دهندگان صرفه‌جویی فراوانی می‌کند. این مدل‌ها برای حل مسائل بسیار مشخص و قطعی عالی‌اند؛ مانند «به زبان برنامه‌نویسی <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">C#</bdi> کد منبعی بنویس که یک <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">PIN</bdi> چهاررقمیِ یکتا بدون ارقام تکراری تولید کند.» اما آیا فناوری مدل‌های زبانی بزرگ می‌تواند در کارهای معمول به معماران نرم‌افزار کمک کند؟ در ادامه چند نمونهٔ کلی از پرامپت‌های مرتبط با معماری آمده است:</p>
+    <ul style="margin:.6rem 1.2rem;padding:0;line-height:1.9;">
+      <li>ارزیابی ریسک: «آیا در این معماری حوزه‌های پرریسک وجود دارد؟»</li>
+      <li>کاهش ریسک: «با این ریسک چگونه برخورد کنم؟»</li>
+      <li>ضدالگوها: «آیا ضدالگوی رایجی در این معماری وجود دارد؟»</li>
+      <li>تصمیم‌ها: «برای این گردش کار از ارکستراسیون استفاده کنم یا کرئوگرافی؟»</li>
+    </ul>
+    <p style="text-align:justify;">تا زمان نگارش این ویراست دوم (اوایل ۲۰۲۵)، در این زمینه موفقیت چندانی نداشته‌ایم. پرسیدن از یک مدل زبانی بزرگ که برای موقعیتی مشخص معماری میکروسرویس‌ها مناسب‌تر است یا معماری مبتنی بر فضا، به‌ندرت (اگر اصلاً) پاسخ درست را به دست می‌دهد. چرا؟ زیرا چنان‌که در این کتاب نشان داده‌ایم، <b>همه‌چیز در معماری نرم‌افزار یک مصالحه است</b>. مدل‌های زبانی بزرگ برای درک <b>دانش</b> عالی‌اند، اما تا امروز همچنان <b>خردِ</b> لازم برای گرفتن تصمیم‌های مناسب را ندارند. این خرد چنان بافتار گسترده‌ای را در بر می‌گیرد که برای معمار بسیار سریع‌تر است خودش یک مسئلهٔ کسب‌وکار را حل کند تا اینکه همه‌چیز را دربارهٔ مسئله و محیط و بافتار گسترده‌اش به یک مدل زبانی بیاموزد. همین که هشت تقاطع دیگر را برای توجه برشمرده‌ایم، باید گواه کافی بر دشواری این کار باشد.</p>
+    <p style="text-align:justify;">با این همه، ابزارهای امیدوارکننده‌ای نیز دیده‌ایم. برای نمونه، <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Thoughtworks Haiven</bdi> می‌تواند یک نمودار معماری را تفسیر کند و معماری نرم‌افزار را به‌طور کامل توصیف کند؛ و به این ترتیب کارِ صادر کردنِ نمودار به یک قالب ماشین‌خوان <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;font-size:.92em;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">(machine-readable format)</bdi> مانند <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">XML</bdi> و استفاده از آن در پرامپت مدل زبانی را حذف می‌کند. کاربران پس از وارد کردنِ این اطلاعات می‌توانند پرسش‌های ساده‌ای دربارهٔ معماری از <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">Haiven</bdi> بپرسند؛ مثلاً اینکه آیا می‌تواند گلوگاه‌ها یا مشکلاتی را شناسایی کند. تلاش‌های دیگر شامل استفاده از یک مدل زبانی بزرگ برای ترجمهٔ یک نمودار <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">PlantUML</bdi> یا توصیفی شبه‌زبانی از معماری به کد اجرایی <bdi dir="ltr" style="display:inline-block;unicode-bidi:isolate;font-family:Consolas,Monaco,monospace;background:#f4f6f8;border:1px solid #dde3e8;border-radius:3px;padding:0 .35em;direction:ltr;">ArchUnit</bdi> برای حاکمیت بر ساختار سیستم بوده است. فعالیت زیادی در این زمینه در جریان است، پس در سال‌های آینده انتظار تغییرات سریعی را در چگونگی کمک هوش مصنوعی مولد به معماران داشته باشید.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">خلاصه</h3>
+    <p style="text-align:justify;">معماری نرم‌افزار فعالیتی کل‌نگر است که جنبه‌های بسیاری از یک سازمان را در بر می‌گیرد. معماران نرم‌افزارِ اثربخش درمی‌یابند که طراحی و نگهداری یک معماری بسیار فراتر از صرفاً انتخاب یک سبک معماری خاص و پیش رفتن به سوی پیاده‌سازی است. این کار همچنین به معنای اطمینان از همسوییِ معماری با دیگر جنبه‌های محیط، و بهره‌گیری از مهارت‌های ارتباط و همکاری‌ای است که در بخش سوم شرح داده شد تا این همسویی محقق شود.</p>
+  </section>
+
+  <hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">
+
+  <section>
+    <h3 style="font-size:1.35rem;color:#2c5f8a;margin:0 0 .8rem;">واژه‌نامهٔ اختصاصی این بخش</h3>
+    <table dir="rtl" style="width:100%;border-collapse:collapse;font-size:.95rem;">
+      <thead>
+        <tr style="background:#2c5f8a;color:#fff;">
+          <th style="border:1px solid #ccc;padding:.5rem .7rem;text-align:right;">واژهٔ انگلیسی</th>
+          <th style="border:1px solid #ccc;padding:.5rem .7rem;text-align:right;">معادل مصوب/به‌کاررفته در این بخش</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Abstraction</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">انتزاع</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Guardrails</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">نرده‌های محافظ</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Evals (evaluations)</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">ارزیابی‌ها</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Anonymize</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">ناشناس‌سازی</td></tr>
+        <tr><td dir="ltr" style="border:1px solid #ccc;padding:.4rem .7rem;text-align:left;font-family:Consolas,Monaco,monospace;background:#f7f9fb;">Machine-Readable Format</td><td style="border:1px solid #ccc;padding:.4rem .7rem;">قالب ماشین‌خوان</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</article>
