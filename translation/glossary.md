@@ -1232,3 +1232,12 @@
 | Modeling Language | زبان مدل‌سازی | chunk-90 | مصوب |
 | Deployable Artifact | مصنوع قابل استقرار | chunk-90 | مصوب |
 | Computer-Assisted Software Engineering (CASE) | مهندسی نرم‌افزار رایانه‌یار (CASE) | chunk-90 | مصوب |
+| Siloed (environment) | جزیره‌ای | chunk-91 | مصوب |
+| Waterfall | آبشاری | chunk-91 | مصوب |
+| Constraints | محدودیت‌ها | chunk-91 | مصوب |
+| Boundaries | مرزها | chunk-91 | مصوب |
+| Control-Freak Architect | معمار کنترل‌گرِ افراطی | chunk-91 | مصوب |
+| Armchair Architect | معمار پشت‌میزنشین | chunk-91 | مصوب |
+| Effective Architect | معمار اثربخش | chunk-91 | مصوب |
+| Naming Conventions | قراردادهای نام‌گذاری | chunk-91 | مصوب |
+| Parallel Loader Pattern | الگوی بارگذار موازی | chunk-91 | مصوب |
