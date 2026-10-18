@@ -892,7 +892,7 @@
 | Rate of Change | نرخ تغییر | chunk-59 | مصوب |
 | Schema | طرح‌واره | chunk-59 | مصوب |
 | Artifact (architecture) | مصنوع | chunk-59 | مصوب |
-| Programmatic Load Balancing | توازن‌بارِ برنامه‌نویسی‌شده | chunk-59 | مصوب |
+| Programmatic Load Balancing | توازن‌بارِ برنامه‌ای | chunk-59 | مصوب |
 | Competing Consumers | مصرف‌کنندگان رقیب | chunk-59 | مصوب |
 | Consumer Group | گروه مصرف‌کننده | chunk-59 | مصوب |
 | Event Tree Diagram | نمودار درخت رویداد | chunk-59 | مصوب |
@@ -906,3 +906,25 @@
 | Online Bidding System | سیستم مزایدهٔ برخط | chunk-60 | مصوب |
 | Backend Processing | پردازش پس‌زمینه‌ای | chunk-60 | مصوب |
 | Auditing | ممیزی | chunk-60 | مصوب |
+| Web Server | سرور وب | chunk-61 | مصوب |
+| Scale Out | مقیاس‌دهیِ افقی | chunk-61 | مصوب |
+| High-Volume Application | برنامهٔ پرحجم | chunk-61 | مصوب |
+| Tuple Space | فضای تاپل | chunk-61 | مصوب |
+| Shared Memory | حافظهٔ مشترک | chunk-61 | مصوب |
+| Replicated In-Memory Data Grid | شبکهٔ دادهٔ درون‌حافظه‌ایِ تکثیرشده | chunk-61 | مصوب |
+| Processing Unit | واحد پردازش | chunk-61 | مصوب |
+| Data Pump | پمپ داده | chunk-61 | مصوب |
+| Persistent Queue | صف ماندگار | chunk-61 | مصوب |
+| Virtualized Middleware | میان‌افزار مجازی‌شده | chunk-61 | مصوب |
+| Messaging Grid | شبکهٔ پیام‌رسانی | chunk-61 | مصوب |
+| Session State | حالت نشست | chunk-61 | مصوب |
+| Data Grid | شبکهٔ داده | chunk-61 | مصوب |
+| Processing Grid | شبکهٔ پردازش | chunk-61 | مصوب |
+| Deployment Manager | مدیر استقرار | chunk-61 | مصوب |
+| Data Writer | نویسندهٔ داده | chunk-61 | مصوب |
+| Data Reader | خوانندهٔ داده | chunk-61 | مصوب |
+| Replication Engine | موتور تکثیر | chunk-61 | مصوب |
+| Load Balancer | توازن‌دهندهٔ بار | chunk-61 | مصوب |
+| Service Orchestrator | هماهنگ‌کنندهٔ سرویس | chunk-61 | مصوب |
+| Round-Robin Algorithm | الگوریتم نوبت‌گردشی | chunk-61 | مصوب |
+| Next-Available Algorithm | الگوریتم «نخستین واحد در دسترس» | chunk-61 | مصوب |
