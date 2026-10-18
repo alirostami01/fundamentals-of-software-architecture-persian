@@ -1339,3 +1339,7 @@
 | Residuality Theory | نظریهٔ باقی‌ماندگی | chunk-104 | مصوب |
 | Stressor | عامل فشار | chunk-104 | مصوب |
 | Residue | باقی‌مانده | chunk-104 | مصوب |
+| Abstraction | انتزاع | chunk-105 | مصوب |
+| Evals (evaluations) | ارزیابی‌ها | chunk-105 | مصوب |
+| Anonymize | ناشناس‌سازی | chunk-105 | مصوب |
+| Machine-Readable Format | قالب ماشین‌خوان | chunk-105 | مصوب |
