@@ -1280,3 +1280,8 @@
 | Inversion of Control | وارونگی کنترل | chunk-95 | مصوب |
 | People Skills | مهارت‌های مردمی | chunk-95 | مصوب |
 | Team Dynamics | پویایی‌های تیم | chunk-95 | مصوب |
+| Negotiation | مذاکره | chunk-96 | مصوب |
+| Lead Architect | معمار ارشد | chunk-96 | مصوب |
+| Product Sponsor | حامی محصول | chunk-96 | مصوب |
+| Unplanned Downtime | زمان ازکارافتادگیِ برنامه‌ریزی‌نشده | chunk-96 | مصوب |
+| Divide and Conquer | تفرقه بینداز و حکومت کن | chunk-96 | مصوب |
