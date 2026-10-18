@@ -1211,3 +1211,14 @@
 | Variable Scalability | مقیاس‌پذیری متغیر | chunk-88 | مصوب |
 | Ambulance Pattern | الگوی Ambulance (آمبولانس) | chunk-88 | مصوب |
 | Regulatory Requirements | الزامات قانونی | chunk-88 | مصوب |
+| Diagramming | نمودارکشی | chunk-89 | مصوب |
+| Representational Consistency | سازگاری بازنمایی | chunk-89 | مصوب |
+| Shared Understanding | درک مشترک | chunk-89 | مصوب |
+| Low-Fidelity Artifacts | مصنوعات کم‌جزئیات | chunk-89 | مصوب |
+| Ephemeral (artifact) | گذرا | chunk-89 | مصوب |
+| Irrational Artifact Attachment (antipattern) | دلبستگی نامعقول به مصنوع | chunk-89 | مصوب |
+| Just-in-Time | درست به‌موقع | chunk-89 | مصوب |
+| Index Cards | کارت‌های فهرست | chunk-89 | مصوب |
+| Layers (diagramming tools) | لایه‌ها | chunk-89 | مصوب |
+| Stencils/Templates | شابلون‌ها/الگوها | chunk-89 | مصوب |
+| Magnets (diagramming tools) | آهنرباها | chunk-89 | مصوب |
