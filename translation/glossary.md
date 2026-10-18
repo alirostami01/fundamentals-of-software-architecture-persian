@@ -1183,3 +1183,12 @@
 | Brain Trust | گنجینهٔ دانش | chunk-84 | مصوب |
 | Event Sourcing | رویدادنگاری | chunk-84 | مصوب |
 | Prompt | پرامپت | chunk-84 | مصوب |
+| Risk Storming | طوفان ریسک | chunk-85 | مصوب |
+| Subjective | ذهنی | chunk-85 | مصوب |
+| Objective | عینی | chunk-85 | مصوب |
+| Risk-Assessment Matrix | ماتریس ارزیابی ریسک | chunk-85 | مصوب |
+| Impact (risk) | اثر | chunk-85 | مصوب |
+| Likelihood (risk) | احتمال وقوع | chunk-85 | مصوب |
+| Signal-to-Noise Ratio | نسبت سیگنال به نویز | chunk-85 | مصوب |
+| Direction of Risk | جهت ریسک | chunk-85 | مصوب |
+| Key (legend) | راهنما | chunk-85 | مصوب |
