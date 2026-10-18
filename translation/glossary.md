@@ -725,3 +725,13 @@
 | Domain Boundaries | مرزهای حوزه | chunk-46 | مصوب |
 | Technically Partitioned Teams | تیم‌های افرازشده به‌صورت فنی | chunk-46 | مصوب |
 | Interteam Communication | ارتباط میان‌تیمی | chunk-46 | مصوب |
+| Persistence Logic | منطق ماندگاری | chunk-47 | مصوب |
+| Federated (UI/Database) | فدراتیو | chunk-47 | مصوب |
+| Test Coverage | پوشش آزمون | chunk-47 | مصوب |
+| Self-Contained (service) | خودبسنده | chunk-47 | مصوب |
+| Programmatic Scalability/Elasticity | مقیاس‌پذیری/کشسانیِ برنامه‌ای | chunk-47 | مصوب |
+| Failover | جابه‌جایی هنگام خرابی | chunk-47 | مصوب |
+| In-Memory Caching | کش‌گذاری درون‌حافظه‌ای | chunk-47 | مصوب |
+| Database-Connection Pooling | تجمیع اتصال‌های پایگاه‌داده | chunk-47 | مصوب |
+| Unit of Work | واحد کار | chunk-47 | مصوب |
+| Eventual Consistency | سازگاری نهایی | chunk-47 | مصوب |
