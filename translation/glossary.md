@@ -1314,3 +1314,8 @@
 | Business Environment | محیط کسب‌وکار | chunk-101 | مصوب |
 | Operational Concerns | دغدغه‌های عملیاتی | chunk-101 | مصوب |
 | Internal Memory | حافظهٔ داخلی | chunk-101 | مصوب |
+| Operations | عملیات | chunk-102 | مصوب |
+| Elastic Scale | مقیاس‌پذیری کشسان | chunk-102 | مصوب |
+| Region (cloud) | منطقه | chunk-102 | مصوب |
+| Availability Zone | ناحیهٔ دسترس‌پذیری | chunk-102 | مصوب |
+| Co-locating | هم‌مکان‌سازی | chunk-102 | مصوب |
