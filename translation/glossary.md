@@ -992,3 +992,16 @@
 | Standby | آماده‌به‌کار | chunk-66 | مصوب |
 | Asking Price | قیمت پیشنهادیِ فروشنده | chunk-66 | مصوب |
 | Specialized Architectural Style | سبک معماریِ تخصصی | chunk-66 | مصوب |
+| Orchestration-Driven Service-Oriented Architecture (SOA) | معماری سرویس‌گرای ارکستراسیون‌محور | chunk-67 | مصوب |
+| Taxonomy of Services | طبقه‌بندیِ سرویس‌ها | chunk-67 | مصوب |
+| Integration Architecture | معماری یکپارچه‌سازی | chunk-67 | مصوب |
+| Distributed Computing | رایانش توزیع‌شده | chunk-67 | مصوب |
+| Operating System | سیستم‌عامل | chunk-67 | مصوب |
+| Entity Service | سرویس موجودیت | chunk-67 | مصوب |
+| Semantic Diffusion | پخش معنایی | chunk-67 | مصوب |
+| Enterprise-Level Reuse | بازاستفاده در سطح سازمان | chunk-67 | مصوب |
+| Business Services | سرویس‌های کسب‌وکار | chunk-67 | مصوب |
+| Litmus Test | محک | chunk-67 | مصوب |
+| Service Signature | امضای سرویس | chunk-67 | مصوب |
+| Enterprise Services | سرویس‌های سازمانی | chunk-67 | مصوب |
+| Reusable Assets | دارایی‌های بازاستفاده‌پذیر | chunk-67 | مصوب |
