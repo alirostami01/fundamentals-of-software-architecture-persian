@@ -36,7 +36,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from build_book import MASTER_H, NOTE, PARTS, SUBTITLE, TITLE_EN, TITLE_FA, master_rows, units  # noqa: E402
+from build_book import front_items, MASTER_H, NOTE, PARTS, SUBTITLE, TITLE_EN, TITLE_FA, master_rows, units  # noqa: E402
 from build_chapter import gloss_html  # noqa: E402
 
 FA = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
@@ -96,6 +96,10 @@ hr {{ border: none !important; border-top: .6pt solid #c8c8c8 !important; }}
 #glossary table {{ font-size: 9pt !important; line-height: 1.45 !important; }}
 #glossary td, #glossary th {{ padding: 1.2mm 2.5mm !important; }}
 
+/* بخش‌های پیش از متن (حمایت از پروژه) روی صفحهٔ جداگانه */
+section.support {{ break-after: page; margin-top: 30mm !important; padding: 8mm 9mm !important; }}
+section.support a {{ overflow-wrap: anywhere; }}
+
 /* صفحهٔ عنوان */
 .cover {{ page: cover; height: 245mm; display: flex; flex-direction: column; justify-content: center;
           text-align: center; break-after: page; }}
@@ -124,12 +128,23 @@ def strip_tags(s: str) -> str:
     return re.sub(r"\s+", " ", htmllib.unescape(re.sub(r"<[^>]+>", "", s))).strip()
 
 
+def chapter_no(anchor: str):
+    m = re.fullmatch(r"chapter-(\d+)", anchor)
+    return int(m.group(1)) if m else None
+
+
 def load_unit(anchor: str, base: str):
     """(article_html, [(level, id, title_html, title_text, heading_pos), ...], number of h1/h3 headings)."""
     t = (HERE / f"{base}.html").read_text(encoding="utf-8")
     t = re.sub(r"^<!--.*?-->\s*", "", t, flags=re.S).strip()
-    t = t.replace("<article ", f'<article id="{anchor}" class="unit" ', 1)
+    t = t.replace("<article ", '<article class="unit" ', 1)
     entries = []
+    # front matter before the H1 (e.g. «حمایت از پروژه» in chapter 1): own TOC entry/bookmark, own page
+    for fid, ftitle in front_items(chapter_no(anchor)):
+        if f'id="{fid}"' in t:
+            entries.append((1, fid, ftitle, ftitle, None))
+    # the unit anchor sits on the H1, so TOC page numbers point at the chapter title, not the front matter
+    t = re.sub(r"<h1([^>]*)>", lambda m: f'<h1 id="{anchor}"{m.group(1)}>', t, count=1)
     h1 = re.search(r"<h1[^>]*>(.*?)</h1>", t, re.S)
     entries.append((1, anchor, h1.group(1), strip_tags(h1.group(1)), 0))
     k = 0
@@ -274,8 +289,8 @@ def outline_from_chromium(pdf_bytes: bytes, entries, n_heads: int):
     doc.close()
     if len(raw) != n_heads:
         print(f"    هشدار: سرفصل‌های Chromium ({len(raw)}) با فایل ({n_heads}) نمی‌خواند؛ فقط نشانک فصل ساخته شد")
-        return [[1, entries[0][3], 1]]
-    return [[lvl, txt, raw[pos][2]] for lvl, _, _, txt, pos in entries]
+        return [[1, e[3], 1] for e in entries if e[0] == 1]
+    return [[lvl, txt, 1 if pos is None else raw[pos][2]] for lvl, _, _, txt, pos in entries]
 
 
 # ───────────────────────────── builds ─────────────────────────────

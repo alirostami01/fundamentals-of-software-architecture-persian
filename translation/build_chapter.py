@@ -25,6 +25,8 @@ HERE = Path(__file__).resolve().parent
 HR = '<hr style="border:none;border-top:1px dashed #bbb;margin:1.4rem 0;">'
 GLOSS_H = "واژه‌نامهٔ اختصاصی این فصل"
 GLOSS_H_CHUNK = "واژه‌نامهٔ اختصاصی این بخش"
+# بخش‌های پیش از متن (front matter) که در آغاز فایل یک فصل، پیش از تیتر H1، می‌آیند
+FRONT = {1: ["support"]}          # فصل ۱ ← front/support.md و front/support.html («حمایت از پروژه»)
 
 
 def _split_chunk_md(n: int):
@@ -133,6 +135,18 @@ def merge_html(chunks, drops, rows):
     return f"{comment}\n{art}\n\n  {h1}{inner}\n\n</article>\n"
 
 
+def add_front_matter(chapter, md, htm):
+    """Prepend front-matter blocks (front/NAME.md|html) before the chapter H1. Idempotent."""
+    for name in reversed(FRONT.get(chapter, [])):
+        fmd = (HERE / "front" / f"{name}.md").read_text(encoding="utf-8").strip()
+        fht = (HERE / "front" / f"{name}.html").read_text(encoding="utf-8").strip()
+        if fmd.split("\n", 1)[0] not in md.split("\n# ", 1)[0] + "\n":
+            md = fmd + "\n\n" + md
+        if f'id="{name}"' not in htm:
+            htm = re.sub(r"(<article[^>]*>\n\n  )", lambda m: m.group(1) + fht + "\n\n  ", htm, count=1)
+    return md, htm
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("chapter", type=int)
@@ -154,6 +168,8 @@ def main():
         md = md.replace("این فصل", f"این {a.unit}")
         htm = htm.replace("این فصل", f"این {a.unit}").replace("کامل فصل", f"کامل {a.unit}")
     out = a.out or f"chapter-{a.chapter:02d}"
+    if not a.out:
+        md, htm = add_front_matter(a.chapter, md, htm)
     (HERE / f"{out}.md").write_text(md, encoding="utf-8")
     (HERE / f"{out}.html").write_text(htm, encoding="utf-8")
     print(f"{out}.md/html written; glossary rows: {len(rows)}")

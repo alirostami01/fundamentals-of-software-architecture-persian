@@ -11,7 +11,7 @@ import html as htmllib
 import re
 from pathlib import Path
 
-from build_chapter import gloss_html
+from build_chapter import FRONT, gloss_html
 
 HERE = Path(__file__).resolve().parent
 FA = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
@@ -31,14 +31,31 @@ BACK = (f'  <p style="text-align:left;margin:1rem 0 0;font-size:.9rem;">'
         f'<a href="#toc" style="{A}">↑ بازگشت به فهرست مطالب</a></p>\n')
 
 
+def first_h1(path):
+    """Title of a chapter file = its first H1 (front matter such as «حمایت از پروژه» may precede it)."""
+    for l in path.read_text(encoding="utf-8").split("\n"):
+        if l.startswith("# "):
+            return l[2:].strip()
+    raise ValueError(f"no H1 in {path}")
+
+
+def front_items(n):
+    """[(id, title)] of the front-matter blocks placed before chapter n (see build_chapter.FRONT)."""
+    out = []
+    for name in FRONT.get(n, []):
+        head = (HERE / "front" / f"{name}.md").read_text(encoding="utf-8").split("\n", 1)[0]
+        out.append((name, re.sub(r"^#+\s*", "", head).strip()))
+    return out
+
+
 def units():
     """(anchor, base filename, title, chapter number or None)"""
     out = []
     for n in range(1, 28):
         f = HERE / f"chapter-{n:02d}.md"
-        title = f.read_text(encoding="utf-8").split("\n", 1)[0][2:].strip()
+        title = first_h1(f)
         out.append((f"chapter-{n:02d}", f"chapter-{n:02d}", title, n))
-    title = (HERE / "appendix.md").read_text(encoding="utf-8").split("\n", 1)[0][2:].strip()
+    title = first_h1(HERE / "appendix.md")
     out.append(("appendix", "appendix", title, None))
     return out
 
@@ -61,10 +78,17 @@ def build_md(us, rows):
             md += ["", f"**{PARTS[n]}**", ""]
         if n is None:
             md += [""]
+        md += [f"- [{ft}](#{fid})" for fid, ft in front_items(n)]
         md.append(f"- [{title}](#{anchor})")
     md.append(f"- [{MASTER_H}](#glossary)")
-    for anchor, base, _, _ in us:
+    for anchor, base, _, _n in us:
         body = (HERE / f"{base}.md").read_text(encoding="utf-8").strip()
+        if not body.startswith("# "):                     # front matter before the H1 gets its own anchor
+            front, body = body.split("\n# ", 1)
+            body = "# " + body
+            front = re.sub(r"\n+---\s*$", "", front.strip())
+            fid = front_items(_n)[0][0] if front_items(_n) else f"{anchor}-front"
+            md += ["", "---", "", f'<a id="{fid}"></a>', "", front]
         md += ["", "---", "", f'<a id="{anchor}"></a>', "", body]
     md += ["", "---", "", '<a id="glossary"></a>', "", f"# {MASTER_H}", "",
            f"این واژه‌نامه همهٔ {str(len(rows)).translate(FA)} معادل مصوبِ به‌کاررفته در ترجمه را "
@@ -84,6 +108,7 @@ def build_html(us, rows):
         elif not toc or n is None:
             if toc: toc.append("      </ul>")
             toc.append('      <ul style="margin:.2rem 1.2rem;padding:0;line-height:1.9;">')
+        toc += [f'        <li><a href="#{fid}" style="{A}">{htmllib.escape(ft)}</a></li>' for fid, ft in front_items(n)]
         toc.append(f'        <li><a href="#{anchor}" style="{A}">{htmllib.escape(title)}</a></li>')
     toc.append(f'        <li><a href="#glossary" style="{A}">{MASTER_H}</a></li>')
     toc.append("      </ul>")

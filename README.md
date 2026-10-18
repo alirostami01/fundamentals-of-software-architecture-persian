@@ -13,7 +13,7 @@
 
 - **متن کامل کتاب:** ۲۷ فصل و پیوست «پرسش‌های بحث»، ترجمه‌شده در ۱۱۰ بستهٔ ۱۰۰۰ تا ۱۵۰۰ کلمه‌ای.
 - **سه قالب:** Markdown، HTML راست‌به‌چپ و PDF، هم برای هر فصل و هم برای کل کتاب.
-- **نسخهٔ PDF کتاب:** ۶۴۹ صفحه، با فهرست مطالب قابل کلیک، شمارهٔ صفحه و نشانک‌های PDF. هر فصل هم PDF جداگانه دارد.
+- **نسخهٔ PDF کتاب:** ۶۵۰ صفحه، با فهرست مطالب قابل کلیک، شمارهٔ صفحه و نشانک‌های PDF. هر فصل هم PDF جداگانه دارد.
 - **شکل‌ها:** هر ۲۴۱ شکل کتاب در جای خود آمده و عنوان‌هایشان به فارسی ترجمه شده است.
 - **واژه‌نامه:** واژه‌نامهٔ اصلی با ۱۳۶۶ اصطلاح، به‌همراه واژه‌نامهٔ اختصاصی در پایان هر فصل.
 - **لحن:** فارسی معیار، روان و امروزی با بار آکادمیک.
@@ -33,7 +33,7 @@
 
 | # | عنوان فارسی | عنوان انگلیسی | Markdown | HTML | PDF |
 |---|---|---|---|---|---|
-| ۱ | مقدمه | Introduction | [MD](translation/chapter-01.md) | [HTML](translation/chapter-01.html) | [PDF](translation/pdf/chapters/chapter-01.pdf) · ۱۶ ص |
+| ۱ | مقدمه | Introduction | [MD](translation/chapter-01.md) | [HTML](translation/chapter-01.html) | [PDF](translation/pdf/chapters/chapter-01.pdf) · ۱۷ ص |
 | | **بخش اول: مبانی** (Part I. Foundations) | | | | |
 | ۲ | تفکر معماری | Architectural Thinking | [MD](translation/chapter-02.md) | [HTML](translation/chapter-02.html) | [PDF](translation/pdf/chapters/chapter-02.pdf) · ۲۳ ص |
 | ۳ | ماژولاریتی | Modularity | [MD](translation/chapter-03.md) | [HTML](translation/chapter-03.html) | [PDF](translation/pdf/chapters/chapter-03.pdf) · ۲۲ ص |

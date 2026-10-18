@@ -41,6 +41,7 @@ for md in sorted(list(here.glob("chunk-*.md")) + list(here.glob("chapter-*.md"))
         if not s or s.startswith("```"): continue                      # fence markers inside sideboxes
         if s.startswith("- "): s = s[2:]
         s = re.sub(r"^[0-9۰-۹]+\. ", "", s)                       # numbered-list markers
+        s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", s)              # Markdown links → link text
         blocks.append(norm(s.replace("`", "")))          # inline-code markers (prose only)
     miss = [b for b in blocks if b not in text_tight and b not in text]
     heads = [norm(re.sub(r"^#+\s*", "", l)) for l in src if l.startswith("##")]
