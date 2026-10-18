@@ -972,3 +972,16 @@
 | Hybrid Topology | توپولوژی ترکیبی | chunk-64 | مصوب |
 | Cold Start | راه‌اندازی سرد | chunk-64 | مصوب |
 | Persisted Queue | صف ماندگار | chunk-64 | مصوب |
+| Data Collision | برخورد داده | chunk-65 | مصوب |
+| Active/Active (state) | فعال/فعال | chunk-65 | مصوب |
+| Update Rate | نرخ به‌روزرسانی | chunk-65 | مصوب |
+| Replication Latency (RL) | تأخیر تکثیر | chunk-65 | مصوب |
+| Collision Rate | نرخ برخورد | chunk-65 | مصوب |
+| Peak Usage | اوج استفاده | chunk-65 | مصوب |
+| Memory Consumption | مصرف حافظه | chunk-65 | مصوب |
+| Synchronization Time | زمان هم‌گام‌سازی | chunk-65 | مصوب |
+| Request ID | شناسهٔ درخواست | chunk-65 | مصوب |
+| Timestamp | مُهر زمانی | chunk-65 | مصوب |
+| Atomic (level) | اتمی | chunk-65 | مصوب |
+| Holistic | کل‌نگر | chunk-65 | مصوب |
+| Queue Depth | عمق صف | chunk-65 | مصوب |
