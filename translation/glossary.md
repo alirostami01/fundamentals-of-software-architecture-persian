@@ -985,3 +985,10 @@
 | Atomic (level) | اتمی | chunk-65 | مصوب |
 | Holistic | کل‌نگر | chunk-65 | مصوب |
 | Queue Depth | عمق صف | chunk-65 | مصوب |
+| Primary Data Store | مخزن دادهٔ اصلی | chunk-66 | مصوب |
+| Peak Load | اوج بار | chunk-66 | مصوب |
+| Licensing Fees | هزینه‌های مجوز | chunk-66 | مصوب |
+| Spike (load) | جهش | chunk-66 | مصوب |
+| Standby | آماده‌به‌کار | chunk-66 | مصوب |
+| Asking Price | قیمت پیشنهادیِ فروشنده | chunk-66 | مصوب |
+| Specialized Architectural Style | سبک معماریِ تخصصی | chunk-66 | مصوب |
