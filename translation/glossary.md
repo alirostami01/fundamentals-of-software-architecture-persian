@@ -699,3 +699,18 @@
 | Declarative | اعلانی | chunk-44 | مصوب |
 | Domain-Specific Language (DSL) | زبان ویژهٔ حوزه | chunk-44 | مصوب |
 | Deployment Frequency | بسامد استقرار | chunk-28 | مصوب |
+| Macro-Layered (structure) | کلان‌لایه‌ای | chunk-45 | مصوب |
+| Containerization | کانتینرسازی | chunk-45 | مصوب |
+| Change Control | کنترل تغییر | chunk-45 | مصوب |
+| Remote Procedure Call (RPC) | فراخوانی رویهٔ دور | chunk-45 | مصوب |
+| Proxy | پراکسی | chunk-45 | مصوب |
+| Service Locator (pattern) | الگوی service locator (بدون ترجمه) | chunk-45 | مصوب |
+| API Gateway | دروازهٔ API | chunk-45 | مصوب |
+| SQL Join | پیوند SQL | chunk-45 | مصوب |
+| API Access Facade | نمای دسترسی API | chunk-45 | مصوب |
+| ACID Transactions | تراکنش‌های ACID (اتمی‌بودن، سازگاری، انزوا، ماندگاری) | chunk-45 | مصوب |
+| BASE Transactions | تراکنش‌های BASE (دسترس‌پذیری پایه، حالت نرم، سازگاری نهایی) | chunk-45 | مصوب |
+| Commit / Rollback | ثبت / بازگردانی | chunk-45 | مصوب |
+| Reverse Proxy | پراکسی معکوس | chunk-45 | مصوب |
+| Cross-Cutting Concerns | دغدغه‌های میان‌بُرشی | chunk-45 | مصوب |
+| Service Discovery | کشف سرویس | chunk-45 | مصوب |
