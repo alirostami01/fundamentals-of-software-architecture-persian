@@ -1019,3 +1019,13 @@
 | Coordinated Deployment | استقرار هماهنگ‌شده | chunk-68 | مصوب |
 | Configuration Manager | مدیر پیکربندی | chunk-68 | مصوب |
 | Transactional Scope | دامنهٔ تراکنشی | chunk-68 | مصوب |
+| Accidental SOA (antipattern) | SOA اتفاقی | chunk-69 | مصوب |
+| Quality Assurance | تضمین کیفیت | chunk-69 | مصوب |
+| Enterprise Resource Planning (ERP) | برنامه‌ریزی منابع سازمانی | chunk-69 | مصوب |
+| Guardrails | نرده‌های محافظ | chunk-69 | مصوب |
+| Communication Antipattern | ضدالگوی ارتباطی | chunk-69 | مصوب |
+| Ticketing Tools | ابزارهای تیکتینگ | chunk-69 | مصوب |
+| General-Purpose (architecture) | همه‌منظوره | chunk-69 | مصوب |
+| Session Replication | تکثیر نشست | chunk-69 | مصوب |
+| Package Software | نرم‌افزار آماده | chunk-69 | مصوب |
+| Bespoke Code | کد سفارشی | chunk-69 | مصوب |
