@@ -749,3 +749,22 @@
 | External Table Synchronization | همگام‌سازیِ بیرونیِ جدول‌ها | chunk-48 | مصوب |
 | Migration Target | مقصد مهاجرت | chunk-48 | مصوب |
 | Stepping Stone | پلهٔ میانی | chunk-48 | مصوب |
+| Hybrid Architecture | معماری ترکیبی | chunk-49 | مصوب |
+| Request-Based Model | مدل درخواست‌محور | chunk-49 | مصوب |
+| Request Orchestrator | ارکستراتور درخواست | chunk-49 | مصوب |
+| Event Hub | هاب رویداد | chunk-49 | مصوب |
+| Event Bus | گذرگاه رویداد | chunk-49 | مصوب |
+| Integration Hub | هاب یکپارچه‌سازی | chunk-49 | مصوب |
+| Request Processor | پردازندهٔ درخواست | chunk-49 | مصوب |
+| Event-Based Model | مدل رویدادمحور | chunk-49 | مصوب |
+| Fire-and-Forget | بفرست‌وفراموش‌کن | chunk-49 | مصوب |
+| Initiating Event | رویداد آغازگر | chunk-49 | مصوب |
+| Event Broker | کارگزار رویداد | chunk-49 | مصوب |
+| Event Processor | پردازندهٔ رویداد | chunk-49 | مصوب |
+| Derived Event | رویداد مشتق | chunk-49 | مصوب |
+| Event Channel | کانال رویداد | chunk-49 | مصوب |
+| Topic Exchange (AMQP) | مبادلهٔ موضوعی | chunk-49 | مصوب |
+| Stream (event) | جریان | chunk-49 | مصوب |
+| Poison Event | رویداد سمی | chunk-49 | مصوب |
+| Relay Race | مسابقهٔ دوی امدادی | chunk-49 | مصوب |
+| Backup (load) | انباشت | chunk-49 | مصوب |
