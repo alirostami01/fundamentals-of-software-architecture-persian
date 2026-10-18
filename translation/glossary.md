@@ -808,3 +808,17 @@
 | Event Header | سرآیند رویداد | chunk-52 | مصوب |
 | Deprecation | منسوخ‌سازی | chunk-52 | مصوب |
 | Breaking Contract Change | تغییرِ شکنندهٔ قرارداد | chunk-52 | مصوب |
+| Key-Based Event Payload | محمولهٔ رویدادِ مبتنی بر کلید | chunk-53 | مصوب |
+| Context Key | کلیدِ بافتار | chunk-53 | مصوب |
+| Schema-less | بدون طرح‌واره | chunk-53 | مصوب |
+| Contract Change Management | مدیریت تغییر قرارداد | chunk-53 | مصوب |
+| Opaque Data | دادهٔ مبهم | chunk-53 | مصوب |
+| Message Broker | کارگزار پیام | chunk-53 | مصوب |
+| Trade-off Summary | خلاصهٔ مصالحه‌ها | chunk-53 | مصوب |
+| All-or-Nothing | همه یا هیچ | chunk-53 | مصوب |
+| Restricted Database Access | دسترسیِ محدود به پایگاه‌داده | chunk-53 | مصوب |
+| Overall System Fragility | شکنندگیِ کلیِ سیستم | chunk-53 | مصوب |
+| Spectrum (vs. Binary) | طیف (در برابر دوگانه) | chunk-53 | مصوب |
+| Anemic Event | رویداد کم‌خون | chunk-53 | مصوب |
+| User Profile | نمایهٔ کاربری | chunk-53 | مصوب |
+| Event Payload Granularity | دانه‌بندیِ محمولهٔ رویداد | chunk-53 | مصوب |
