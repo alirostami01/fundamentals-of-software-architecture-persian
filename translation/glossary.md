@@ -796,3 +796,15 @@
 | Complex Event Processing (CEP) | پردازش رویداد پیچیده | chunk-51 | مصوب |
 | Ticker Price | قیمت لحظه‌ای | chunk-51 | مصوب |
 | Semantic Decoupling | جداسازی معنایی | chunk-51 | مصوب |
+| Key-Value Pair | جفت کلید-مقدار | chunk-52 | مصوب |
+| Data-Based Event Payload | محمولهٔ رویدادِ مبتنی بر داده | chunk-52 | مصوب |
+| Database-per-Service | پایگاه‌داده به ازای هر سرویس | chunk-52 | مصوب |
+| Data Consistency | سازگاری داده | chunk-52 | مصوب |
+| Contract Management | مدیریت قرارداد | chunk-52 | مصوب |
+| Strict Contract | قرارداد سخت‌گیرانه | chunk-52 | مصوب |
+| Loose Contract | قرارداد آزاد | chunk-52 | مصوب |
+| Name-Value Pair | جفت نام-مقدار | chunk-52 | مصوب |
+| Vendor MIME Type | نوع MIME اختصاصیِ فروشنده | chunk-52 | مصوب |
+| Event Header | سرآیند رویداد | chunk-52 | مصوب |
+| Deprecation | منسوخ‌سازی | chunk-52 | مصوب |
+| Breaking Contract Change | تغییرِ شکنندهٔ قرارداد | chunk-52 | مصوب |
