@@ -1271,3 +1271,12 @@
 | Software-Release Checklist | فهرست وارسیِ انتشار نرم‌افزار | chunk-94 | مصوب |
 | Database-Migration Scripts | اسکریپت‌های مهاجرت پایگاه داده | chunk-94 | مصوب |
 | Root Cause | علت ریشه‌ای | chunk-94 | مصوب |
+| Layered Stack | پشتهٔ لایه‌ای | chunk-95 | مصوب |
+| Special Purpose (library) | ویژه‌منظوره | chunk-95 | مصوب |
+| General Purpose (library) | همه‌منظوره | chunk-95 | مصوب |
+| Framework (library) | چارچوب | chunk-95 | مصوب |
+| Wrapper | پوشش‌دهنده | chunk-95 | مصوب |
+| Persistence | ماندگاری | chunk-95 | مصوب |
+| Inversion of Control | وارونگی کنترل | chunk-95 | مصوب |
+| People Skills | مهارت‌های مردمی | chunk-95 | مصوب |
+| Team Dynamics | پویایی‌های تیم | chunk-95 | مصوب |
