@@ -1198,3 +1198,13 @@
 | Identification (risk storming) | شناسایی | chunk-86 | مصوب |
 | Sticky Notes | برگه‌های یادداشت چسب‌دار | chunk-86 | مصوب |
 | Consensus (risk storming) | اجماع | chunk-86 | مصوب |
+| Risk Mitigation | کاهش ریسک | chunk-87 | مصوب |
+| Story Grooming | پالایش داستان‌ها | chunk-87 | مصوب |
+| Self-Service | سلف‌سرویس | chunk-87 | مصوب |
+| Medical Records Exchange | مرکز تبادل سوابق پزشکی | chunk-87 | مصوب |
+| Health Insurance Portability and Accountability Act (HIPAA) | قانون انتقال‌پذیری و پاسخ‌گویی بیمهٔ سلامت (HIPAA) | chunk-87 | مصوب |
+| Skill Profile | نیم‌رخ مهارتی | chunk-87 | مصوب |
+| Backend Service | سرویس پشتیبان | chunk-87 | مصوب |
+| Service-Level Agreement (SLA) | توافق‌نامهٔ سطح خدمت (SLA) | chunk-87 | مصوب |
+| Service-Level Objective (SLO) | هدف سطح خدمت (SLO) | chunk-87 | مصوب |
+| Downtime | زمان ازکارافتادگی | chunk-87 | مصوب |
