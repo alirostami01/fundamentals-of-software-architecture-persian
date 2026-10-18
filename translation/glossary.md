@@ -783,3 +783,16 @@
 | Extensible Derived Event | رویداد مشتقِ گسترش‌پذیر | chunk-50 | مصوب |
 | Hook | قلاب | chunk-50 | مصوب |
 | Event Streaming | جریان‌سازی رویداد | chunk-50 | مصوب |
+| Event Consumer | مصرف‌کنندهٔ رویداد | chunk-51 | مصوب |
+| Comment Service | سرویس نظر | chunk-51 | مصوب |
+| Parsing Engine | موتور تجزیه | chunk-51 | مصوب |
+| Network Latency | تأخیر شبکه | chunk-51 | مصوب |
+| End-to-End | سرتاسری | chunk-51 | مصوب |
+| Reactive Architecture | معماری واکنش‌گرا | chunk-51 | مصوب |
+| Workflow Event Pattern | الگوی رویداد گردش‌کار | chunk-51 | مصوب |
+| Dynamic Decoupling | جداسازیِ پویا | chunk-51 | مصوب |
+| Dynamic Quantum Entanglement (antipattern) | درهم‌تنیدگی کوانتومیِ پویا | chunk-51 | مصوب |
+| Compliance Check | بررسی انطباق | chunk-51 | مصوب |
+| Complex Event Processing (CEP) | پردازش رویداد پیچیده | chunk-51 | مصوب |
+| Ticker Price | قیمت لحظه‌ای | chunk-51 | مصوب |
+| Semantic Decoupling | جداسازی معنایی | chunk-51 | مصوب |
