@@ -1319,3 +1319,15 @@
 | Region (cloud) | منطقه | chunk-102 | مصوب |
 | Availability Zone | ناحیهٔ دسترس‌پذیری | chunk-102 | مصوب |
 | Co-locating | هم‌مکان‌سازی | chunk-102 | مصوب |
+| Superpowers (architecture) | ابرتوانایی‌ها | chunk-103 | مصوب |
+| Key-Value Database | پایگاه‌دادهٔ کلید-مقدار | chunk-103 | مصوب |
+| Columnar Database | پایگاه‌دادهٔ ستونی | chunk-103 | مصوب |
+| Graph Database | پایگاه‌دادهٔ گرافی | chunk-103 | مصوب |
+| Polyglot Databases | پایگاه‌داده‌های چندگانه | chunk-103 | مصوب |
+| Processes (development) | فرایندها | chunk-103 | مصوب |
+| Continuous Delivery (CD) | تحویل مداوم (CD) | chunk-103 | مصوب |
+| Software Engineering | مهندسی نرم‌افزار | chunk-103 | مصوب |
+| Estimation | برآورد | chunk-103 | مصوب |
+| Iterative Process | فرایند تکرارشونده | chunk-103 | مصوب |
+| Feature Toggles | کلیدهای قابلیت | chunk-103 | مصوب |
+| Machine Provisioning | تأمین ماشین | chunk-103 | مصوب |
