@@ -1146,3 +1146,26 @@
 | Technical Justification | توجیه فنی | chunk-81 | مصوب |
 | Business Justification | توجیه کسب‌وکاری | chunk-81 | مصوب |
 | Strategic Positioning | جایگاه‌یابی راهبردی | chunk-81 | مصوب |
+| Architectural Significance | اهمیت معماری | chunk-82 | مصوب |
+| Technical Decision | تصمیم فنی | chunk-82 | مصوب |
+| Architecturally Significant | دارای اهمیت معماری | chunk-82 | مصوب |
+| Structure (architecturally significant) | ساختار | chunk-82 | مصوب |
+| Non-Functional Characteristics | ویژگی‌های غیرکارکردی | chunk-82 | مصوب |
+| Dependencies (architecturally significant) | وابستگی‌ها | chunk-82 | مصوب |
+| Construction Techniques | فنون ساخت | chunk-82 | مصوب |
+| Service Bus | گذرگاه سرویس | chunk-82 | مصوب |
+| Command-Line Interface | واسط خط فرمان | chunk-82 | مصوب |
+| Title (ADR section) | عنوان | chunk-82 | مصوب |
+| Status (ADR section) | وضعیت | chunk-82 | مصوب |
+| Decision (ADR section) | تصمیم | chunk-82 | مصوب |
+| Consequences (ADR section) | پیامدها | chunk-82 | مصوب |
+| Compliance (ADR section) | انطباق | chunk-82 | مصوب |
+| Notes (ADR section) | یادداشت‌ها | chunk-82 | مصوب |
+| Alternatives (ADR section) | گزینه‌های جایگزین | chunk-82 | مصوب |
+| Proposed (ADR status) | پیشنهادی | chunk-82 | مصوب |
+| Accepted (ADR status) | پذیرفته‌شده | chunk-82 | مصوب |
+| Superseded (ADR status) | جایگزین‌شده | chunk-82 | مصوب |
+| Architecture Review Board | هیئت بازبینی معماری | chunk-82 | مصوب |
+| Request for Comments (RFC) | درخواست نظر (RFC) | chunk-82 | مصوب |
+| Cross-Team Impact | اثر میان‌تیمی | chunk-82 | مصوب |
+| Full-Time Equivalency (FTE) | معادل تمام‌وقت (FTE) | chunk-82 | مصوب |
