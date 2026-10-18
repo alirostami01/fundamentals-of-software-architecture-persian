@@ -1029,3 +1029,14 @@
 | Session Replication | تکثیر نشست | chunk-69 | مصوب |
 | Package Software | نرم‌افزار آماده | chunk-69 | مصوب |
 | Bespoke Code | کد سفارشی | chunk-69 | مصوب |
+| Microservices Architecture | معماری میکروسرویس‌ها | chunk-70 | مصوب |
+| Share Nothing (architecture) | (معماری) بدون اشتراک | chunk-70 | مصوب |
+| Inheritance | وراثت | chunk-70 | مصوب |
+| Composition | ترکیب | chunk-70 | مصوب |
+| Duplication | دوباره‌نویسی | chunk-70 | مصوب |
+| Process (OS) | فرایند | chunk-70 | مصوب |
+| Multitenant Infrastructure | زیرساخت چندمستأجری | chunk-70 | مصوب |
+| Operational Reuse | بازاستفادهٔ عملیاتی | chunk-70 | مصوب |
+| Automated Machine Provisioning | تأمین خودکار ماشین‌ها | chunk-70 | مصوب |
+| Network Call | فراخوانی شبکه‌ای | chunk-70 | مصوب |
+| Method Call | فراخوانی متد | chunk-70 | مصوب |
