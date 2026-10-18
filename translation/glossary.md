@@ -1258,3 +1258,16 @@
 | Pluralistic Ignorance | نادانی جمعی | chunk-93 | مصوب |
 | Diffusion of Responsibility | پخش مسئولیت | chunk-93 | مصوب |
 | Law of Diminishing Returns | قانون بازده نزولی | chunk-93 | مصوب |
+| Hawthorne Effect | اثر Hawthorne | chunk-94 | مصوب |
+| Developer Code-Completion Checklist | فهرست وارسیِ تکمیل کد توسعه‌دهنده | chunk-94 | مصوب |
+| Definition of Done | تعریف انجام‌شدگی | chunk-94 | مصوب |
+| Absorbed Exceptions | استثناهای بلعیده‌شده | chunk-94 | مصوب |
+| Code-Validation Checker | بررسی‌کنندهٔ اعتبار کد | chunk-94 | مصوب |
+| Code-Crawling Tool | ابزار پیمایش کد | chunk-94 | مصوب |
+| Unit Testing | آزمون واحد | chunk-94 | مصوب |
+| Functional Testing | آزمون کارکردی | chunk-94 | مصوب |
+| Test Case | مورد آزمون | chunk-94 | مصوب |
+| Automated Test Suite | مجموعهٔ آزمون‌های خودکار | chunk-94 | مصوب |
+| Software-Release Checklist | فهرست وارسیِ انتشار نرم‌افزار | chunk-94 | مصوب |
+| Database-Migration Scripts | اسکریپت‌های مهاجرت پایگاه داده | chunk-94 | مصوب |
+| Root Cause | علت ریشه‌ای | chunk-94 | مصوب |
