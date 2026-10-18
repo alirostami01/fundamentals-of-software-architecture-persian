@@ -874,3 +874,9 @@
 | Long-Running Transaction | تراکنش طولانی‌مدت | chunk-56 | مصوب |
 | Business Process Management (BPM) | مدیریت فرایند کسب‌وکار | chunk-56 | مصوب |
 | Mediator Delegation Model | مدل واگذاری میانجی | chunk-56 | مصوب |
+| Restart Capability | قابلیت راه‌اندازی دوباره | chunk-57 | مصوب |
+| Persistent Datastore | مخزن دادهٔ ماندگار | chunk-57 | مصوب |
+| Declarative Modeling | مدل‌سازیِ اعلانی | chunk-57 | مصوب |
+| Out-of-Stock Condition | وضعیت کمبود موجودی | chunk-57 | مصوب |
+| Bottleneck | گلوگاه | chunk-57 | مصوب |
+| Backpressure Point | نقطهٔ فشار معکوس | chunk-57 | مصوب |
