@@ -1117,3 +1117,12 @@
 | Pagination | صفحه‌بندی | chunk-77 | مصوب |
 | Streamer | پخش‌کننده | chunk-78 | مصوب |
 | Quantum Analysis | تحلیل کوانتوم | chunk-78 | مصوب |
+| Best Practice | بهترین شیوه | chunk-79 | مصوب |
+| Domain Coupling | کوپلینگ حوزه‌ای | chunk-79 | مصوب |
+| Operational Coupling | کوپلینگ عملیاتی | chunk-79 | مصوب |
+| Semantic Drift | رانش معنایی | chunk-79 | مصوب |
+| Hexagonal Architecture (pattern) | معماری Hexagonal (شش‌ضلعی) | chunk-79 | مصوب |
+| Ports and Adapters (pattern) | Ports and Adapters (درگاه‌ها و مبدل‌ها) | chunk-79 | مصوب |
+| Data Fidelity | وفاداری داده | chunk-79 | مصوب |
+| Orthogonal Reuse (pattern) | بازاستفادهٔ متعامد | chunk-79 | مصوب |
+| Orthogonal Coupling | کوپلینگ متعامد | chunk-79 | مصوب |
