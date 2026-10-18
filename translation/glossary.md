@@ -897,3 +897,12 @@
 | Consumer Group | گروه مصرف‌کننده | chunk-59 | مصوب |
 | Event Tree Diagram | نمودار درخت رویداد | chunk-59 | مصوب |
 | Business Transaction | تراکنش کسب‌وکار | chunk-59 | مصوب |
+| Data-Driven (request) | داده‌محور | chunk-60 | مصوب |
+| Action-Based (event) | کنش‌محور | chunk-60 | مصوب |
+| Debugging | اشکال‌زدایی | chunk-60 | مصوب |
+| Change Management | مدیریت تغییر | chunk-60 | مصوب |
+| Real-Time Decision Making | تصمیم‌گیریِ بی‌درنگ | chunk-60 | مصوب |
+| Situational Awareness | آگاهی موقعیتی | chunk-60 | مصوب |
+| Online Bidding System | سیستم مزایدهٔ برخط | chunk-60 | مصوب |
+| Backend Processing | پردازش پس‌زمینه‌ای | chunk-60 | مصوب |
+| Auditing | ممیزی | chunk-60 | مصوب |
