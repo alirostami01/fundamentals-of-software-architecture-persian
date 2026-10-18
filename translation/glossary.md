@@ -1005,3 +1005,17 @@
 | Service Signature | امضای سرویس | chunk-67 | مصوب |
 | Enterprise Services | سرویس‌های سازمانی | chunk-67 | مصوب |
 | Reusable Assets | دارایی‌های بازاستفاده‌پذیر | chunk-67 | مصوب |
+| Application Services | سرویس‌های کاربردی | chunk-68 | مصوب |
+| Geolocation | مکان‌یابی جغرافیایی | chunk-68 | مصوب |
+| Infrastructure Services | سرویس‌های زیرساختی | chunk-68 | مصوب |
+| Transactional Coordination | هماهنگ‌سازیِ تراکنشی | chunk-68 | مصوب |
+| Message Transformation | تبدیل پیام | chunk-68 | مصوب |
+| Transaction Boundary | مرز تراکنش | chunk-68 | مصوب |
+| Enterprise Service Bus (ESB) | گذرگاه سرویس سازمانی | chunk-68 | مصوب |
+| Message Bus | گذرگاه پیام | chunk-68 | مصوب |
+| Distributed Transaction | تراکنش توزیع‌شده | chunk-68 | مصوب |
+| Canonical (service) | متعارف | chunk-68 | مصوب |
+| Ripple Effect | اثر موجی | chunk-68 | مصوب |
+| Coordinated Deployment | استقرار هماهنگ‌شده | chunk-68 | مصوب |
+| Configuration Manager | مدیر پیکربندی | chunk-68 | مصوب |
+| Transactional Scope | دامنهٔ تراکنشی | chunk-68 | مصوب |
