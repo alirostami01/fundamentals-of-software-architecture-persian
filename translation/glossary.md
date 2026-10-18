@@ -943,3 +943,18 @@
 | Proprietary Protocol | پروتکل اختصاصیِ فروشنده | chunk-62 | مصوب |
 | Mirroring (cache) | آینه‌سازی | chunk-62 | مصوب |
 | Reference Data | دادهٔ مرجع | chunk-62 | مصوب |
+| Near-Cache | کش نزدیک | chunk-63 | مصوب |
+| Full Backing Cache | کش پشتیبانِ کامل | chunk-63 | مصوب |
+| Front Cache | کش جلویی | chunk-63 | مصوب |
+| Eviction Policy | سیاست بیرون‌رانی | chunk-63 | مصوب |
+| Most Recently Used (cache) | تازه‌ترین استفاده | chunk-63 | مصوب |
+| Most Frequently Used (cache) | پرتکرارترین استفاده | chunk-63 | مصوب |
+| Random Replacement | جایگزینیِ تصادفی | chunk-63 | مصوب |
+| Orchestration Engine | موتور ارکستراسیون | chunk-63 | مصوب |
+| Response Time | زمان پاسخ | chunk-63 | مصوب |
+| Message Persistence | ماندگاری پیام | chunk-63 | مصوب |
+| Message Order | ترتیب پیام | chunk-63 | مصوب |
+| Value-Driven Message | پیام ارزش‌محور | chunk-63 | مصوب |
+| Map Message | پیام نگاشتی | chunk-63 | مصوب |
+| Data Hub | هاب داده | chunk-63 | مصوب |
+| Domain-Based Data Writer | نویسندهٔ دادهٔ حوزه‌محور | chunk-63 | مصوب |
