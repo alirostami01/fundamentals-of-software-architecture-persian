@@ -751,7 +751,7 @@
 | Stepping Stone | پلهٔ میانی | chunk-48 | مصوب |
 | Hybrid Architecture | معماری ترکیبی | chunk-49 | مصوب |
 | Request-Based Model | مدل درخواست‌محور | chunk-49 | مصوب |
-| Request Orchestrator | ارکستراتور درخواست | chunk-49 | مصوب |
+| Request Orchestrator | هماهنگ‌کنندهٔ درخواست | chunk-49 | مصوب |
 | Event Hub | هاب رویداد | chunk-49 | مصوب |
 | Event Bus | گذرگاه رویداد | chunk-49 | مصوب |
 | Integration Hub | هاب یکپارچه‌سازی | chunk-49 | مصوب |
@@ -859,3 +859,18 @@
 | Message Filter / Message Selector | پالایهٔ پیام / گزینشگر پیام | chunk-55 | مصوب |
 | Temporary Queue | صف موقت | chunk-55 | مصوب |
 | Concurrency | هم‌روندی | chunk-55 | مصوب |
+| Choreographed (EDA) | کرئوگرافی‌شده | chunk-56 | مصوب |
+| Orchestrated (EDA) | ارکستره‌شده | chunk-56 | مصوب |
+| Mediator Topology | توپولوژی میانجی | chunk-56 | مصوب |
+| Event Mediator | میانجی رویداد | chunk-56 | مصوب |
+| Event Queue | صف رویداد | chunk-56 | مصوب |
+| Derived Message | پیام مشتق | chunk-56 | مصوب |
+| Single Point of Failure | نقطهٔ شکست واحد | chunk-56 | مصوب |
+| Message Flow | جریان پیام | chunk-56 | مصوب |
+| Message Route | مسیر پیام | chunk-56 | مصوب |
+| Business Process Execution Language (BPEL) | زبان اجرای فرایند کسب‌وکار | chunk-56 | مصوب |
+| Redirection | تغییر مسیر | chunk-56 | مصوب |
+| Multicasting | چندپخشی | chunk-56 | مصوب |
+| Long-Running Transaction | تراکنش طولانی‌مدت | chunk-56 | مصوب |
+| Business Process Management (BPM) | مدیریت فرایند کسب‌وکار | chunk-56 | مصوب |
+| Mediator Delegation Model | مدل واگذاری میانجی | chunk-56 | مصوب |
