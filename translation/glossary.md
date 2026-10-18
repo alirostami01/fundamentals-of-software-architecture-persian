@@ -1115,3 +1115,5 @@
 | Architectural Decision Record (ADR) | سابقهٔ تصمیم معماری (ADR) | chunk-77 | مصوب |
 | Backends for Frontends (BFF) | Backends for Frontends (بدون ترجمه؛ نام الگو) | chunk-77 | مصوب |
 | Pagination | صفحه‌بندی | chunk-77 | مصوب |
+| Streamer | پخش‌کننده | chunk-78 | مصوب |
+| Quantum Analysis | تحلیل کوانتوم | chunk-78 | مصوب |
