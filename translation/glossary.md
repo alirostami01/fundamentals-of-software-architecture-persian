@@ -1169,3 +1169,9 @@
 | Request for Comments (RFC) | درخواست نظر (RFC) | chunk-82 | مصوب |
 | Cross-Team Impact | اثر میان‌تیمی | chunk-82 | مصوب |
 | Full-Time Equivalency (FTE) | معادل تمام‌وقت (FTE) | chunk-82 | مصوب |
+| Rationale | منطق | chunk-83 | مصوب |
+| Upstream Systems | سیستم‌های بالادستی | chunk-83 | مصوب |
+| Real-time Transport Protocol (RTP) | پروتکل انتقال بی‌درنگ (RTP) | chunk-83 | مصوب |
+| Shared State | حالت مشترک | chunk-83 | مصوب |
+| Backpressure | فشار معکوس | chunk-83 | مصوب |
+| High Availability | در دسترس‌بودن بالا | chunk-83 | مصوب |
