@@ -1094,3 +1094,15 @@
 | Data Latency | تأخیر داده | chunk-75 | مصوب |
 | Vital Signs | علائم حیاتی | chunk-75 | مصوب |
 | Shared Service | سرویس مشترک | chunk-75 | مصوب |
+| Pain Point | نقطهٔ درد | chunk-76 | مصوب |
+| Paradigm | پارادایم | chunk-76 | مصوب |
+| Game Changer | تغییردهندهٔ بازی | chunk-76 | مصوب |
+| Industry Trend | روند صنعت | chunk-76 | مصوب |
+| Subject Matter Expert | متخصص موضوعی | chunk-76 | مصوب |
+| Business Analyst | تحلیلگر کسب‌وکار | chunk-76 | مصوب |
+| Architectural Characteristics Analysis | تحلیل ویژگی‌های معماری | chunk-76 | مصوب |
+| Generic Architecture Style | سبک معماریِ عام | chunk-76 | مصوب |
+| Star Chart | نمودار ستاره‌ای | chunk-76 | مصوب |
+| Data Architecture | معماری داده | chunk-76 | مصوب |
+| Architectural Destination | مقصد معماری | chunk-76 | مصوب |
+| Commodity | کالای همگانی | chunk-76 | مصوب |
