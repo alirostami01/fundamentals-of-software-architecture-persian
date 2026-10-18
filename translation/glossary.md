@@ -1222,3 +1222,13 @@
 | Layers (diagramming tools) | لایه‌ها | chunk-89 | مصوب |
 | Stencils/Templates | شابلون‌ها/الگوها | chunk-89 | مصوب |
 | Magnets (diagramming tools) | آهنرباها | chunk-89 | مصوب |
+| Unified Modeling Language (UML) | زبان مدل‌سازی یکپارچه (UML) | chunk-90 | مصوب |
+| Class Diagram | نمودار کلاس | chunk-90 | مصوب |
+| Sequence Diagram | نمودار توالی | chunk-90 | مصوب |
+| Context (C4) | بافتار | chunk-90 | مصوب |
+| Component (C4) | مؤلفه | chunk-90 | مصوب |
+| Class (C4) | کلاس | chunk-90 | مصوب |
+| Ecosystem | بوم‌سازگان | chunk-90 | مصوب |
+| Modeling Language | زبان مدل‌سازی | chunk-90 | مصوب |
+| Deployable Artifact | مصنوع قابل استقرار | chunk-90 | مصوب |
+| Computer-Assisted Software Engineering (CASE) | مهندسی نرم‌افزار رایانه‌یار (CASE) | chunk-90 | مصوب |
