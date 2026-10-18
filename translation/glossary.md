@@ -1077,3 +1077,13 @@
 | Cloud-Native | بومیِ ابر | chunk-73 | مصوب |
 | Serverless | بدون سرور | chunk-73 | مصوب |
 | Deployment Model | مدل استقرار | chunk-73 | مصوب |
+| Grains of Sand (antipattern) | دانه‌های شن | chunk-74 | مصوب |
+| Service Consolidation | ادغام سرویس‌ها | chunk-74 | مصوب |
+| Code Reuse | بازاستفادهٔ کد | chunk-74 | مصوب |
+| Custom Library | کتابخانهٔ سفارشی | chunk-74 | مصوب |
+| Software Bill of Materials | فهرست اجزای نرم‌افزار | chunk-74 | مصوب |
+| Deployment Script | اسکریپت استقرار | chunk-74 | مصوب |
+| Dependency-Management Tool | ابزار مدیریت وابستگی | chunk-74 | مصوب |
+| Compile Time | زمان کامپایل | chunk-74 | مصوب |
+| Registry Entry | مدخل رجیستری | chunk-74 | مصوب |
+| Configuration Server | سرور پیکربندی | chunk-74 | مصوب |
