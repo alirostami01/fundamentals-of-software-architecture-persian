@@ -1087,3 +1087,10 @@
 | Compile Time | زمان کامپایل | chunk-74 | مصوب |
 | Registry Entry | مدخل رجیستری | chunk-74 | مصوب |
 | Configuration Server | سرور پیکربندی | chunk-74 | مصوب |
+| Modern Engineering Practices | شیوه‌های مهندسیِ مدرن | chunk-75 | مصوب |
+| Automated Deployment | استقرار خودکار | chunk-75 | مصوب |
+| Evolutionary Change | تغییر تکاملی | chunk-75 | مصوب |
+| Security Check | بررسی امنیتی | chunk-75 | مصوب |
+| Data Latency | تأخیر داده | chunk-75 | مصوب |
+| Vital Signs | علائم حیاتی | chunk-75 | مصوب |
+| Shared Service | سرویس مشترک | chunk-75 | مصوب |
