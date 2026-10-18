@@ -585,8 +585,8 @@
 | Overall Cost | هزینهٔ کلی | chunk-35 | مصوب |
 | Ceremony (deployment) | تشریفات | chunk-35 | مصوب |
 | Regression Test Suite | مجموعهٔ آزمون رگرسیون | chunk-35 | مصوب |
-| Mock | ساختگی‌سازی | chunk-35 | مصوب |
-| Stub | جانشین‌سازی | chunk-35 | مصوب |
+| Mock | ماک | chunk-35 | مصوب |
+| Stub | استاب | chunk-35 | مصوب |
 | Engineering Characteristics | ویژگی‌های مهندسی | chunk-35 | مصوب |
 | Multithreading | چندریسمانی | chunk-35 | مصوب |
 | Internal Messaging | پیام‌رسانی داخلی | chunk-35 | مصوب |
@@ -1365,7 +1365,7 @@
 | Out of Context Antipattern | ضدالگوی خارج از بافتار | chunk-108 | مصوب |
 | Companion Website | وب‌سایت همراه کتاب | chunk-108 | مصوب |
 | Discussion Questions | پرسش‌های بحث | chunk-109 | مصوب |
-| Knowledge Triangle | مثلث دانش | chunk-109 | مصوب |
+| Knowledge Triangle | هرم دانش | chunk-109 | مصوب |
 | Replicated Cache | کش تکثیرشده | chunk-110 | مصوب |
 | Distributed Cache | کش توزیع‌شده | chunk-110 | مصوب |
 | Domain Reuse | بازاستفادهٔ حوزه | chunk-110 | مصوب |

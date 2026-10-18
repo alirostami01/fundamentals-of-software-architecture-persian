@@ -60,7 +60,11 @@ def merge_md(title, chunks, drops):
             body.pop(0)
         bodies.append("\n".join(body).strip())
     rows = collect_rows(chunks)
-    md = f"# {title}\n\n" + "\n\n---\n\n".join(bodies)
+    # مرز بسته‌ها: «---» فقط وقتی می‌ماند که بستهٔ بعدی با بخش تازه (H2) آغاز شود؛
+    # در غیر این صورت (ادامهٔ همان بخش) بدون جداکننده به هم پیوند می‌خورند.
+    md = f"# {title}\n\n" + bodies[0]
+    for b in bodies[1:]:
+        md += ("\n\n---\n\n" if b.startswith("## ") else "\n\n") + b
     md += f"\n\n---\n\n## {GLOSS_H}\n\n"
     md += "| واژهٔ انگلیسی | معادل مصوب/به‌کاررفته در این فصل |\n|---|---|\n"
     md += "".join(f"| {en} | {fa} |\n" for en, fa in rows)
@@ -111,7 +115,15 @@ def merge_html(chunks, drops, rows):
             body = re.sub(r"<(h[34])[^>]*>" + re.escape(d) + r"</\1>\n\s*", "", body)
         bodies.append(body.strip())
     sep = "\n\n  " + HR + "\n\n  "
-    inner = "\n\n  " + sep.join(bodies)
+    merged = bodies[0]
+    for b in bodies[1:]:
+        if re.match(r"<section>\s*<h3", b):                 # new H2 section → keep separator
+            merged += sep + b
+        else:                                               # continuation → merge into previous section
+            prev = re.sub(r"</section>\s*$", "", merged)
+            nxt = re.sub(r"^<section>\s*", "", b)
+            merged = prev.rstrip() + "\n\n    " + nxt if prev != merged and nxt != b else merged + "\n\n  " + b
+    inner = "\n\n  " + merged
     inner += "\n\n  " + HR + "\n\n  " + gloss_html(rows)
     listed = ", ".join(f"{c:02d}" for c in chunks)
     comment = (
