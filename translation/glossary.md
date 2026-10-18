@@ -880,3 +880,10 @@
 | Out-of-Stock Condition | وضعیت کمبود موجودی | chunk-57 | مصوب |
 | Bottleneck | گلوگاه | chunk-57 | مصوب |
 | Backpressure Point | نقطهٔ فشار معکوس | chunk-57 | مصوب |
+| Domain Database Topology | توپولوژی پایگاه‌دادهٔ حوزه‌ای | chunk-58 | مصوب |
+| Synchronous Coupling | کوپلینگ هم‌گام | chunk-58 | مصوب |
+| Dedicated Database Topology | توپولوژی پایگاه‌دادهٔ اختصاصی | chunk-58 | مصوب |
+| Database Technology Stack | پشتهٔ فناوری پایگاه‌داده | chunk-58 | مصوب |
+| Cloud Vendor | فروشندهٔ ابر | chunk-58 | مصوب |
+| Side Effect | اثر جانبی | chunk-58 | مصوب |
+| State Management | مدیریت حالت | chunk-58 | مصوب |
