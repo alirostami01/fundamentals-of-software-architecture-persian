@@ -8,10 +8,10 @@
 | Software Architect | معمار نرم‌افزار | فصل ۱ | مصوب |
 | Accidental Architect | معمار اتفاقی | فصل ۱ | مصوب |
 | Architecture Decision | تصمیم معماری (جمع: تصمیمات معماری) | فصل ۱ | مصوب |
-| Trade-off | مصالحه | فصل ۱ | مصوب |
+| Trade-off | موازنه و دادوستد (Trade-off) | فصل ۱ | مصوب |
 | Generative AI | هوش مصنوعی مولد | فصل ۱ | مصوب |
 | Context | بافتار | فصل ۱ | مصوب |
-| Open Source | نرم‌افزار آزاد | فصل ۱ | مصوب |
+| Open Source | متن‌باز / کدمنبع‌باز (Open Source) | فصل ۱ | مصوب |
 | Microservices | میکروسرویس | فصل ۱ | مصوب |
 | Architecture Style | سبک معماری | فصل ۱ | مصوب |
 | Architecture Characteristics | ویژگی‌های معماری | فصل ۱ | مصوب |
@@ -26,19 +26,19 @@
 | Entity | موجودیت | فصل ۱ | مصوب |
 | Workflow | گردش‌کار | فصل ۱ | مصوب |
 | Requirements | الزامات | فصل ۱ | مصوب |
-| "-ilities" | اختصار انگلیسی حفظ می‌شود (توانمندی‌های سیستم) | فصل ۱ | مصوب |
-| Presentation / Business / Services Layer | لایهٔ Presentation / Business / Services (بدون ترجمه) | فصل ۱ | مصوب |
-| Windows, DevOps | دست‌نخورده به انگلیسی | فصل ۱ | مصوب |
+| "-ilities" | همان اختصار انگلیسی حفظ می‌شود (توانمندی‌های سیستم) | فصل ۱ | مصوب |
+| Presentation / Business / Services Layer | لایه‌های ارائه (نمایش) / منطق کسب‌وکار / سرویس‌ها | فصل ۱ | مصوب |
+| Windows, DevOps | نام ابزار/شیوه؛ دست‌نخورده به انگلیسی | فصل ۱ | مصوب |
 | Corollary | نتیجهٔ فرعی | فصل ۱ | مصوب |
-| One Big Trade-off Jamboree | گردهمایی بزرگ مصالحه‌ها | فصل ۱ | مصوب |
+| One Big Trade-off Jamboree | جشنوارهٔ بزرگ دادوستدها و مصالحه‌ها | فصل ۱ | مصوب |
 | Choreography | کرئوگرافی | فصل ۱ | مصوب |
 | Orchestration | ارکستراسیون | فصل ۱ | مصوب |
 | Second Law of Software Architecture | قانون دوم معماری نرم‌افزار | فصل ۱ | مصوب |
 | Third Law of Software Architecture | قانون سوم معماری نرم‌افزار | فصل ۱ | مصوب |
 | Design Principle | اصل طراحی (جمع: اصول طراحی) | فصل ۱ | مصوب |
 | Scalability | مقیاس‌پذیری | فصل ۱ | مصوب |
-| Performance | کارایی | فصل ۱ | مصوب |
-| Availability | در دسترس‌بودن | فصل ۱ | مصوب |
+| Performance | عملکرد / کارایی (Performance) | فصل ۱ | مصوب |
+| Availability | دسترس‌پذیری (Availability) | فصل ۱ | مصوب |
 | Frontend | سمت کاربر | فصل ۱ | مصوب |
 | Reactive Framework | چارچوب واکنش‌گرا | فصل ۱ | مصوب |
 | Architecture Vitality | سرزندگی معماری | فصل ۱ | مصوب |
@@ -49,7 +49,7 @@
 | Automated Fitness Functions | توابع برازش خودکار | فصل ۱ | مصوب |
 | Platform | پلتفرم | فصل ۱ | مصوب |
 | Heterogeneous | ناهمگون | فصل ۱ | مصوب |
-| Comfort Zone | منطقهٔ راحتی | فصل ۱ | مصوب |
+| Comfort Zone | حاشیهٔ امن / منطقهٔ امن | فصل ۱ | مصوب |
 | Technical Breadth | گستردگی فنی | فصل ۱ | مصوب |
 | Technical Depth | ژرفای فنی | فصل ۱ | مصوب |
 | Caching | کش‌گذاری | فصل ۱ | مصوب |
@@ -71,9 +71,9 @@
 | Database Schema | طرح‌وارهٔ پایگاه‌داده | فصل ۱ | مصوب |
 | Application Silo | جزیرهٔ برنامه‌ای | فصل ۱ | مصوب |
 | Product Owner | مالک محصول | فصل ۱ | مصوب |
-| Remote Access | دسترسی دور | فصل ۱ | مصوب |
+| Remote Access | ارتباط / دسترسی از راه دور | فصل ۱ | مصوب |
 | Roadmap | نقشهٔ راه | فصل ۱ | مصوب |
-| Scaffolding | اسکفولد | فصل ۱ | مصوب |
+| Scaffolding | داربست‌بندی کد / اسکلت‌بندی اولیه | فصل ۱ | مصوب |
 | Named Topology | توپولوژی نام‌دار | فصل ۱ | مصوب |
 | Soft Skills | مهارت‌های نرم | فصل ۱ | مصوب |
 | Architectural Thinking | تفکر معماری | فصل ۲ | مصوب |
@@ -84,16 +84,16 @@
 | Monolithic Architecture | معماری تک‌پارچه | فصل ۲ | مصوب |
 | Elasticity | کشسانی | فصل ۲ | مصوب |
 | Fault Tolerance | تحمل خطا | فصل ۲ | مصوب |
-| Service Coupling | کوپلینگ سرویس‌ها | فصل ۲ | مصوب |
+| Service Coupling | جفت‌شدگی / کوپلینگ سرویس‌ها | فصل ۲ | مصوب |
 | Maintainability | قابلیت نگهداری | فصل ۲ | مصوب |
 | Readability | خوانایی | فصل ۲ | مصوب |
 | Knowledge Pyramid | هرم دانش | فصل ۲ | مصوب |
 | Antipattern | ضدالگو | فصل ۲ | مصوب |
-| Frozen Caveman Antipattern | ضدالگوی انسان یخ‌زده | فصل ۲ | مصوب |
-| Stale Expertise | تخصص کهن‌شده | فصل ۲ | مصوب |
+| Frozen Caveman Antipattern | ضدالگوی انسان غارنشین منجمد | فصل ۲ | مصوب |
+| Stale Expertise | تخصص کهن‌شده و فرسوده | فصل ۲ | مصوب |
 | Risk Assessment | ارزیابی ریسک | فصل ۲ | مصوب |
-| 20-Minute Rule | قانون بیست‌دققه‌ای | فصل ۲ | مصوب |
-| Buzzword | واژهٔ داغ | فصل ۲ | مصوب |
+| 20-Minute Rule | قانون بیست‌دقیقه‌ای | فصل ۲ | مصوب |
+| Buzzword | واژهٔ داغ / اصطلاح روز | فصل ۲ | مصوب |
 | Portfolio of Knowledge | سبد دانش | فصل ۲ | مصوب |
 | Technology Radar | رادار فناوری | فصل ۲ | مصوب |
 | Personal Radar | رادار شخصی | فصل ۲ | مصوب |
@@ -105,31 +105,31 @@
 | Blip | نقطهٔ رادار | فصل ۲ | مصوب |
 | Development Spike | اسپایک توسعه | فصل ۲ | مصوب |
 | Code Base | پایگاه کد | فصل ۲ | مصوب |
-| Technology Gambit | شرط‌بندی فناوری | فصل ۲ | مصوب |
+| Technology Gambit | ریسک هوشمندانه / گامبیت فناوری (Technology Gambit) | فصل ۲ | مصوب |
 | Embedded IoT Device | دستگاه اینترنت اشیای تعبیه‌شده | فصل ۲ | مصوب |
 | Technology Portfolio | سبد فناوری | فصل ۲ | مصوب |
 | CTO | مدیر فناوری (CTO) | فصل ۲ | مصوب |
-| Rapid Application Development (RAD) | توسعهٔ سریع برنامه | فصل ۲ | مصوب |
-| Trade-off Analysis | تحلیل مصالحه‌ها | فصل ۲ | مصوب |
+| Rapid Application Development (RAD) | توسعهٔ سریع نرم‌افزار (RAD) | فصل ۲ | مصوب |
+| Trade-off Analysis | تحلیل موازنه‌ها و دادوستدها (Trade-off Analysis) | فصل ۲ | مصوب |
 | Large Language Model (LLM) | مدل زبانی بزرگ (LLM) | فصل ۲ | مصوب |
 | Point-to-Point Messaging | پیام‌رسانی نقطه‌به‌نقطه | فصل ۲ | مصوب |
 | Publish-and-Subscribe | انتشار-اشتراک | فصل ۲ | مصوب |
-| Topic | موضوع | فصل ۲ | مصوب |
+| Topic | موضوع / تاپیک | فصل ۲ | مصوب |
 | Queue | صف | فصل ۲ | مصوب |
 | Architectural Extensibility | گسترش‌پذیری معماری | فصل ۲ | مصوب |
 | Service Decoupling | جداسازی سرویس‌ها | فصل ۲ | مصوب |
 | Data Contract | قرارداد داده | فصل ۲ | مصوب |
 | Homogeneous Contract | قرارداد همگون | فصل ۲ | مصوب |
 | Autoscaling | مقیاس‌پذیری خودکار | فصل ۲ | مصوب |
-| Load Balancing | توازن‌بار | فصل ۲ | مصوب |
-| Advanced Message Queuing Protocol (AMQP) | پروتکل پیام‌رسانی پیشرفتهٔ پیام (AMQP) | فصل ۲ | مصوب |
-| Exchange | مبادله‌گر (Exchange) | فصل ۲ | مصوب |
-| Rogue Service | سرویس مزاحم | فصل ۲ | مصوب |
+| Load Balancing | توازن بار / متعادل‌سازی بار | فصل ۲ | مصوب |
+| Advanced Message Queuing Protocol (AMQP) | پروتکل پیشرفتهٔ صف‌بندی پیام (AMQP) | فصل ۲ | مصوب |
+| Exchange | مرکز تبادل پیام / مبادله‌گر (Exchange) | فصل ۲ | مصوب |
+| Rogue Service | سرویس سرکش / خودسر (Rogue Service) | فصل ۲ | مصوب |
 | Hands-On Coding | کدنویسی مستقیم | فصل ۲ | مصوب |
 | Bottleneck Trap | تلهٔ گلوگاه | فصل ۲ | مصوب |
 | Critical Path | مسیر بحرانی | فصل ۲ | مصوب |
 | Iteration | تکرار | فصل ۲ | مصوب |
-| Production Code | کد تولیدی | فصل ۲ | مصوب |
+| Production Code | کد عملیاتی (محیط پروداکشن) | فصل ۲ | مصوب |
 | Proof of Concept (POC) | اثبات مفهوم (POC) | فصل ۲ | مصوب |
 | Throwaway Code | کد یک‌بارمصرف | فصل ۲ | مصوب |
 | Source Code Repository | مخزن کد منبع | فصل ۲ | مصوب |
