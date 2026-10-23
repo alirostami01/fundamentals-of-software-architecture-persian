@@ -154,7 +154,7 @@
 | Backward Compatibility | سازگاری رو به عقب | فصل ۳ | مصوب |
 | Structured Programming | برنامه‌نویسی ساخت‌یافته | فصل ۳ | مصوب |
 | Encapsulation | کپسوله‌سازی | فصل ۳ | مصوب |
-| Meta-Object Protocol | پروتکل فراداده | فصل ۳ | مصوب |
+| Meta-Object Protocol | پروتکل فراشیء | فصل ۳ | مصوب |
 | Implicit Architecture Characteristic | ویژگی نامشهود معماری | فصل ۳ | مصوب |
 | Cohesion | انسجام | فصل ۳ | مصوب |
 | Connascence | هم‌بستگی | فصل ۳ | مصوب |
