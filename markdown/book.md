@@ -6,6 +6,8 @@
 
 > ترجمهٔ فارسی؛ تصاویر شکل‌ها از کتاب اصلی برداشته شده و عنوان‌هایشان ترجمه شده است.
 
+> **نسخهٔ ترجمه: 2.1.0 — بازبینی جامع ۲۷ فصل و واژه‌نامه (آبان ۱۴۰۵ (اکتبر ۲۰۲۶))**
+
 <a id="toc"></a>
 
 ## فهرست مطالب
@@ -9577,7 +9579,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 ## فصل ۲: تفکر معماری
 
 ۱. سه معیار نام ببرید که با آن‌ها بتوان تعیین کرد یک تصمیم بیشتر به معماری مربوط است یا به طراحی.
-۲. سه سطح دانش را در هرم دانش (knowledge triangle) فهرست کنید و برای هر یک مثالی بیاورید.
+۲. سه سطح دانش را در مثلث دانش (هرم دانش) (knowledge triangle) فهرست کنید و برای هر یک مثالی بیاورید.
 ۳. چرا برای معمار، تمرکز بر گستردگی فنی (technical breadth) مهم‌تر از ژرفای فنی (technical depth) است؟
 ۴. برخی از راه‌های حفظ ژرفای فنی و درگیر ماندن مستقیم با کار فنی در مقام معمار کدام‌اند؟
 
@@ -9818,7 +9820,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Architecture Decision | تصمیم معماری (جمع: تصمیمات معماری) |
 | Design Principle | اصل طراحی (جمع: اصول طراحی) |
 | First Law of Software Architecture | قانون اول معماری نرم‌افزار |
-| Knowledge Triangle | هرم دانش |
+| Knowledge Triangle | مثلث دانش (هرم دانش) |
 | Technical Breadth | گستردگی فنی |
 | Technical Depth | ژرفای فنی |
 | Granularity | دانه‌بندی |
@@ -9905,14 +9907,14 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | 80-20 Rule | قاعدهٔ ۸۰-۲۰ |
 | A/B Testing | آزمون A/B |
 | Ability to Version Changes | توانایی نسخه‌بندی تغییرات |
-| Absorbed Exceptions | استثناهای بلعیده‌شده |
+| Absorbed Exceptions | استثناهای سرپوش‌گذاشته‌شده / نادیده‌گرفته‌شده (بلعیده‌شده) |
 | Abstract Class | کلاس انتزاعی |
 | Abstract Syntax Tree | درخت نحو انتزاعی |
 | Abstraction | انتزاع |
-| Abstraction Layer | لایهٔ انتزاعی |
+| Abstraction Layer | لایهٔ انتزاع (Abstraction Layer) |
 | Abstractness | میزان انتزاع |
 | Accepted (ADR status) | پذیرفته‌شده |
-| Accessibility | دسترس‌پذیری |
+| Accessibility | سهولت دسترسی / دسترس‌پذیری برای همگان (Accessibility) |
 | Accidental Architect | معمار اتفاقی |
 | Accidental Architecture (antipattern) | معماری اتفاقی |
 | Accidental Complexity | پیچیدگی عارضی |
@@ -9927,8 +9929,8 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Adaptability | انطباق‌پذیری |
 | Adapter | مبدل |
 | Additional Context | زمینهٔ تکمیلی |
-| Advanced Message Queuing Protocol (AMQP) | پروتکل پیشرفتهٔ صف‌بندی پیام (AMQP) |
-| Afferent Coupling | کوپلینگ ورودی |
+| Advanced Message Queuing Protocol (AMQP) | پروتکل صف‌بندی پیشرفتهٔ پیام (AMQP) |
+| Afferent Coupling | جفت‌شدگی ورودی / وابستگی هم‌گرا (Afferent) |
 | Agile | چابک |
 | Agility | چابکی |
 | Aleatory Contract | قرارداد تصادفی |
@@ -9937,12 +9939,12 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Ambulance Pattern | الگوی Ambulance (آمبولانس) |
 | Analysis Paralysis (antipattern) | فلج تحلیلی |
 | Analyzability | تحلیل‌پذیری |
-| Anemic Event | رویداد کم‌خون |
+| Anemic Event | رویداد تُهی‌مایه / کم‌محتوا (کم‌خون) |
 | Annotation (Java) | حاشیه‌نویسی |
 | Anomaly | ناهنجاری |
 | Anonymize | ناشناس‌سازی |
 | Antipattern | ضدالگو |
-| API Access Facade | نمای دسترسی API |
+| API Access Facade | الگوی نمای دسترسی API (Facade Pattern) |
 | API Gateway | دروازهٔ API |
 | API Layer | لایهٔ API |
 | Application Layer | لایهٔ کاربرد |
@@ -9952,7 +9954,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Appropriateness Recognizability | تشخیص‌پذیری تناسب |
 | Architectural Characteristics Analysis | تحلیل ویژگی‌های معماری |
 | Architectural Characteristics Worksheet | کاربرگ ویژگی‌های معماری |
-| Architectural Decision Record (ADR) | سابقهٔ تصمیم معماری (ADR) |
+| Architectural Decision Record (ADR) | سند ثبت تصمیم معماری (ADR) |
 | Architectural Destination | مقصد معماری |
 | Architectural Direction | جهت‌گیری معماری |
 | Architectural Extensibility | گسترش‌پذیری معماری |
@@ -9970,17 +9972,17 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Architecture Pattern | الگوی معماری |
 | Architecture Quantum (pl. Quanta) | کوانتوم معماری (ج. کوانتوم‌ها) |
 | Architecture Review Board | هیئت بازبینی معماری |
-| Architecture Sinkhole (antipattern) | چاهک معماری |
+| Architecture Sinkhole (antipattern) | ضدالگوی چاهک معماری (اتلاف منابع در لایه‌های بی‌خاصیت) |
 | Architecture Style | سبک معماری |
 | Architecture Topology | توپولوژی معماری |
 | Architecture Vitality | سرزندگی معماری |
 | Archivability | بایگانی‌پذیری |
 | Archive Data | دادهٔ بایگانی‌شده |
-| Armchair Architect | معمار پشت‌میزنشین |
+| Armchair Architect | معمار نظریه‌پرداز و دور از میدان عمل (معمار پشت‌میزنشین) |
 | Artifact (architecture) | مصنوع |
-| Asking Price | قیمت پیشنهادیِ فروشنده |
+| Asking Price | قیمت پیشنهادی / قیمت پایهٔ فروش (Asking Price) |
 | Assembly (.NET) | اسمبلی |
-| Assertion (testing) | ادعا |
+| Assertion (testing) | گزارهٔ درستی‌سنجی / وارسی شرط (Assert) |
 | Assessment (domain) | ارزیابی |
 | Asynchronous Communication | ارتباط ناهم‌گام |
 | Asynchronous Messaging | پیام‌رسانی ناهم‌گام |
@@ -9998,7 +10000,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Automated Deployment | استقرار خودکار |
 | Automated Fitness Functions | توابع برازش خودکار |
 | Automated Governance | حاکمیت خودکار |
-| Automated Machine Provisioning | تأمین خودکار ماشین‌ها |
+| Automated Machine Provisioning | تخصیص و راه‌اندازی خودکار سرورها/ماشین‌ها |
 | Automated Provisioning | تأمین خودکار منابع |
 | Automated Test Suite | مجموعهٔ آزمون‌های خودکار |
 | Automation | خودکارسازی |
@@ -10008,36 +10010,36 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Average Directional Index | میانگین جهت‌دار |
 | Average Response Time | میانگین زمان پاسخ |
 | Back-and-Forth Communication | ارتباط رفت‌وبرگشتی |
-| Back-Office | پشتیبانی اداری |
+| Back-Office | سیستم‌های اداری-پشتیبانی داخلی (Back-Office) |
 | Backend Processing | پردازش پس‌زمینه‌ای |
-| Backend Service | سرویس پشتیبان |
-| Backends for Frontends (BFF) | Backends for Frontends (بدون ترجمه؛ نام الگو) |
+| Backend Service | سرویس بک‌اند / سرویس پشتی (Backend Service) |
+| Backends for Frontends (BFF) | الگوی بک‌اند برای فرانت‌اندها (BFF Pattern) |
 | Backpressure | فشار معکوس |
-| Backpressure Point | نقطهٔ فشار معکوس |
+| Backpressure Point | نقطهٔ مهار فشار بار / کنترل پس‌زدگی جریان داده |
 | Backup (data) | نسخهٔ پشتیبان |
-| Backup (load) | انباشت |
+| Backup (load) | تجمع بار و پس‌زدگی ترافیک (Traffic Backup) |
 | Backward Compatibility | سازگاری رو به عقب |
 | Bandwidth | پهنای باند |
 | BASE Transactions | تراکنش‌های BASE (دسترس‌پذیری پایه، حالت نرم، سازگاری نهایی) |
 | Baseline | خط مبنا |
 | Basket (of trade orders) | سبد |
 | Behavior | رفتار |
-| Bespoke Code | کد سفارشی |
+| Bespoke Code | کد اختصاصی / کد دست‌نویس سازمان (Bespoke Code) |
 | Best Practice | بهترین شیوه |
 | Bidder | پیشنهاددهنده |
 | Bidirectional Communication | ارتباط دوسویه |
-| Big Ball of Distributed Mud | توپِ بزرگِ گِلِ توزیع‌شده |
-| Big Ball of Mud (antipattern) | توپِ بزرگِ گِل |
-| Big Design Up Front | طراحی بزرگ از پیش |
+| Big Ball of Distributed Mud | کلاف سردرگم توزیع‌شده / گلولهٔ گِلی توزیع‌شده |
+| Big Ball of Mud (antipattern) | ضدالگوی کلاف سردرگم معماری / گلولهٔ گِلی (Big Ball of Mud) |
+| Big Design Up Front | طراحی جامع و همه‌جانبه در آغاز (BDUF) |
 | Binding Rules | قواعد اتصال |
 | Blip | نقطهٔ رادار |
-| Blocking Wait | انتظار مسدودکننده |
+| Blocking Wait | انتظار مسدودشونده (Blocking Wait) |
 | Bottleneck | گلوگاه |
 | Bottleneck Trap | تلهٔ گلوگاه |
 | Boundaries | مرزها |
 | Boundary Condition | شرط مرزی |
-| Bounded Context | زمینهٔ محدود |
-| Brain Trust | گنجینهٔ دانش |
+| Bounded Context | بافتار مقید / زمینهٔ کران‌دار (Bounded Context) |
+| Brain Trust | اتاق فکر / مشاوران زبده و هستهٔ فکری (Brain Trust) |
 | Breaking Change | تغییر شکننده |
 | Breaking Contract Change | تغییرِ شکنندهٔ قرارداد |
 | Brittleness | شکنندگی |
@@ -10045,15 +10047,15 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Broker | کارگزار |
 | Broker-Domain / Domain-Broker (pattern) | الگوی کارگزار حوزه‌ای |
 | Brokerage Account | حساب کارگزاری |
-| Brooks’s Law | قانون Brooks |
-| Brown-Bag Lunch | جلسهٔ ناهار آموزشی |
-| Brute Force | زور خام |
-| Buffer | میانگیر |
+| Brooks’s Law | قانون بروکس (Brooks's Law) |
+| Brown-Bag Lunch | جلسهٔ ناهار و یادگیری (جلسهٔ برون‌بگ) |
+| Brute Force | جستجوی جامع / بررسی فراگیر تمام حالت‌ها (بروت فورس) |
+| Buffer | بافر / حافظهٔ میانگیر (Buffer) |
 | Bug Fix | رفع اشکال |
 | Build Time | زمان ساخت |
 | Building Block | بلوک سازنده |
 | Business Analyst | تحلیلگر کسب‌وکار |
-| Business Delegate (pattern) | الگوی Business Delegate (بدون ترجمه) |
+| Business Delegate (pattern) | الگوی نمایندهٔ کسب‌وکار (Business Delegate) |
 | Business Domain | حوزهٔ کسب‌وکار |
 | Business Driver | محرک کسب‌وکار |
 | Business Environment | محیط کسب‌وکار |
@@ -10062,7 +10064,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Business Process Management (BPM) | مدیریت فرایند کسب‌وکار |
 | Business Services | سرویس‌های کسب‌وکار |
 | Business Transaction | تراکنش کسب‌وکار |
-| Buy-in | همراهی |
+| Buy-in | جلب موافقت و حمایت ذی‌نفعان / همراهی و پذیرش سازمانی (Buy-in) |
 | Buzzword | واژهٔ داغ / اصطلاح روز |
 | C-level Executives | مدیران ارشد |
 | Caching | کش‌گذاری |
@@ -10070,11 +10072,11 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Call Graph | گراف فراخوانی |
 | Call Point | نقطهٔ فراخوانی |
 | Candidate Component | مؤلفهٔ نامزد |
-| Canonical (service) | متعارف |
+| Canonical (service) | سرویس یکپارچه‌کنندهٔ استاندارد / سرویس کانونیکال |
 | Capabilities | قابلیت‌ها |
 | Capacity | ظرفیت |
 | Centralized Workflow | گردش‌کار متمرکز |
-| Ceremony (deployment) | تشریفات |
+| Ceremony (deployment) | سربار فرآیندی و تشریفات استقرار (Ceremony) |
 | Change Control | کنترل تغییر |
 | Change Management | مدیریت تغییر |
 | Chaos Engineering | مهندسی آشوب |
@@ -10082,9 +10084,9 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Checklist | فهرست وارسی |
 | Choreographed (EDA) | کرئوگرافی‌شده |
 | Choreography | کرئوگرافی |
-| Churn (event flow) | آشفتگی |
-| Churn (version control) | حجم تغییرات |
-| Circuit Breaker | قطع‌کنندهٔ مدار |
+| Churn (event flow) | تلاطم و نوسان شدید جریان رویدادها |
+| Churn (version control) | نرخ دستخوردگی و تغییرات مکرر کد (Code Churn) |
+| Circuit Breaker | الگوی مدارشکن / قطع‌کنندهٔ مدار (Circuit Breaker) |
 | Class (C4) | کلاس |
 | Class Diagram | نمودار کلاس |
 | Clear | روشن |
@@ -10092,7 +10094,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Client/Server | کلاینت/سرور |
 | Closed Layer | لایهٔ بسته |
 | Cloud Provider | ارائه‌دهندهٔ ابر |
-| Cloud Vendor | فروشندهٔ ابر |
+| Cloud Vendor | تأمین‌کنندهٔ خدمات ابری (Cloud Provider/Vendor) |
 | Cloud-based Storage and Deployment | ذخیره‌سازی و استقرار مبتنی بر ابر |
 | Cloud-Native | بومیِ ابر |
 | Clustering | خوشه‌بندی |
@@ -10107,7 +10109,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Code Reuse | بازاستفادهٔ کد |
 | Code Review | بازبینی کد |
 | Code Smell | بوی کد |
-| Code-Crawling Tool | ابزار پیمایش کد |
+| Code-Crawling Tool | ابزار خزش و تحلیل کد (Code Crawler) |
 | Code-Validation Checker | بررسی‌کنندهٔ اعتبار کد |
 | Coding Hygiene | بهداشت کدنویسی |
 | Coexistence | همزیستی |
@@ -10124,8 +10126,8 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Command-Line Tool | ابزار خط فرمان |
 | Command-Query-Responsibility-Segregation (CQRS) | تفکیک مسئولیت فرمان و پرس‌وجو (CQRS) |
 | Comment Service | سرویس نظر |
-| Commit / Rollback | ثبت / بازگردانی |
-| Commodity | کالای همگانی |
+| Commit / Rollback | تثبیت / برگشت به عقب تراکنش (Commit / Rollback) |
+| Commodity | کالای عمومی و استاندارد / خدمت مصرفی رایج (Commodity) |
 | Communication | ارتباط |
 | Communication Antipattern | ضدالگوی ارتباطی |
 | Communication Style | سبک ارتباطی |
@@ -10139,7 +10141,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Compile Time | زمان کامپایل |
 | Compile-Based Plug-in | افزونهٔ مبتنی بر کامپایل |
 | Compile-Time Dependency | وابستگی زمان کامپایل |
-| Complex Event Processing (CEP) | پردازش رویداد پیچیده |
+| Complex Event Processing (CEP) | پردازش رویدادهای مرکب و پیچیده (CEP) |
 | Complexity Theory | نظریهٔ پیچیدگی |
 | Compliance (ADR section) | انطباق |
 | Compliance Check | بررسی انطباق |
@@ -10154,7 +10156,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Composite Architectural Characteristic | ویژگی معماری مرکب |
 | Composition | ترکیب |
 | Compositional Reuse | بازاستفادهٔ ترکیبی |
-| Computer-Assisted Software Engineering (CASE) | مهندسی نرم‌افزار رایانه‌یار (CASE) |
+| Computer-Assisted Software Engineering (CASE) | مهندسی نرم‌افزار با کمک رایانه (ابزارهای CASE) |
 | Concise | موجز |
 | Concrete Artifact | مصنوع عینی |
 | Concurrency | هم‌روندی |
@@ -10205,16 +10207,16 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Contract Management | مدیریت قرارداد |
 | Contract Test | آزمون قرارداد |
 | Control-Freak Architect | معمار کنترل‌گرِ افراطی |
-| Conway’s Law | قانون Conway |
+| Conway’s Law | قانون کانوی (Conway's Law) |
 | Coordinated Deployment | استقرار هماهنگ‌شده |
 | Core (microkernel) | هسته |
 | Core Component | مؤلفهٔ اصلی |
 | Core System | سیستم هسته |
 | Corollary | نتیجهٔ فرعی |
-| Correlation ID (CID) | شناسهٔ تناظر |
-| Coupling | کوپلینگ |
+| Correlation ID (CID) | شناسهٔ همبستگی و ردگیری پیام (Correlation ID) |
+| Coupling | جفت‌شدگی / وابستگی متقابل (کوپلینگ) |
 | Coupling Point | نقطهٔ کوپلینگ |
-| Covering Your Assets (antipattern) | ضدالگوی «خود را پوشش بده» |
+| Covering Your Assets (antipattern) | ضدالگوی دفع تقصیر / عافیت‌طلبی و شانه خالی کردن از مسئولیت (CYA) |
 | Credit Limit | سقف اعتبار |
 | Critical Path | مسیر بحرانی |
 | Cross-Cutting Architectural Characteristics | ویژگی‌های میان‌بُرشی معماری |
@@ -10238,38 +10240,38 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Data Architect | معمار داده |
 | Data Architecture | معماری داده |
 | Data Center | مرکزداده |
-| Data Collision | برخورد داده |
+| Data Collision | تداخل همزمان داده‌ها / تصادم داده (Data Collision) |
 | Data Consistency | سازگاری داده |
 | Data Contract | قرارداد داده |
-| Data Fidelity | وفاداری داده |
+| Data Fidelity | صحت و اصالت داده / تطابق داده (Data Fidelity) |
 | Data Grid | شبکهٔ داده |
 | Data Hub | هاب داده |
 | Data Integrity | یکپارچگی داده |
 | Data Isolation | جداسازی داده |
 | Data Latency | تأخیر داده |
 | Data Link Layer | لایهٔ پیوند داده |
-| Data Loss | گم‌شدن داده |
+| Data Loss | از دست رفتن داده / اتلاف داده (Data Loss) |
 | Data Mesh | مش داده |
 | Data Model | مدل داده |
 | Data Protection | حفاظت از داده |
-| Data Pump | پمپ داده |
-| Data Reader | خوانندهٔ داده |
+| Data Pump | تزریق‌گر داده / موتور انتقال داده (Data Pump) |
+| Data Reader | مؤلفهٔ خواندن/بازیابی داده (Data Reader) |
 | Data Store | مخزن داده |
 | Data Synchronization | هم‌گام‌سازیِ داده |
 | Data Topologies | توپولوژی‌های داده |
 | Data Topology | توپولوژی داده |
-| Data Writer | نویسندهٔ داده |
+| Data Writer | مؤلفهٔ ثبت/نوشتن داده (Data Writer) |
 | Data-Based Event Payload | محمولهٔ رویدادِ مبتنی بر داده |
 | Data-Driven (request) | داده‌محور |
 | Database Commit | ثبت در پایگاه‌داده |
 | Database Connection | اتصال پایگاه‌داده |
-| Database Connection Pool | مخزن اتصال پایگاه‌داده |
+| Database Connection Pool | استخر اتصالات پایگاه‌داده (Connection Pool) |
 | Database Replication | تکثیر پایگاه‌داده |
 | Database Schema | طرح‌وارهٔ پایگاه‌داده |
 | Database Server | سرور پایگاه‌داده |
 | Database Technology Stack | پشتهٔ فناوری پایگاه‌داده |
 | Database Topology | توپولوژی پایگاه‌داده |
-| Database-Connection Pooling | تجمیع اتصال‌های پایگاه‌داده |
+| Database-Connection Pooling | استخر اتصالات پایگاه‌داده (Connection Pooling) |
 | Database-Migration Scripts | اسکریپت‌های مهاجرت پایگاه داده |
 | Database-per-Service | پایگاه‌داده به ازای هر سرویس |
 | Deadlock | بن‌بست |
@@ -10282,7 +10284,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Decoupled | جدا (فاقد کوپلینگ) |
 | Decoupling | جداسازی |
 | Dedicated Database Topology | توپولوژی پایگاه‌دادهٔ اختصاصی |
-| Definition of Done | تعریف انجام‌شدگی |
+| Definition of Done | تعریف اتمام کار (DoD / Definition of Done) |
 | Degree (of Connascence) | درجه (هم‌بستگی) |
 | Delegation | واگذاری |
 | Demonstration Defeats Discussion | نمایش عملی بر بحث چیره می‌شود |
@@ -10311,7 +10313,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Developer Flow State | حالت غرقگی توسعه‌دهنده |
 | Development Spike | اسپایک توسعه |
 | Diagramming | نمودارکشی |
-| Diffusion of Responsibility | پخش مسئولیت |
+| Diffusion of Responsibility | پراکندگی مسئولیت / لوث مسئولیت (Diffusion of Responsibility) |
 | Direction of Risk | جهت ریسک |
 | Discovery (tool) | کشف |
 | Discussion Questions | پرسش‌های بحث |
@@ -10323,8 +10325,8 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Distributed Monolith | تک‌پارچهٔ توزیع‌شده |
 | Distributed Transaction | تراکنش توزیع‌شده |
 | Distributed Workflow | گردش‌کار توزیع‌شده |
-| Divide and Conquer | تفرقه بینداز و حکومت کن |
-| DLL Hell (antipattern) | جهنم DLL |
+| Divide and Conquer | تاکتیک تفرقه بینداز و حکومت کن (مذاکره) / الگوریتم تقسیم و حل (Divide and Conquer) |
+| DLL Hell (antipattern) | ضدالگوی جهنم وابستگی‌ها / جهنم DLL |
 | Document Database | پایگاه‌دادهٔ سندمحور |
 | Domain | حوزه |
 | Domain Analyst | تحلیلگر حوزه |
@@ -10338,7 +10340,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Domain Service | سرویس حوزه‌ای |
 | Domain-Based Data Writer | نویسندهٔ دادهٔ حوزه‌محور |
 | Domain-Based Database Topology | توپولوژی پایگاه‌دادهٔ حوزه‌ای |
-| Domain-Driven Design (DDD) | طراحی حوزه‌محور (DDD) |
+| Domain-Driven Design (DDD) | طراحی دامنه‌محور (DDD) |
 | Domain-Focused Team | تیم حوزه‌محور |
 | Domain-Scoped Database | پایگاه‌دادهٔ هم‌دامنه با حوزه |
 | Domain-Specific Language (DSL) | زبان ویژهٔ حوزه |
@@ -10347,8 +10349,8 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Downstream (event processor) | پایین‌دستی |
 | Downtime | زمان ازکارافتادگی |
 | Driving Architectural Characteristics | ویژگی‌های معماری پیشران |
-| Dumping Ground | انبار درهم |
-| Duplication | دوباره‌نویسی |
+| Dumping Ground | انبار ضایعات کد / محل انباشت بی‌رویه کلاس‌ها |
+| Duplication | کپی و تکرار کد / همانندسازی کد (Code Duplication) |
 | Durable Subscriber | مشترک بادوام |
 | Dynamic Connascence | هم‌بستگی پویا |
 | Dynamic Coupling | کوپلینگ پویا |
@@ -10360,7 +10362,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Edge (graph) | یال |
 | Edge Case | حالت مرزی |
 | Effective Architect | معمار اثربخش |
-| Efferent Coupling | کوپلینگ خروجی |
+| Efferent Coupling | جفت‌شدگی خروجی / وابستگی واگرا (Efferent) |
 | Elastic Leadership | رهبری کشسان |
 | Elastic Scale | مقیاس‌پذیری کشسان |
 | Elasticity | کشسانی |
@@ -10395,7 +10397,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Essential Complexity | پیچیدگی ذاتی |
 | Estimation | برآورد |
 | Evals (evaluations) | ارزیابی‌ها |
-| Evangelism | مبلغ‌گری |
+| Evangelism | ترویج‌گری فناوری (Technology Evangelism) |
 | Event Broker | کارگزار رویداد |
 | Event Bus | گذرگاه رویداد |
 | Event Channel | کانال رویداد |
@@ -10410,13 +10412,13 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Event Processor | پردازندهٔ رویداد |
 | Event Producer | تولیدکنندهٔ رویداد |
 | Event Queue | صف رویداد |
-| Event Sourcing | رویدادنگاری |
+| Event Sourcing | منبع‌یابی رویداد / بازسازی وضعیت با رخدادها (Event Sourcing) |
 | Event Streaming | جریان‌سازی رویداد |
 | Event Tree Diagram | نمودار درخت رویداد |
 | Event-Based Model | مدل رویدادمحور |
 | Event-Driven Architecture | معماری رویدادمحور |
 | Eventual Consistency | سازگاری نهایی |
-| Eviction Policy | سیاست بیرون‌رانی |
+| Eviction Policy | سیاست تخلیه و پاک‌سازی کش (Eviction Policy) |
 | Evolutionary Architecture | معماری تکامل‌پذیر |
 | Evolutionary Change | تغییر تکاملی |
 | Evolutionary Computing | محاسبات تکاملی |
@@ -10432,37 +10434,37 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Facilitation | تسهیل‌گری |
 | Facilitator | تسهیل‌گر |
 | Fail-safe | ایمن در برابر خرابی |
-| Failover | جابه‌جایی هنگام خرابی |
-| Failure Mode | حالت شکست |
+| Failover | انتقال خودکار به پشتیبان پس از خرابی (Failover) |
+| Failure Mode | حالت خرابی / نحوهٔ ازکارافتادگی (Failure Mode) |
 | Fallacies of Distributed Computing | مغالطه‌های محاسبات توزیع‌شده |
 | False Equivalence | هم‌ارزی نادرست |
 | Fan-out Call | فراخوانی انشعابی |
-| Fast-Lane Reader (pattern) | الگوی Fast-Lane Reader (بدون ترجمه) |
+| Fast-Lane Reader (pattern) | الگوی خوانندهٔ مسیر سریع / خط ویژه (Fast-Lane Reader) |
 | Fatal Error | خطای مهلک |
 | Fault Tolerance | تحمل خطا |
 | Feasibility | امکان‌پذیری |
-| Feature Toggles | کلیدهای قابلیت |
+| Feature Toggles | کلیدهای تغییر ویژگی / پرچم‌های قابلیت (Feature Flags/Toggles) |
 | Federated (UI/Database) | فدراتیو |
 | Feedback Loop | حلقهٔ بازخورد |
 | Field Selector | انتخاب‌گر فیلد |
-| Filesystem | سیستم فایل |
+| Filesystem | سامانهٔ پرونده‌ها / فایل‌سیستم (Filesystem) |
 | Filter | فیلتر |
 | Fine-Grained | ریزدانه |
-| Fire-and-Forget | بفرست‌وفراموش‌کن |
+| Fire-and-Forget | ارسال بدون انتظار پاسخ / آتش و فراموش (Fire-and-Forget) |
 | Firewall | دیوار آتش |
-| First Contentful Paint | نخستین رنگ‌آمیزی محتوایی |
-| First CPU Idle | نخستین بیکاری CPU |
+| First Contentful Paint | اولین ترسیم محتوا (FCP) |
+| First CPU Idle | اولین زمان بیکاری پردازنده (FCI) |
 | First Law of Software Architecture | قانون اول معماری نرم‌افزار |
-| First-In, First-Out (FIFO) | نخست وارد، نخست خارج |
+| First-In, First-Out (FIFO) | خروج به ترتیب ورود / اولین ورودی، اولین خروجی (FIFO) |
 | First-Page Render | نخستین رندر صفحه |
 | Fitness Function | تابع برازش |
 | Floor Plan | نقشهٔ طبقه |
-| Flow (state) | غرقگی |
+| Flow (state) | حالت غرقگی ذهنی / تمرکز عمیق (Flow State) |
 | Frame Synchronization | همگام‌سازی قاب |
 | Framework (library) | چارچوب |
 | Fraud Detection | تشخیص تقلب |
-| Front Cache | کش جلویی |
-| Front Controller (pattern) | Front Controller (بدون ترجمه؛ نام الگو) |
+| Front Cache | کش لایهٔ اول / حافظه پنهان بیرونی (Front Cache) |
+| Front Controller (pattern) | الگوی کنترل‌گر جلویی / ورودی واحد (Front Controller) |
 | Frontend | سمت کاربر |
 | Frontend / Backend | سمت کاربر / سمت سرور |
 | Frozen Caveman Antipattern | ضدالگوی انسان غارنشین منجمد |
@@ -10479,7 +10481,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Functional Testing | آزمون کارکردی |
 | Fundamental Patterns | الگوهای بنیادین |
 | Future-Proofing | آینده‌نگری و مصون‌سازی در برابر آینده |
-| Game Changer | تغییردهندهٔ بازی |
+| Game Changer | برهم‌زنندهٔ قواعد بازی / تحول‌آفرین (Game Changer) |
 | Game the System | دور زدن سیستم |
 | Gateway | دروازه |
 | General Purpose (library) | همه‌منظوره |
@@ -10493,31 +10495,31 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Go-to Person | فرد مرجع |
 | Governance | حاکمیت |
 | Governance Mesh | شبکهٔ حاکمیت |
-| Grains of Sand (antipattern) | دانه‌های شن |
+| Grains of Sand (antipattern) | ضدالگوی دانه‌های ماسه (ریزدانگی افراطی سرویس‌ها) |
 | Granularity | دانه‌بندی |
 | Graph Database | پایگاه‌دادهٔ گرافی |
 | Graph Theory | نظریهٔ گراف |
 | Greenfield System | سیستم نوساخت |
-| Groundhog Day (antipattern) | ضدالگوی «روز موش‌خرما» |
+| Groundhog Day (antipattern) | ضدالگوی روز تکراری (تصمیم‌گیری‌های فرسایشی تکرارشونده) |
 | Group Potential | توان بالقوهٔ گروه |
 | Guaranteed Delivery | تحویل تضمین‌شده |
-| Guardrails | نرده‌های محافظ |
+| Guardrails | چارچوب‌های حفاظتی و راهنما / خطوط بازدارنده (Guardrails) |
 | Hands-On Coding | کدنویسی مستقیم |
-| Handshake | دست‌دهی |
-| Happy Path | مسیر موفق |
-| Hardcoded | سخت‌کدشده |
+| Handshake | دست‌تکانی / توافق اولیه ارتباطی (Handshake) |
+| Happy Path | مسیر هموار / سناریوی بدون خطا (Happy Path) |
+| Hardcoded | هاردکدشده / درج مستقیم مقادیر ثابت در کد |
 | Hardware Layer | لایهٔ سخت‌افزار |
 | Hashing | درهم‌سازی |
-| Hawthorne Effect | اثر Hawthorne |
+| Hawthorne Effect | اثر هاثورن (Hawthorne Effect) |
 | Health Insurance Portability and Accountability Act (HIPAA) | قانون انتقال‌پذیری و پاسخ‌گویی بیمهٔ سلامت (HIPAA) |
 | Heterogeneous | ناهمگون |
 | Heterogeneous Code | کد ناهمگون |
 | Hexagonal Architecture (pattern) | معماری Hexagonal (شش‌ضلعی) |
-| High Availability | در دسترس‌بودن بالا |
+| High Availability | دسترس‌پذیری بالا (High Availability) |
 | High Code Volatility | نوسان‌پذیری بالای کد |
 | High Data Volume | حجم بالای داده |
 | High-Frequency Trading | معاملات پربسامد |
-| High-Throughput | پرتوان |
+| High-Throughput | دارای توان پردازشی بالا / با توان عملیاتی بالا |
 | High-Volume Application | برنامهٔ پرحجم |
 | Holistic | کل‌نگر |
 | Holistic Agility | چابکی کل‌نگر |
@@ -10532,7 +10534,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Implementation Coupling | کوپلینگ پیاده‌سازی |
 | Implicit Architecture Characteristic | ویژگی نامشهود معماری |
 | Implicit Domain Knowledge | دانش ضمنی حوزه |
-| Import / Auto-import | درون‌بُرد / درون‌بُرد خودکار |
+| Import / Auto-import | وارد کردن / واردسازی خودکار ماژول‌ها |
 | In-Memory Caching | کش‌گذاری درون‌حافظه‌ای |
 | In-Memory Database | پایگاه‌دادهٔ درون‌حافظه‌ای |
 | In-Memory Replicated Cache | کش تکثیرشدهٔ درون‌حافظه‌ای |
@@ -10572,15 +10574,15 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Interservice Call | فراخوانی میان‌سرویسی |
 | Interservice Communication | ارتباط میان‌سرویسی |
 | Interteam Communication | ارتباط میان‌تیمی |
-| Inverse Conway Maneuver | مانور معکوس Conway |
+| Inverse Conway Maneuver | مانور معکوس کانوی (Inverse Conway Maneuver) |
 | Inversion of Control | وارونگی کنترل |
-| Irrational Artifact Attachment (antipattern) | دلبستگی نامعقول به مصنوع |
+| Irrational Artifact Attachment (antipattern) | ضدالگوی دلبستگی وسواس‌گونه به مستندات یا دیاگرام‌ها |
 | Isomorphic Shape | شکل هم‌ریخت |
 | Isomorphism | هم‌ریختی |
 | Item Status (domain) | وضعیت قلم |
 | Iteration | تکرار |
 | Iterative Process | فرایند تکرارشونده |
-| Ivory Tower Architecture Antipattern | ضدالگوی معماری برج عاج |
+| Ivory Tower Architecture Antipattern | ضدالگوی معماران برج عاج (جدایی از واقعیت‌های توسعه) |
 | JAR Hell (antipattern) | جهنم JAR |
 | Join Point | نقطهٔ اتصال |
 | Jurisdiction | حوزهٔ قضایی |
@@ -10593,18 +10595,18 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Key-Value Database | پایگاه‌دادهٔ کلید-مقدار |
 | Key-Value Pair | جفت کلید-مقدار |
 | Kiosk | کیوسک |
-| Kitchen Sink (Utility Class) | کلاس کمکی همه‌چیزدار |
+| Kitchen Sink (Utility Class) | کلاس کمکی آشفته و همه‌چیزدان (Kitchen Sink) |
 | Knowledge Pyramid | هرم دانش |
-| Knowledge Triangle | هرم دانش |
+| Knowledge Triangle | مثلث دانش (هرم دانش) |
 | Known Unknowns | نادانسته‌های دانسته |
 | Lack of Cohesion | فقدان انسجام |
 | Lack of Cohesion in Methods (LCOM) | فقدان انسجام در متدها (LCOM) |
 | Landing Page | صفحهٔ فرود |
 | Large Language Model (LLM) | مدل زبانی بزرگ (LLM) |
 | Last Participant Support (LPS) | پشتیبانی از آخرین مشارکت‌کننده |
-| Last Responsible Moment | آخرین لحظهٔ مسئولانه |
+| Last Responsible Moment | آخرین زمان معقول برای تصمیم‌گیری (Last Responsible Moment) |
 | Latency | تأخیر |
-| Law of Demeter | قانون Demeter |
+| Law of Demeter | قانون دیمیتر (Law of Demeter) |
 | Law of Diminishing Returns | قانون بازده نزولی |
 | Laws of Software Architecture | قوانین معماری نرم‌افزار |
 | Layered Architecture | معماری لایه‌ای |
@@ -10618,7 +10620,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Leaf Node | گرهٔ برگ |
 | Learnability | یادگیری‌پذیری |
 | Least Worst (Trade-offs) | کم‌بدترین (مجموعهٔ مصالحه‌ها) |
-| Least Worst Architecture | کم‌بدترین معماری |
+| Least Worst Architecture | بهینه‌ترین معماری میان مصالحه‌ها (کم‌بدترین گزینه) |
 | Legacy System | سیستم میراثی |
 | Legal | الزامات حقوقی |
 | Level of Effort | سطح تلاش |
@@ -10628,7 +10630,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Likelihood (risk) | احتمال وقوع |
 | Linter | لینتر |
 | Litmus Test | محک |
-| Load Balancer | توازن‌دهندهٔ بار |
+| Load Balancer | توزیع‌کنندهٔ بار / متعادل‌کنندهٔ بار (Load Balancer) |
 | Load Balancing | توازن بار / متعادل‌سازی بار |
 | Locality (of Connascence) | محلی‌بودن (هم‌بستگی) |
 | Localization | بومی‌سازی |
@@ -10640,13 +10642,13 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Logical Partitioning | افراز منطقی |
 | Long-Running Transaction | تراکنش طولانی‌مدت |
 | Long-Tail Latency | تأخیر دنبالهٔ بلند |
-| Loose Contract | قرارداد آزاد |
-| Loose Coupling | کوپلینگ سست |
+| Loose Contract | قرارداد منعطف / سهل‌گیرانه (Loose Contract) |
+| Loose Coupling | جفت‌شدگی ضعیف / وابستگی اندک (Loose Coupling) |
 | Low External Implementation Static Coupling | کوپلینگ ایستای پیاده‌سازی بیرونی پایین |
 | Low Volatility | نوسان‌پذیری پایین |
-| Low-Fidelity Artifacts | مصنوعات کم‌جزئیات |
+| Low-Fidelity Artifacts | مستندات و طرح‌های اولیه و کم‌دقت (Low-Fidelity) |
 | Loyalty Points | امتیازهای وفاداری |
-| Machine Provisioning | تأمین ماشین |
+| Machine Provisioning | تخصیص و راه‌اندازی خودکار سرورها/ماشین‌ها (Provisioning) |
 | Machine-Readable Format | قالب ماشین‌خوان |
 | Macro-Layered (structure) | کلان‌لایه‌ای |
 | Magic Value | مقدار جادویی |
@@ -10684,37 +10686,37 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Message Transformation | تبدیل پیام |
 | Messaging Grid | شبکهٔ پیام‌رسانی |
 | Messaging Service | سرویس پیام‌رسانی |
-| Meta-Object Protocol | پروتکل فراشیء |
+| Meta-Object Protocol | پروتکل فراشیء (MOP) |
 | Metadata | فراداده |
 | Method Call | فراخوانی متد |
 | Metric | معیار |
 | Micro-Frontends | میکروفرانت‌اندها |
-| Microkern-ality | میکروکرنل‌بودن |
+| Microkern-ality | ماهیت ریزهسته‌ای / قابلیت معماری میکروکرنل |
 | Microkernel Architectural Style | سبک معماری میکروکرنل |
 | Microservices | میکروسرویس |
 | Microservices Architecture | معماری میکروسرویس‌ها |
 | Migration Target | مقصد مهاجرت |
 | Mirroring (cache) | آینه‌سازی |
-| Mock | ماک |
-| Model-View-Controller (MVC) | Model-View-Controller (بدون ترجمه) |
+| Mock | شبیه‌ساز رفتار / شیء ساختگی (Mock) |
+| Model-View-Controller (MVC) | الگوی مدل-نما-کنترل‌گر (MVC) |
 | Modeling Language | زبان مدل‌سازی |
 | Modern Engineering Practices | شیوه‌های مهندسیِ مدرن |
 | Modifiability | اصلاح‌پذیری |
 | Modular Monolith | تک‌پارچهٔ ماژولار |
 | Modular Structure | ساختار ماژولار |
-| Modularity | ماژولاریتی |
+| Modularity | پیمانه‌ای بودن / ساختار ماژولار (پیمانه‌گری) |
 | Module | ماژول |
 | Monitor | پایشگر |
 | Monitoring | پایش |
 | Monolithic Architecture | معماری تک‌پارچه |
 | Monolithic Database Topology | توپولوژی پایگاه‌دادهٔ تک‌پارچه |
-| Monolithic Frontend | سمت کاربرِ تک‌پارچه |
+| Monolithic Frontend | فرانت‌اند یکپارچه (Monolithic Frontend) |
 | Monolithic Structure | ساختار تک‌پارچه |
-| Most Frequently Used (cache) | پرتکرارترین استفاده |
-| Most Recently Used (cache) | تازه‌ترین استفاده |
+| Most Frequently Used (cache) | الگوریتم بیشترین بسامد استفاده (MFU) |
+| Most Recently Used (cache) | الگوریتم آخرین استفاده‌شده (MRU) |
 | Multicasting | چندپخشی |
-| Multitenant Infrastructure | زیرساخت چندمستأجری |
-| Multithreading | چندریسمانی |
+| Multitenant Infrastructure | زیرساخت چندمستاجره / چندمشتری (Multi-tenant) |
+| Multithreading | چندرشته‌ای (Multithreading) |
 | N-Tiered Architecture | معماری چندلایه |
 | Name-Value Pair | جفت نام-مقدار |
 | Named Topology | توپولوژی نام‌دار |
@@ -10722,7 +10724,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Naming Conventions | قراردادهای نام‌گذاری |
 | Naming Service | سرویس نام‌گذاری |
 | Native Application | برنامهٔ بومی |
-| Near-Cache | کش نزدیک |
+| Near-Cache | کش محلی گره / حافظه پنهان همجوار (Near-Cache) |
 | Negotiation | مذاکره |
 | Negotiation Skills | مهارت‌های مذاکره |
 | Network Administrator | مدیر شبکه |
@@ -10756,7 +10758,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | On-Demand Provisioning | تأمین منابع بر حسب تقاضا |
 | On-demand Scalability | مقیاس‌پذیری بر حسب تقاضا |
 | On-Premises (On-Prem) | درون‌سازمانی |
-| One Big Trade-off Jamboree | جشنوارهٔ بزرگ دادوستدها و مصالحه‌ها |
+| One Big Trade-off Jamboree | جشنوارهٔ بزرگ دادوستدها و مصالحه‌های معماری |
 | One-Way Access | دسترسیِ یک‌طرفه |
 | Online Bidding System | سیستم مزایدهٔ برخط |
 | Opaque Data | دادهٔ مبهم |
@@ -10782,10 +10784,10 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Orthogonal Coupling | کوپلینگ متعامد |
 | Orthogonal Reuse (pattern) | بازاستفادهٔ متعامد |
 | Others Considered (worksheet category) | موارد بررسی‌شدهٔ دیگر |
-| Out of Context Antipattern | ضدالگوی خارج از بافتار |
+| Out of Context Antipattern | ضدالگوی نادیده‌گرفتن زمینه و شرایط (خارج از بافتار) |
 | Out of Sequence | خارج از ترتیب |
-| Out-of-Memory | کمبود حافظه |
-| Out-of-Stock Condition | وضعیت کمبود موجودی |
+| Out-of-Memory | خطای اتمام / سرریز حافظه (Out of Memory) |
+| Out-of-Stock Condition | وضعیت اتمام موجودی کالا (Out of Stock) |
 | Outgoing (Fan-out) Coupling | کوپلینگ برون‌سو (انشعابی) |
 | Outlier | دادهٔ پرت |
 | Overall Change Risk | ریسک کلی تغییر |
@@ -10795,7 +10797,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Overspecifying (Architectural Characteristics) | تعیین بیش‌ازحد (ویژگی‌های معماری) |
 | Owning Service | سرویسِ مالک |
 | Package | بسته |
-| Package Software | نرم‌افزار آماده |
+| Package Software | بسته‌های نرم‌افزاری تجاری آماده (COTS Software) |
 | Package Structure | ساختار بسته‌ها |
 | Pagination | صفحه‌بندی |
 | Pain Point | نقطهٔ درد |
@@ -10810,11 +10812,11 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Peak Usage | اوج استفاده |
 | Peer-to-Peer | همتابه‌همتا |
 | Pending (state) | وضعیت معلق |
-| People Skills | مهارت‌های مردمی |
+| People Skills | مهارت‌های ارتباط بین‌فردی / مهارت‌های تعاملی (People Skills) |
 | Percentile | صدک |
-| Performance | عملکرد / کارایی (Performance) |
-| Performance Budget | بودجهٔ کارایی |
-| Performance Efficiency | کارایی و بهره‌وری |
+| Performance | عملکرد / کارایی عملیاتی (Performance) |
+| Performance Budget | سقف مجاز عملکرد / بودجهٔ عملکردی وب |
+| Performance Efficiency | کارایی عملکردی (Performance Efficiency بر پایه استاندارد ISO 25010) |
 | Persisted Queue | صف ماندگار |
 | Persistence | ماندگاری |
 | Persistence Logic | منطق ماندگاری |
@@ -10830,19 +10832,19 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Physical Layering | لایه‌بندی فیزیکی |
 | Pipe | لوله |
 | Pipeline Architecture | معماری خط لوله |
-| Pipes and Filters Architecture | معماری لوله‌ها و فیلترها |
+| Pipes and Filters Architecture | معماری لوله و پالایه (Pipes and Filters) |
 | Placeholder | جانگهدار |
 | Platform | پلتفرم |
 | Platform Team | تیم پلتفرم |
 | Plug-in | افزونه |
 | Plug-in Architecture | معماری افزونه‌ای |
 | Plug-in Registry | رجیستری افزونه‌ها |
-| Plumbing | لوله‌کشی زیرساختی |
-| Pluralistic Ignorance | نادانی جمعی |
+| Plumbing | زیرساخت ارتباطی پایه / زیرسیستم ارتباطی (Plumbing) |
+| Pluralistic Ignorance | جهل جمعی / تجاهل همگانی (Pluralistic Ignorance) |
 | Point-to-Point | نقطه‌به‌نقطه |
 | Point-to-Point Messaging | پیام‌رسانی نقطه‌به‌نقطه |
-| Poison Event | رویداد سمی |
-| Polyglot Databases | پایگاه‌داده‌های چندگانه |
+| Poison Event | رویداد سمّی / پیام مسموم و پردازش‌ناپذیر (Poison Pill) |
+| Polyglot Databases | پایگاه‌های دادهٔ چندمدلی / چندزبانه (Polyglot Persistence) |
 | Polyglot Environment | محیط چندزبانه |
 | Port (network) | درگاه |
 | Portability | قابلیت حمل |
@@ -10866,8 +10868,8 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Product Owner | مالک محصول |
 | Product Sponsor | حامی محصول |
 | Product-Based Application | برنامهٔ محصول‌محور |
-| Production | محیط تولید |
-| Production Code | کد عملیاتی (محیط پروداکشن) |
+| Production | محیط عملیاتی (Production) |
+| Production Code | کد عملیاتی / کد محیط پروداکشن |
 | Production Fitness Function | تابع برازش محیط تولید |
 | Productivity Flow | جریان بهره‌وری |
 | Programmatic Load Balancing | توازن‌بارِ برنامه‌ای |
@@ -10884,7 +10886,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Proxy | پراکسی |
 | Pseudocode | شبه‌کد |
 | Pseudosynchronous Communication | ارتباط شبه‌هم‌گام |
-| Public-Facing | روبه‌عموم |
+| Public-Facing | روبه‌مشتری / در دسترس عموم |
 | Publish-and-Subscribe | انتشار-اشتراک |
 | Quadrant | ربع |
 | Quality Assurance | تضمین کیفیت |
@@ -10894,12 +10896,12 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Queue | صف |
 | Queue Depth | عمق صف |
 | Quoting (domain) | قیمت‌دهی |
-| Race Condition | شرایط رقابتی |
+| Race Condition | وضعیت رقابتی (Race Condition) |
 | Random Replacement | جایگزینیِ تصادفی |
 | Rapid Application Development (RAD) | توسعهٔ سریع نرم‌افزار (RAD) |
 | Rate of Change | نرخ تغییر |
 | Rates Rally | جهش نرخ‌ها |
-| Rationale | منطق |
+| Rationale | دلایل و توجیه تصمیم / مبنای منطقی (Rationale) |
 | Reactive Architecture | معماری واکنش‌گرا |
 | Reactive Framework | چارچوب واکنش‌گرا |
 | Read-Only | فقط‌خواندنی |
@@ -10921,12 +10923,12 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Regression Test Suite | مجموعهٔ آزمون رگرسیون |
 | Regulatory Requirements | الزامات قانونی |
 | Relational Database | پایگاه‌دادهٔ رابطه‌ای |
-| Relay Race | مسابقهٔ دوی امدادی |
+| Relay Race | الگوی انتقال امدادی پیام‌ها (Relay Pattern) |
 | Reliability | قابلیت اطمینان |
 | Reliability/Safety | قابلیت اطمینان/ایمنی |
-| Remote Access | ارتباط / دسترسی از راه دور |
-| Remote Call | فراخوانی دور |
-| Remote Procedure Call (RPC) | فراخوانی رویهٔ دور |
+| Remote Access | دسترسی از راه دور |
+| Remote Call | فراخوانی از راه دور (Remote Call) |
+| Remote Procedure Call (RPC) | فراخوانی رویه از راه دور (RPC) |
 | Remote Teams | تیم‌های دورکار |
 | Repair | ترمیم |
 | Replaceability | جایگزین‌پذیری |
@@ -10950,8 +10952,8 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Requirements | الزامات |
 | Requirements Document | سند الزامات |
 | Requirements Specification | مشخصات الزامات |
-| Residuality Theory | نظریهٔ باقی‌ماندگی |
-| Residue | باقی‌مانده |
+| Residuality Theory | نظریهٔ پسماند / بقایای سیستم در برابر بحران (Residuality Theory) |
+| Residue | پسماند ساختاری / بازماندهٔ تاب‌آور سیستم (Residue) |
 | Resiliency | تاب‌آوری |
 | Resource Utilization | بهره‌برداری از منابع |
 | Response Contract | قرارداد پاسخ |
@@ -10965,14 +10967,14 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Reusable Assets | دارایی‌های بازاستفاده‌پذیر |
 | Reverse Data Pump | پمپ دادهٔ معکوس |
 | Reverse Proxy | پراکسی معکوس |
-| Rich Client | کلاینت غنی |
+| Rich Client | کلاینت چاق / کلاینت سنگین و پرقابلیت (Fat/Rich Client) |
 | Ring | حلقه |
 | Ripple Effect | اثر موجی |
 | Rippling Side Effects | اثرات جانبیِ موجی |
 | Risk Assessment | ارزیابی ریسک |
 | Risk Assessment Matrix | ماتریس ارزیابی ریسک |
 | Risk Mitigation | کاهش ریسک |
-| Risk Storming | طوفان ریسک |
+| Risk Storming | طوفان فکری ریسک (Risk Storming) |
 | Risk-Assessment Matrix | ماتریس ارزیابی ریسک |
 | Roadmap | نقشهٔ راه |
 | Robustness | استواری |
@@ -10986,29 +10988,29 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Rules Engine | موتور قواعد |
 | Runtime | زمان اجرا |
 | Runtime-Based Plug-in | افزونهٔ مبتنی بر زمان اجرا |
-| Sacrificial Architecture | معماری قربانی‌شدنی |
+| Sacrificial Architecture | معماری فداشونده / دورانداختنی آگاهانه |
 | Saga Pattern | الگوی Saga |
 | Salting | نمک‌زنی |
 | Scaffolding | داربست‌بندی کد / اسکلت‌بندی اولیه |
 | Scalability | مقیاس‌پذیری |
-| Scale Out | مقیاس‌دهیِ افقی |
+| Scale Out | مقیاس‌پذیری افقی / افزایش افقی ظرفیت (Scale-out) |
 | Schema | طرح‌واره |
 | Schema-less | بدون طرح‌واره |
 | Scope (of Architectural Characteristics) | دامنه (ویژگی‌های معماری) |
 | Scoping | دامنه‌گذاری |
-| Scorecard | کارنامه |
+| Scorecard | کارت امتیازدهی / ماتریس ارزیابی ویژگی‌ها (Scorecard) |
 | Second Law of Software Architecture | قانون دوم معماری نرم‌افزار |
 | Security | امنیت |
 | Security Check | بررسی امنیتی |
 | Security Hygiene | بهداشت امنیتی |
 | Security Zone | ناحیهٔ امنیتی |
 | Self-Contained (service) | خودبسنده |
-| Self-Contained Artifact | مصنوع خودبسنده |
+| Self-Contained Artifact | بستهٔ نرم‌افزاری مستقل و خودکفا |
 | Self-Service | سلف‌سرویس |
 | Semantic Coupling | کوپلینگ معنایی |
 | Semantic Decoupling | جداسازی معنایی |
-| Semantic Diffusion | پخش معنایی |
-| Semantic Drift | رانش معنایی |
+| Semantic Diffusion | تشتت و تضعیف تمرکز معنایی سرویس (Semantic Diffusion) |
+| Semantic Drift | انحراف تدریجی معنا / فرسایش معنایی (Semantic Drift) |
 | Senior Developer | توسعه‌دهندهٔ ارشد |
 | Separation of Concerns | جداسازی دغدغه‌ها |
 | Separation of Technical Concerns | جداسازی دغدغه‌های فنی |
@@ -11019,15 +11021,15 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Serverless Function | تابع بدون سرور |
 | Service Bus | گذرگاه سرویس |
 | Service Consolidation | ادغام سرویس‌ها |
-| Service Coupling | جفت‌شدگی / کوپلینگ سرویس‌ها |
+| Service Coupling | جفت‌شدگی / وابستگی متقابل سرویس‌ها (کوپلینگ) |
 | Service Decoupling | جداسازی سرویس‌ها |
 | Service Discovery | کشف سرویس |
 | Service Instance | نمونهٔ سرویس |
-| Service Locator (pattern) | الگوی service locator (بدون ترجمه) |
+| Service Locator (pattern) | الگوی مکان‌یاب سرویس (Service Locator) |
 | Service Mesh | مش سرویس |
 | Service Orchestration Platform | پلتفرم ارکستراسیون سرویس |
 | Service Orchestrator | هماهنگ‌کنندهٔ سرویس |
-| Service Plane | صفحهٔ سرویس |
+| Service Plane | سطح سرویس / لایهٔ سرویس (Service Plane) |
 | Service Signature | امضای سرویس |
 | Service-Based Architecture | معماری مبتنی بر سرویس |
 | Service-Level Agreement (SLA) | توافق‌نامهٔ سطح خدمت (SLA) |
@@ -11035,7 +11037,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Service-Oriented Architecture | معماری سرویس‌گرا |
 | Session Replication | تکثیر نشست |
 | Session State | حالت نشست |
-| Share Nothing (architecture) | (معماری) بدون اشتراک |
+| Share Nothing (architecture) | معماری بدون اشتراک‌گذاری منابع (Shared-Nothing Architecture) |
 | Shared File Server | سرور فایل مشترک |
 | Shared Interface Class | کلاس واسط مشترک |
 | Shared Library | کتابخانهٔ مشترک |
@@ -11048,24 +11050,24 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Shell Script | اسکریپت پوسته |
 | Shopping Cart | سبد خرید |
 | Side Effect | اثر جانبی |
-| Sidecar (pattern) | Sidecar (بدون ترجمه؛ نام الگو) |
+| Sidecar (pattern) | الگوی سایدکار / اتاقک همجوار (Sidecar Pattern) |
 | Signal-to-Noise Ratio | نسبت سیگنال به نویز |
 | Siloed (environment) | جزیره‌ای |
-| Silver Bullet | گلولهٔ نقره‌ای |
+| Silver Bullet | راه‌حل معجزه‌آسا (تیر نقره‌ای / Silver Bullet) |
 | Simplicity | سادگی |
-| Single Point of Failure | نقطهٔ شکست واحد |
+| Single Point of Failure | نقطهٔ تکین خرابی / نقطهٔ تکی ازکارافتادگی (SPOF) |
 | Single Source of Truth | منبع واحد حقیقت |
 | Single-Broker (pattern) | الگوی کارگزار واحد |
 | Single-Page Application | برنامهٔ تک‌صفحه‌ای |
 | Single-Purpose Filter | فیلتر تک‌منظوره |
 | Situational Awareness | آگاهی موقعیتی |
-| Skill Profile | نیم‌رخ مهارتی |
+| Skill Profile | شناسنامهٔ مهارتی / نمایهٔ مهارت‌ها |
 | Skill Set | مجموعهٔ مهارت‌ها |
 | Social Capital | سرمایهٔ اجتماعی |
 | Soft Skills | مهارت‌های نرم |
 | Software Architect | معمار نرم‌افزار |
 | Software Architecture | معماری نرم‌افزار |
-| Software Bill of Materials | فهرست اجزای نرم‌افزار |
+| Software Bill of Materials | صورت مواد نرم‌افزار / فهرست اجزا و وابستگی‌ها (SBOM) |
 | Software Engineering | مهندسی نرم‌افزار |
 | Software-Release Checklist | فهرست وارسیِ انتشار نرم‌افزار |
 | Source (filter) | منبع |
@@ -11076,12 +11078,12 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Special Purpose (library) | ویژه‌منظوره |
 | Specialized Architectural Style | سبک معماریِ تخصصی |
 | Spectrum (vs. Binary) | طیف (در برابر دوگانه) |
-| Spike (load) | جهش |
+| Spike (load) | جهش ناگهانی بار (Load Spike) |
 | SQL Join | پیوند SQL |
 | Stability | پایداری |
 | Stakeholder | ذی‌نفع |
 | Stale Expertise | تخصص کهن‌شده و فرسوده |
-| Stamp Coupling | کوپلینگ مُهری |
+| Stamp Coupling | کوپلینگ ساختارداده / جفت‌شدگی ساختاری (Stamp Coupling) |
 | Standby | آماده‌به‌کار |
 | Star Chart | نمودار ستاره‌ای |
 | State Change | تغییر حالت |
@@ -11089,21 +11091,21 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Stateless | بی‌حالت |
 | Static Connascence | هم‌بستگی ایستا |
 | Static Coupling | کوپلینگ ایستا |
-| Statically Typed | دارای نوع‌دهی ایستا |
+| Statically Typed | ایستا-نوع / دارای سیستم نوع‌دهی ایستا |
 | Status (ADR section) | وضعیت |
 | Stencils/Templates | شابلون‌ها/الگوها |
-| Stepping Stone | پلهٔ میانی |
+| Stepping Stone | گام واسط / پل گذار معماری (Stepping Stone) |
 | Sticky Notes | برگه‌های یادداشت چسب‌دار |
-| Story Grooming | پالایش داستان‌ها |
+| Story Grooming | جلسهٔ پالایش داستان‌های کاربر (Story Grooming / Refinement) |
 | Strategic Decision | تصمیم راهبردی |
 | Strategic Positioning | جایگاه‌یابی راهبردی |
 | Strategic Thinking | تفکر راهبردی |
 | Stream (event) | جریان |
-| Stream-Aligned Team | تیم هم‌راستا با جریان |
+| Stream-Aligned Team | تیم هم‌راستا با جریان ارزش (کتاب توپولوژی تیم‌ها) |
 | Streamer | پخش‌کننده |
 | Streaming | جریان‌سازی داده |
 | Strength (of Connascence) | قدرت (هم‌بستگی) |
-| Stressor | عامل فشار |
+| Stressor | عامل تنش‌زا / تنش‌زای سیستمی (Stressor) |
 | Strict Contract | قرارداد سخت‌گیرانه |
 | Structural Architectural Characteristics | ویژگی‌های ساختاری معماری |
 | Structural Decay | فرسایش ساختاری |
@@ -11114,7 +11116,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Structural Testing Tools | ابزارهای آزمون ساختاری |
 | Structure (architecturally significant) | ساختار |
 | Structured Programming | برنامه‌نویسی ساخت‌یافته |
-| Stub | استاب |
+| Stub | پاسخ‌دهندهٔ ساختگی / خردک تست (Stub) |
 | Subdomain | زیرحوزه |
 | Subject Matter Expert | متخصص موضوعی |
 | Subjective | ذهنی |
@@ -11123,15 +11125,15 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Superpowers (architecture) | ابرتوانایی‌ها |
 | Superseded (ADR status) | جایگزین‌شده |
 | Supportability | پشتیبانی‌پذیری |
-| Swarm of Gnats Antipattern | ضدالگوی دستهٔ پشه‌ها |
-| Sweet Spot | نقطهٔ مطلوب |
+| Swarm of Gnats Antipattern | ضدالگوی ازدحام پشه‌ها (ریزدانگی افراطی سرویس‌ها) |
+| Sweet Spot | نقطهٔ تعادل بهینه / نقطهٔ ایدئال (Sweet Spot) |
 | Synchronization Time | زمان هم‌گام‌سازی |
 | Synchronous Communication | ارتباط هم‌گام |
 | Synchronous Coupling | کوپلینگ هم‌گام |
 | Synchronous Send | ارسال هم‌گام |
 | Synergistic | هم‌افزا |
 | System Call Interface Layer | لایهٔ واسط فراخوانی سیستمی |
-| System of Record | سیستم مرجع |
+| System of Record | سامانهٔ مرجع داده‌ها / منبع اصلی ثبت داده (SOR) |
 | Systems Integration | یکپارچه‌سازی سیستم‌ها |
 | Tactical Decision | تصمیم تاکتیکی |
 | Tag | برچسب |
@@ -11151,7 +11153,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Technical Top-Level Partitioning | افراز فنی سطح بالا |
 | Technically Partitioned Teams | تیم‌های افرازشده به‌صورت فنی |
 | Technology Advisory Board (TAB) | هیئت مشاورهٔ فناوری |
-| Technology Gambit | ریسک هوشمندانه / گامبیت فناوری (Technology Gambit) |
+| Technology Gambit | ریسک هوشمندانهٔ فناوری / گامبیت فناوری |
 | Technology Portfolio | سبد فناوری |
 | Technology Radar | رادار فناوری |
 | Technology Stack | پشتهٔ فناوری |
@@ -11164,19 +11166,19 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Test Coverage | پوشش آزمون |
 | Test-Driven Development (TDD) | توسعهٔ آزمون‌محور (TDD) |
 | Testability | آزمون‌پذیری |
-| Tester (filter) | آزماینده |
+| Tester (filter) | ارزیاب شرط / پالایهٔ اعتبارسنج (Tester) |
 | The Enterprise | سازمان |
-| Thin Client | کلاینت نازک |
+| Thin Client | کلاینت لاغر / کلاینت سبک (Thin Client) |
 | Third Law of Software Architecture | قانون سوم معماری نرم‌افزار |
 | Third-Party | شخص ثالث |
-| Thread | ریسمان |
+| Thread | رشته / نَخ اجرایی (Thread) |
 | Three-Tier Architecture | معماری سه‌لایه |
 | Threshold | آستانه |
 | Throughput | توان عملیاتی |
 | Throwaway Code | کد یک‌بارمصرف |
 | Ticker Price | قیمت لحظه‌ای |
-| Ticketing Tools | ابزارهای تیکتینگ |
-| Tight Coupling | کوپلینگ تنگاتنگ |
+| Ticketing Tools | سامانه‌های مدیریت و رهگیری تیکت‌ها |
+| Tight Coupling | جفت‌شدگی قوی / وابستگی شدید (Tight Coupling) |
 | Time and Budget | زمان و بودجه |
 | Time Behavior | رفتار زمانی |
 | Time to Market | زمان عرضه به بازار |
@@ -11189,7 +11191,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Topic (Kafka) | موضوع |
 | Topic Exchange (AMQP) | مبادله‌گر موضوعی |
 | Trade Compliance Engine | موتور انطباق معاملات |
-| Trade-off | موازنه و دادوستد (Trade-off) |
+| Trade-off | موازنه / دادوستد (مصالحه و دادوستد) |
 | Trade-off Analysis | تحلیل موازنه‌ها و دادوستدها (Trade-off Analysis) |
 | Trade-off Summary | خلاصهٔ مصالحه‌ها |
 | Transaction | تراکنش |
@@ -11197,14 +11199,14 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Transactional Coordination | هماهنگ‌سازیِ تراکنشی |
 | Transactional Scope | دامنهٔ تراکنشی |
 | Transformation Logic | منطق تبدیل |
-| Transformer (filter) | تبدیل‌گر |
+| Transformer (filter) | مبدل داده / پالایهٔ تبدیل‌کننده (Transformer) |
 | Transitive Dependency | وابستگی گذرا |
 | Transport Cost | هزینهٔ انتقال |
 | Transport Layer | لایهٔ انتقال |
 | Traveling Salesperson Problem | مسئلهٔ فروشندهٔ دوره‌گرد |
 | Triggered Function | تابع رویدادانگیخته |
 | Trusted Network | شبکهٔ مورد اعتماد |
-| Tuple Space | فضای تاپل |
+| Tuple Space | فضای چندتایی‌ها / حافظهٔ مشترک تاپل‌ها (Tuple Space) |
 | Two-Tier Architecture | معماری دولایه |
 | Ubiquitous Language | زبان فراگیر |
 | Underspecifying (Architectural Characteristics) | تعیین کمتر از حد (ویژگی‌های معماری) |
@@ -11221,7 +11223,7 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Update Rate | نرخ به‌روزرسانی |
 | Upgradeability | ارتقاپذیری |
 | Upstream Systems | سیستم‌های بالادستی |
-| Uptime | زمان فعالیت |
+| Uptime | مدت‌زمان پایداری و فعالیت مداوم سیستم (Uptime) |
 | Usability | کاربردپذیری |
 | Usability/Achievability | کاربردپذیری/دستیابی‌پذیری |
 | User Error Protection | محافظت در برابر خطای کاربر |
@@ -11245,23 +11247,23 @@ Barry O’Reilly، معمار نرم‌افزار باتجربه‌ای که د�
 | Virtualized Middleware | میان‌افزار مجازی‌شده |
 | Visionary | دوراندیش |
 | Vital Signs | علائم حیاتی |
-| Volatile (code) | پرنوسان |
+| Volatile (code) | کد ناپایدار و پرتغییر (Volatile Code) |
 | Volatility | نوسان‌پذیری |
 | Wait State | حالت انتظار |
 | Waterfall | آبشاری |
 | Web Archive (WAR) | آرشیو وب |
 | Web Server | سرور وب |
 | Weighting | وزن‌دهی |
-| Well-factored | خوش‌تجزیه |
-| Windows, DevOps | نام ابزار/شیوه؛ دست‌نخورده به انگلیسی |
-| Wish List | فهرست علاقه‌مندی‌ها |
+| Well-factored | خوش‌ساختار / دارای تفکیک و شکست بهینه (Well-factored) |
+| Windows, DevOps | ویندوز، دوآپس (توسعه و عملیات نرم‌افزاری) |
+| Wish List | فهرست خواسته‌ها و انتظارات (Wish List) |
 | Wishlist | فهرست علاقه‌مندی‌ها |
 | Workflow | گردش‌کار |
 | Workflow Approach | رویکرد گردش‌کار |
 | Workflow Delegate | نمایندهٔ گردش‌کار |
 | Workflow Event Pattern | الگوی رویداد گردش‌کار |
 | Workplace Harassment | آزار در محیط کار |
-| Wrapper | پوشش‌دهنده |
+| Wrapper | کلاس پوششی / رَپِر (Wrapper) |
 | Zone of Pain | منطقهٔ درد |
 | Zone of Uselessness | منطقهٔ بی‌فایدگی |
-| Zone-based Availability | در دسترس‌بودن مبتنی بر ناحیه |
+| Zone-based Availability | دسترس‌پذیری مبتنی بر ناحیه |
