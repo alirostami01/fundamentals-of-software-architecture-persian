@@ -22,6 +22,9 @@ FA = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
 TITLE_FA = "مبانی معماری نرم‌افزار: رویکردی مهندسی و مدرن"
 TITLE_EN = "Fundamentals of Software Architecture: A Modern Engineering Approach"
 SUBTITLE = "ویرایش دوم — Mark Richards و Neal Ford (O’Reilly، ۲۰۲۵)"
+VERSION = "2.1.0"
+VERSION_DATE = "آبان ۱۴۰۵ (اکتبر ۲۰۲۶)"
+VERSION_NOTE = f"نسخهٔ ترجمه: {VERSION} — بازبینی جامع ۲۷ فصل و واژه‌نامه ({VERSION_DATE})"
 NOTE = "ترجمهٔ فارسی؛ تصاویر شکل‌ها از کتاب اصلی برداشته شده و عنوان‌هایشان ترجمه شده است."
 PARTS = {2: "بخش اول: مبانی", 9: "بخش دوم: سبک‌های معماری", 21: "بخش سوم: تکنیک‌ها و مهارت‌های نرم"}
 MASTER_H = "واژه‌نامهٔ اصلی کتاب"
@@ -103,6 +106,7 @@ def master_rows():
 
 def build_md(us, rows):
     md = [f"# {TITLE_FA}", "", f"**{TITLE_EN}**", "", SUBTITLE, "", f"> {NOTE}", "",
+          f"> **{VERSION_NOTE}**", "",
           '<a id="toc"></a>', "", "## فهرست مطالب", ""]
     for anchor, _, title, n in us:
         if n in PARTS:
@@ -151,6 +155,7 @@ def build_html(us, rows):
         f'  <h1 style="{H1}">{TITLE_FA}</h1>',
         f'  <p dir="ltr" style="text-align:left;font-weight:bold;margin:.2rem 0;">{TITLE_EN}</p>',
         f'  <p style="margin:.2rem 0;">{SUBTITLE}</p>',
+        f'  <p style="color:#2c5f8a;font-weight:bold;margin:.3rem 0;font-size:.95rem;">{VERSION_NOTE}</p>',
         f'  <p style="color:#666;font-size:.92rem;">{NOTE}</p>',
         '  <nav aria-label="فهرست مطالب">',
         '    <h2 style="font-size:1.35rem;color:#2c5f8a;margin:1rem 0 .4rem;">فهرست مطالب</h2>',

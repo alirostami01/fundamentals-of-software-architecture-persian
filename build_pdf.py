@@ -32,6 +32,7 @@ import html as htmllib
 import os
 import re
 import sys
+import shutil
 import tempfile
 import time
 from pathlib import Path
@@ -39,6 +40,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from build_book import (HTML_DIR, MASTER_H, NOTE, PARTS, SUBTITLE, TITLE_EN, TITLE_FA,  # noqa: E402
+                        VERSION, VERSION_DATE, VERSION_NOTE,
                         front_items, gloss_html, master_rows, units)
 
 FA = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
@@ -46,6 +48,16 @@ OUT = HERE / "pdf"
 FONTS = HERE / "pdf" / "fonts"
 GLOSS_CHAPTER_H = "واژه‌نامهٔ اختصاصی این فصل"
 PLACEHOLDER = "۸۸۸"          # جای شمارهٔ صفحه در گذر نخست (پهن‌ترین حالت سه‌رقمی)
+
+
+def default_chromium():
+    if os.environ.get("CHROMIUM_PATH"):
+        return os.environ.get("CHROMIUM_PATH")
+    for name in ("google-chrome", "google-chrome-stable", "chromium", "chromium-browser"):
+        p = shutil.which(name)
+        if p:
+            return p
+    return None
 
 
 # ───────────────────────────── CSS ─────────────────────────────
@@ -193,9 +205,11 @@ def toc_html(entries, chapter_of, pages=None):
     return "\n".join(rows)
 
 
-def cover_html():
+def cover_html(version_str: str = None):
+    v = version_str or VERSION_NOTE
     return (f'<section class="cover"><div class="t">{TITLE_FA}</div><div class="bar"></div>'
             f'<div class="en">{TITLE_EN}</div><div class="sub">{SUBTITLE}</div>'
+            f'<div class="ver" style="margin-top:12mm;font-size:11.5pt;font-weight:700;color:#2c5f8a;">{v}</div>'
             f'<div class="note">{NOTE}</div></section>')
 
 
@@ -265,13 +279,14 @@ def count_toc_pages(doc):
     return n
 
 
-def finalize(pdf_bytes: bytes, out: Path, title: str, toc):
+def finalize(pdf_bytes: bytes, out: Path, title: str, toc, version: str = VERSION):
     import pymupdf
     doc = pymupdf.open(stream=pdf_bytes, filetype="pdf")
     if toc is not None:
         doc.set_toc(toc)
     doc.set_metadata({"title": title, "author": "Mark Richards, Neal Ford — ترجمهٔ فارسی",
-                      "subject": TITLE_EN, "creator": "build_pdf.py (Chromium + PyMuPDF)"})
+                      "subject": f"{TITLE_EN} (نسخهٔ {version})",
+                      "creator": f"build_pdf.py v{version} (Chromium + PyMuPDF)"})
     out.parent.mkdir(parents=True, exist_ok=True)
     doc.save(out, garbage=3, deflate=True)
     pages = doc.page_count
@@ -315,7 +330,8 @@ def build_book(r: Renderer, args):
     ga, ge = glossary_article(master_rows())
     arts.append(ga)
     entries += ge
-    body = lambda pages: (cover_html() + "\n" + toc_html(entries, chapter_of, pages) + "\n" + "\n".join(arts))
+    ver_note = f"نسخهٔ ترجمه: {args.version} — بازبینی جامع ۲۷ فصل و واژه‌نامه ({VERSION_DATE})"
+    body = lambda pages: (cover_html(ver_note) + "\n" + toc_html(entries, chapter_of, pages) + "\n" + "\n".join(arts))
 
     import pymupdf
     print("  گذر ۱: چیدمان و یافتن شمارهٔ صفحه‌ها…", flush=True)
@@ -333,7 +349,7 @@ def build_book(r: Renderer, args):
     d2.close()
 
     toc = [[1, "فهرست مطالب", 2]] + [[e[0], e[3], pages[i]] for i, e in enumerate(entries)]
-    n = finalize(pdf2, OUT / "book.pdf", TITLE_FA, toc)
+    n = finalize(pdf2, OUT / "book.pdf", TITLE_FA, toc, version=args.version)
     print(f"  ✓ {rel(OUT / 'book.pdf')} — {n} صفحه، {len(entries)} سرفصل در فهرست "
           f"({(OUT / 'book.pdf').stat().st_size / 1e6:.1f} MB، {time.time() - t0:.0f} ثانیه)")
 
@@ -349,7 +365,7 @@ def build_chapters(r: Renderer, args):
         pdf = r.render(document(art, f"{title} — {TITLE_FA}", args), base)
         toc = outline_from_chromium(pdf, entries, n_heads)
         out = OUT / "chapters" / f"{base}.pdf"
-        pages = finalize(pdf, out, f"{title} — {TITLE_FA}", toc)
+        pages = finalize(pdf, out, f"{title} — {TITLE_FA}", toc, version=args.version)
         print(f"  ✓ {rel(out)} — {pages} صفحه ({out.stat().st_size / 1e6:.1f} MB)", flush=True)
 
 
@@ -359,8 +375,9 @@ def main():
     g.add_argument("--book-only", action="store_true", help="فقط pdf/book.pdf")
     g.add_argument("--chapters-only", action="store_true", help="فقط PDF فصل‌ها")
     ap.add_argument("--chapters", type=int, nargs="+", metavar="N", help="فقط این فصل‌ها (0 = پیوست)")
-    ap.add_argument("--chromium", default=os.environ.get("CHROMIUM_PATH"),
-                    help="مسیر Chrome/Chromium (پیش‌فرض: Chromium خود Playwright یا متغیر CHROMIUM_PATH)")
+    ap.add_argument("--version", default=VERSION, help=f"نسخهٔ کتاب در PDF (پیش‌فرض: {VERSION})")
+    ap.add_argument("--chromium", default=default_chromium(),
+                    help="مسیر Chrome/Chromium (پیش‌فرض: خودکار، متغیر CHROMIUM_PATH یا Chromium Playwright)")
     ap.add_argument("--page-size", default="A4", help="اندازهٔ صفحه، مانند A4، A5 یا Letter (پیش‌فرض A4)")
     ap.add_argument("--out-dir", type=Path, default=None, help="پوشهٔ خروجی (پیش‌فرض: pdf/)")
     ap.add_argument("--font-size", type=float, default=11, help="اندازهٔ قلم متن به pt (پیش‌فرض 11)")
