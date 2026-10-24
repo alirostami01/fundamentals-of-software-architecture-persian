@@ -22,9 +22,10 @@ FA = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
 TITLE_FA = "مبانی معماری نرم‌افزار: رویکردی مهندسی و مدرن"
 TITLE_EN = "Fundamentals of Software Architecture: A Modern Engineering Approach"
 SUBTITLE = "ویرایش دوم — Mark Richards و Neal Ford (O’Reilly، ۲۰۲۵)"
-VERSION = "2.1.0"
+VERSION = "2.2.0"
 VERSION_DATE = "آبان ۱۴۰۵ (اکتبر ۲۰۲۶)"
-VERSION_NOTE = f"نسخهٔ ترجمه: {VERSION} — بازبینی جامع ۲۷ فصل و واژه‌نامه ({VERSION_DATE})"
+VERSION_NOTE = f"نسخهٔ ترجمه: {VERSION} — ویرایش بازبینی‌شده با تصویر جلد و صفحهٔ عنوان ({VERSION_DATE})"
+COVER_IMG = "figures/fundamentals-of-software-architecture-persian.jpeg"
 NOTE = "ترجمهٔ فارسی؛ تصاویر شکل‌ها از کتاب اصلی برداشته شده و عنوان‌هایشان ترجمه شده است."
 PARTS = {2: "بخش اول: مبانی", 9: "بخش دوم: سبک‌های معماری", 21: "بخش سوم: تکنیک‌ها و مهارت‌های نرم"}
 MASTER_H = "واژه‌نامهٔ اصلی کتاب"
@@ -105,7 +106,8 @@ def master_rows():
 
 
 def build_md(us, rows):
-    md = [f"# {TITLE_FA}", "", f"**{TITLE_EN}**", "", SUBTITLE, "", f"> {NOTE}", "",
+    md = [f"![روی جلد کتاب مبانی معماری نرم‌افزار](../{COVER_IMG})", "",
+          f"# {TITLE_FA}", "", f"**{TITLE_EN}**", "", SUBTITLE, "", f"> {NOTE}", "",
           f"> **{VERSION_NOTE}**", "",
           '<a id="toc"></a>', "", "## فهرست مطالب", ""]
     for anchor, _, title, n in us:
@@ -150,6 +152,10 @@ def build_html(us, rows):
     parts = [
         "<!-- خروجی HTML — نسخهٔ یکپارچهٔ کل کتاب (بدون html/head)؛ ساخته‌شده با build_book.py -->",
         '<div dir="rtl" lang="fa">',
+        "",
+        '  <figure style="text-align:center;margin:0 0 2rem;padding:0;">',
+        f'    <img src="../{COVER_IMG}" alt="روی جلد کتاب مبانی معماری نرم‌افزار" style="max-width:100%;max-height:85vh;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.15);">',
+        '  </figure>',
         "",
         f'<article id="toc" dir="rtl" lang="fa" style="{ART}">',
         f'  <h1 style="{H1}">{TITLE_FA}</h1>',

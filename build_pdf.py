@@ -75,6 +75,28 @@ def css(page_size: str, font_pt: float) -> str:
   @bottom-center {{ content: counter(page, persian); font-family: 'VazirPDF'; font-size: 9pt; color: #666; }}
 }}
 @page cover {{ @bottom-center {{ content: none; }} }}
+@page bookcover {{
+  size: {page_size};
+  margin: 0;
+  @bottom-center {{ content: none; }}
+}}
+
+.book-cover-image {{
+  page: bookcover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  break-after: page;
+  overflow: hidden;
+  background: #0d1b2a;
+}}
+.book-cover-image img {{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}}
 
 html {{ -webkit-print-color-adjust: exact; print-color-adjust: exact; }}
 body {{ margin: 0; font-family: 'VazirPDF', sans-serif; font-size: {font_pt}pt; line-height: 1.9; color: #1a1a1a; }}
@@ -205,6 +227,13 @@ def toc_html(entries, chapter_of, pages=None):
     return "\n".join(rows)
 
 
+def cover_image_html():
+    img_uri = (HERE / "figures" / "fundamentals-of-software-architecture-persian.jpeg").as_uri()
+    return (f'<div class="book-cover-image">'
+            f'<img src="{img_uri}" alt="روی جلد کتاب">'
+            f'</div>')
+
+
 def cover_html(version_str: str = None):
     v = version_str or VERSION_NOTE
     return (f'<section class="cover"><div class="t">{TITLE_FA}</div><div class="bar"></div>'
@@ -252,10 +281,10 @@ class Renderer:
         self._pw.stop()
 
 
-def toc_link_pages(doc, toc_pages: int, n_entries: int):
+def toc_link_pages(doc, toc_start: int, toc_pages: int, n_entries: int):
     """Target page (1-based) of every TOC row, read from the internal links Chromium wrote on the TOC pages."""
     rows = []
-    for pno in range(1, 1 + toc_pages):
+    for pno in range(toc_start, toc_start + toc_pages):
         links = [l for l in doc[pno].get_links() if l.get("page", -1) >= 0]
         links.sort(key=lambda l: (round(l["from"].y0, 0), -l["from"].x1))
         for l in links:
@@ -268,15 +297,21 @@ def toc_link_pages(doc, toc_pages: int, n_entries: int):
     return [p for _, p in rows]
 
 
-def count_toc_pages(doc):
-    """Cover = page 1; TOC pages follow until the first page that has no internal links."""
-    n = 0
-    for pno in range(1, doc.page_count):
-        if any(l.get("page", -1) >= 0 for l in doc[pno].get_links()):
-            n += 1
-        else:
+def find_toc_pages(doc):
+    """Cover image and title page have no TOC links. TOC pages have internal links."""
+    start = None
+    count = 0
+    for pno in range(doc.page_count):
+        forward_links = [l for l in doc[pno].get_links() if l.get("page", -1) > pno]
+        if len(forward_links) >= 10:
+            if start is None:
+                start = pno
+            count += 1
+        elif start is not None:
             break
-    return n
+    if start is None:
+        raise RuntimeError("TOC pages not found in rendered document")
+    return start, count
 
 
 def finalize(pdf_bytes: bytes, out: Path, title: str, toc, version: str = VERSION):
@@ -331,24 +366,29 @@ def build_book(r: Renderer, args):
     arts.append(ga)
     entries += ge
     ver_note = f"نسخهٔ ترجمه: {args.version} — بازبینی جامع ۲۷ فصل و واژه‌نامه ({VERSION_DATE})"
-    body = lambda pages: (cover_html(ver_note) + "\n" + toc_html(entries, chapter_of, pages) + "\n" + "\n".join(arts))
+    body = lambda pages: (cover_image_html() + "\n" + cover_html(ver_note) + "\n" + toc_html(entries, chapter_of, pages) + "\n" + "\n".join(arts))
 
     import pymupdf
     print("  گذر ۱: چیدمان و یافتن شمارهٔ صفحه‌ها…", flush=True)
     pdf1 = r.render(document(body(None), TITLE_FA, args), "book-pass1")
     d1 = pymupdf.open(stream=pdf1, filetype="pdf")
-    toc_pages = count_toc_pages(d1)
-    pages = toc_link_pages(d1, toc_pages, len(entries))
+    toc_start, toc_pages = find_toc_pages(d1)
+    pages = toc_link_pages(d1, toc_start, toc_pages, len(entries))
     d1.close()
 
     print("  گذر ۲: درج شمارهٔ صفحه‌ها در فهرست…", flush=True)
     pdf2 = r.render(document(body(pages), TITLE_FA, args), "book-pass2")
     d2 = pymupdf.open(stream=pdf2, filetype="pdf")
-    if count_toc_pages(d2) != toc_pages or toc_link_pages(d2, toc_pages, len(entries)) != pages:
+    d2_start, d2_pages = find_toc_pages(d2)
+    if d2_start != toc_start or d2_pages != toc_pages or toc_link_pages(d2, d2_start, d2_pages, len(entries)) != pages:
         raise RuntimeError("page numbers shifted between passes")
     d2.close()
 
-    toc = [[1, "فهرست مطالب", 2]] + [[e[0], e[3], pages[i]] for i, e in enumerate(entries)]
+    toc = [
+        [1, "روی جلد", 1],
+        [1, "صفحهٔ عنوان و شناسنامه", 2],
+        [1, "فهرست مطالب", toc_start + 1]
+    ] + [[e[0], e[3], pages[i]] for i, e in enumerate(entries)]
     n = finalize(pdf2, OUT / "book.pdf", TITLE_FA, toc, version=args.version)
     print(f"  ✓ {rel(OUT / 'book.pdf')} — {n} صفحه، {len(entries)} سرفصل در فهرست "
           f"({(OUT / 'book.pdf').stat().st_size / 1e6:.1f} MB، {time.time() - t0:.0f} ثانیه)")
